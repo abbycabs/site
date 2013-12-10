@@ -1,14 +1,129 @@
----
-layout: blog
-date: 2010-01-10
-time: 09:00:00
-author: Greg Wilson
-title: How We Got Here, and Where We Are
-category: ["Opinion"]
----
-<p>I gave a talk in Santa Fe early in 1997 describing a set of articles I'd organized for the Summer 1996 and Fall 1996 issues of <em>IEEE Computational Science and Engineering</em> (now <a href="http://cise.aip.org/"><em>Computing in Science &amp; Engineering</em></a> on the subject, "What should computer scientists teach physical scientists and engineers?" After the talk, John Reynders (then the director of the Advanced Computing Lab at <a href="http://www.lanl.gov">Los Alamos National Laboratory</a>) challenged me to put my money where my mouth was and actually teach basic software development skills to working scientists.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: How We Got Here, and Where We Are</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">How We Got Here, and Where We Are</h1>
+            <!-- start content -->
+            <p>I gave a talk in Santa Fe early in 1997 describing a set of articles I'd organized for the Summer 1996 and Fall 1996 issues of <em>IEEE Computational Science and Engineering</em> (now <a href="http://cise.aip.org/"><em>Computing in Science &amp; Engineering</em></a> on the subject, "What should computer scientists teach physical scientists and engineers?" After the talk, John Reynders (then the director of the Advanced Computing Lab at <a href="http://www.lanl.gov">Los Alamos National Laboratory</a>) challenged me to put my money where my mouth was and actually teach basic software development skills to working scientists.</p>
 <p>Brent Gorda and I ran the course for the first time in July 1997. We used Perl as a programming language, and covered topics such as CVS, regular expressions, and a little bit of web client programming. Our part of the course was three days long, and was followed by a two-day consulting visit from Steve McConnell (whose books <a href="http://www.amazon.com/Complete-Microsoft-Programming-Steve-McConnell/dp/1556154844"><em>Code Complete</em></a> and <a href="http://www.amazon.com/Rapid-Development-Taming-Software-Schedules/dp/1556159005"><em>Rapid Development</em></a> were at the top of the charts). We ran the course in various forms another five or six times in the next three years, during which time we switched to Python and expanded it to five days. All told, about 120 LANL technical staff went through the course, most of them under 35.</p>
 <p>In 2004, after I'd taught the course for the <a href="http://www.stsci.edu">Space Telescope Science Institute</a> and the US Navy, the <a href="http://www.python.org/psf/">Python Software Foundation</a> gave me a grant to reorganize, update, and expand the material. That version is the core of what's now online; when I last checked, the site was getting 10-12,000 distinct visitors a month, and the material was being used in whole or in part at <a href="http://www.caltech.edu">Caltech</a>, <a href="http://www.indiana.edu">Indiana</a>, several schools in the UK and Germany, Chile, South Korea, and of course here in Toronto.</p>
 <p>Based on follow-ups with alumni, I'd guess that it has no effect at all on 20-25%, who take the course because their manager or supervisor told them they had to, and get little out of it. The rest routinely describe it as game changing: a PhD candidate in Psychology who did the course with us in July 2009 told me a few days ago that what she learned probably saved her six months on her current project, and that without it, a second project would simply not have occurred to her to try. As another data point, one of the other alumni of that offering came to me early in October to say that several of her labmates wanted to take the course, and was I planning to offer it again any time soon? I told her that I wasn't, but that I could arrange for a CS grad student to teach it. Three weeks later, 65 students from Pysch and Linguistics had signed up to do it as a non-credit course, roughly 45 of whom have stuck with it so far.</p>
 <p>While I don't have data to back this up, I believe very strongly that what most students get out of the course isn't specific knowledge about relational databases, regular expressions, or object-oriented programming, but rather a mental map of the computing landscape, so that they know what's supposed to be easy, what else is supposed to be possible, and where to go looking for more information. Another student from the July 2009 offering said that the biggest thing the course did for him was turn "unknown unknowns" into "known unknowns". I'm supposed to conduct a follow-up survey with those students later this month to see how much they're using what they learned, and what impact is has had; I hope to have results up on the web by Easter.</p>
-<p>And as regular readers will know, I'm presently trying to raise money to update the material: <a href="{{page.root}}/blog/2010/01/new-challenges.html">this post</a> explains the background, while <a href="{{page.root}}/v4/">this plan</a> incorporates what I've learned from students and instructors on four continents about what material, sequence, and presentation will actually "reach" scientists. Sadly, though, funding agencies and companies mostly still seem to think that only HPC-related training is worth funding, which I feel is asking scientists to run before they can walk. This <a href="will-not-learn-2008.pdf">CiSE paper</a> talks about this particular frustration, while <a href="survey-2009.pdf">our survey results</a> put weight behind the claim that the overwhelming majority of scientists will benefit much more from being helped with development issues than from anything to do with big iron.</p>
+<p>And as regular readers will know, I'm presently trying to raise money to update the material: <a href="/blog/2010/01/new-challenges.html">this post</a> explains the background, while <a href="/v4/">this plan</a> incorporates what I've learned from students and instructors on four continents about what material, sequence, and presentation will actually "reach" scientists. Sadly, though, funding agencies and companies mostly still seem to think that only HPC-related training is worth funding, which I feel is asking scientists to run before they can walk. This <a href="will-not-learn-2008.pdf">CiSE paper</a> talks about this particular frustration, while <a href="survey-2009.pdf">our survey results</a> put weight behind the claim that the overwhelming majority of scientists will benefit much more from being helped with development issues than from anything to do with big iron.</p>
+
+            <p><em>Originally posted 2010-01-10 by Greg Wilson in Opinion.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'How We Got Here, and Where We Are';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2010/01/how-we-got-here-and-where-we-are.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

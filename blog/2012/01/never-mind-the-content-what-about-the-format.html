@@ -1,12 +1,68 @@
----
-layout: blog
-date: 2012-01-26
-time: 09:00:00
-author: Greg Wilson
-title: Never Mind the Content, What About the Format?
-category: ["Content", "Education"]
----
-<p>I'm still gnawing on the problem of how to construct content for 21st Century learning&mdash;or, more prosaically, what I should use to build the next version of Software Carpentry. My starting point is the need to serve several different kinds of users [<a id="a1" href="#f1">1</a>], whose descriptions I have moved to a separate post on <a href="{{page.root}}/blog/2012/01/learners-and-their-needs.html">learners and their needs</a>.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Never Mind the Content, What About the Format?</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">Never Mind the Content, What About the Format?</h1>
+            <!-- start content -->
+            <p>I'm still gnawing on the problem of how to construct content for 21st Century learning&mdash;or, more prosaically, what I should use to build the next version of Software Carpentry. My starting point is the need to serve several different kinds of users [<a id="a1" href="#f1">1</a>], whose descriptions I have moved to a separate post on <a href="/blog/2012/01/learners-and-their-needs.html">learners and their needs</a>.</p>
 <ul>
 <li><em>Textbook</em>: big blocks of prose in some narrative order, with pictures, either printed or electronic, read at the learner's pace, alone.
 <ul>
@@ -167,7 +223,7 @@ The fact is, most presenters continue to use PowerPoint (or something similar) b
 <p>But animation... Ah, that's a big one. It's an intrinsically hard problem, but canned effects can do a lot to put simple things within reach [<a id="a11" href="#f11">11</a>]. The big question is, how far do we push it? If I want to show you how to use a debugger, or how to draw something with a painting program, I can't re-create the whole UI&mdash;I'm going to have to record pixels off a screen.</p>
 <p>Or am I? I know this is never going to happen&mdash;we're not that organized a species&mdash;but just imagine what the world would be like if every interface was built using HTML5 and CSS. Any tool at all could export widget descriptions and a semantic trace of what they did (i.e., "the file menu was pulled down" rather than "the cursor moved to pixel (132,172) and the user clicked"), and any other tool could consume it and play it back. The consuming tool might draw the widgets differently, or display the interactions in its own way, but that would be exactly the same as applying a different skin to the original tool [<a id="a12" href="#f12">12</a>].</p>
 <p>Returning to this universe for a moment, we can <a href="#html5">store things as HTML5</a> right now&mdash;I'm already using it for Version 5 of <a href="http://software-carpentry.org">Software Carpentry</a>. I could create a <a href="#vocabulary">vocabulary</a> for instructional metadata, but I'm not an information architect. <a href="#authoring-wysiwyg">WYSIWYG authoring tools</a> for HTML5 abound, though the HTML5 they produce can be idiosyncratic (and doesn't play nicely with version control, but that's fixable). I haven't seen a WYSIWYG tool that supports <a href="#authoring-freehand">freehand drawing mixed freely with text</a>, or one that supports <a href="#authoring-channels">parallel content streams</a>, but I think half a dozen people working could deliver something substantial in half a dozen months [<a id="a13" href="#f13">13</a>].</p>
-<p>As for <a href="#animate">animation</a>, I think we're stuck with video for now: prototyping an HTML5/SVG/Javascript animation framework for use in a learning tool would be a great research project, but we really do need to build a couple to throw away to find out if it's workable. If you'd lke to tackle it, please <a href="mailto:{{site.contact}}">let us know</a>&mdash;I'd be happy to be your alpha tester.</p>
+<p>As for <a href="#animate">animation</a>, I think we're stuck with video for now: prototyping an HTML5/SVG/Javascript animation framework for use in a learning tool would be a great research project, but we really do need to build a couple to throw away to find out if it's workable. If you'd lke to tackle it, please <a href="mailto:info@software-carpentry.org">let us know</a>&mdash;I'd be happy to be your alpha tester.</p>
 <p><strong>Notes</strong></p>
 <p id="f1">[<a href="#a1">1</a>] There was a lot of talk in the 1980s and 1990s about different people having different learning styles, inspired in part on Gardner's theory of multiple intelligences. The idea has mostly been <a href="http://en.wikipedia.org/wiki/Learning_styles#Criticism">discredited</a>, but like many memes, it lives on in popular culture.</p>
 <p id="f2">[<a href="#a2">2</a>] Although I bet someone's working on an Emacs mode to do that...</p>
@@ -182,3 +238,62 @@ The fact is, most presenters continue to use PowerPoint (or something similar) b
 <p id="f11">[<a href="#a11">11</a>] In my mind, the animation interface looks more like <a href="http://scratch.mit.edu/">Scratch</a> than it does like PowerPoint's menus and dialogs. It definitely <em>doesn't</em> require people to type in code, unless they want to create and share an entirely new kind of animation effect.</p>
 <p id="f12">[<a href="#a12">12</a>] We could even call that format <a href="http://en.wikipedia.org/wiki/XUL">XUL</a>...</p>
 <p id="f13">[<a href="#a13">13</a>] "6&times;6" is as big a team/timescale as I'm able to contemplate these days.</p>
+
+            <p><em>Originally posted 2012-01-26 by Greg Wilson in Content, Education.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'Never Mind the Content, What About the Format?';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2012/01/never-mind-the-content-what-about-the-format.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

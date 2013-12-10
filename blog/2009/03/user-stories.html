@@ -1,12 +1,68 @@
----
-layout: blog
-date: 2009-03-30
-time: 09:00:00
-author: Greg Wilson
-title: User Stories
-category: ["Content"]
----
-<p>One of the tricks I teach my undergraduates is to create fictional personas to describe the intended users of a system&mdash;or in this case, a course.  Here are three of the "people" I've had in mind while developing Software Carpentry to date; my goal is to update these stories to better reflect how scientists work today.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: User Stories</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">User Stories</h1>
+            <!-- start content -->
+            <p>One of the tricks I teach my undergraduates is to create fictional personas to describe the intended users of a system&mdash;or in this case, a course.  Here are three of the "people" I've had in mind while developing Software Carpentry to date; my goal is to update these stories to better reflect how scientists work today.</p>
 <p><strong>Bhargan Basepair</strong></p>
 <p>Bhargan Basepair received a B.Sc. in biochemistry five years ago.  He has been working since then for Genes'R'Us, a biotech firm with labs in four countries.  He did a Java programming course as a freshman, and a bioinformatics course using Perl as a senior.</p>
 <p>Bhargan and his colleagues are developing fuzzy pattern-matching algorithms for finding similarities between DNA records in standard databases.  To help other Genes'R'Us researchers, and to test his group's heuristics, Bhargan runs an overnight sequence query service. Researchers email sequences in a variety of formats (in-line, attachments, URLs to pages behind the company firewall, etc.). Bhargan saves them in files called <code>search/a.in</code>, <code>search/b.in</code>, and so on, then edits them to add query directives.  He is very conscientious, and almost never accidentally overwrites one query with another.</p>
@@ -24,3 +80,62 @@ category: ["Content"]
 <p>The controller for the experimental machine writes these files to Stefan's workstation approximately an hour after the experiment begins.  To analyze them, Stefan opens them with Excel, copies and pastes to merge the data into one spreadsheet, then creates a chart using the chart wizard.  He saves the chart as a PNG file on the group's web site, along with the original data file.</p>
 <p>Two or three times a week, Stefan receives results from his supervisor's collaborators.  He creates charts for each, which he uploads to the web site, then merges summary statistics into a master spreadsheet.</p>
 <p>This course will teach Stefan how to automate the process described above.  More importantly, it will teach him how to track the provenance of the data he is working with, so that scientists in his group and others can trace backward from the final charts to the raw data they represent.</p>
+
+            <p><em>Originally posted 2009-03-30 by Greg Wilson in Content.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'User Stories';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2009/03/user-stories.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

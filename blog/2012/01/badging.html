@@ -1,21 +1,136 @@
----
-layout: blog
-date: 2012-01-24
-time: 09:00:00
-author: Greg Wilson
-title: Badging
-category: ["Community", "Sloan Foundation"]
----
-<p>One of the things we need to do in the next six months along with running <a href="{{page.root}}/bootcamps/">boot camps</a> and updating our <a href="{{page.root}}/v4/">online content</a> is to create some sort of badging to recognize people's skills and contributions. As we said in the <a href="{{page.root}}/blog/2012/01/sloan-foundation-grant-to-software-carpentry-and-mozilla.html">proposal to the Sloan Foundation</a>, "A badge program will provide near-term incentives for both learning and mentoring; a framework to support viral, peer-driven engagement with the program; and facilitate recognition by partner institutions and potential employers."</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Badging</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">Badging</h1>
+            <!-- start content -->
+            <p>One of the things we need to do in the next six months along with running <a href="/bootcamps/">boot camps</a> and updating our <a href="/v4/">online content</a> is to create some sort of badging to recognize people's skills and contributions. As we said in the <a href="/blog/2012/01/sloan-foundation-grant-to-software-carpentry-and-mozilla.html">proposal to the Sloan Foundation</a>, "A badge program will provide near-term incentives for both learning and mentoring; a framework to support viral, peer-driven engagement with the program; and facilitate recognition by partner institutions and potential employers."</p>
 <p>We're going to rely on Mozilla's <a href="http://openbadges.org/">Open Badges project</a> to handle the mechanics of storing and validating badges, so we only have three questions to answer:</p>
 <ol>
 <li>What do we award badges for?</li>
 <li>How do we determine that someone has earned one?</li>
 <li>What do they look like?</li>
 </ol>
-<p>The obvious answer to the first (and most important) question would be, "You get a badge for completing the <a href="{{page.root}}/blog/2012/01/revising-the-curriculum.html">core curriculum</a>." However, one of the purposes of badging is to provide a finer-grained inventory of people's knowledge and skills, so there's an argument to be made for giving one badge per topic, e.g., a version control badge, a Unix shell badge, a basic imperative programming badge, and so on.  The argument for is that their meaning will be clearer: if I say, "Jane knows the basics of Subversion," that's more immediately understandable than, "Jane has completed the core of Software Carpentry." The argument against is that if someone has collected two hundred small badges, we're going to aggregate them anyway ("Jane knows basic software development skills"), so why not just do that in the first place.</p>
+<p>The obvious answer to the first (and most important) question would be, "You get a badge for completing the <a href="/blog/2012/01/revising-the-curriculum.html">core curriculum</a>." However, one of the purposes of badging is to provide a finer-grained inventory of people's knowledge and skills, so there's an argument to be made for giving one badge per topic, e.g., a version control badge, a Unix shell badge, a basic imperative programming badge, and so on.  The argument for is that their meaning will be clearer: if I say, "Jane knows the basics of Subversion," that's more immediately understandable than, "Jane has completed the core of Software Carpentry." The argument against is that if someone has collected two hundred small badges, we're going to aggregate them anyway ("Jane knows basic software development skills"), so why not just do that in the first place.</p>
 <p>I've gone back and forth on this, but currently think that one badge for the core curriculum ("Basic Software Carpentry") will work best. We will offer two other badges as well: one for organizing a boot camp, and one for contributing a medium-sized chunk of content (on the scale of one 5-minute video episode).</p>
 <p>Having decided that, the next challenge is to determine when someone has earned a particular badge. The "Boot Camp Organizer" and "Content Contributor" badges are straightforward; telling when someone has mastered the core skills is not. We can tell that you've attended the boot camp and viewed the videos, but how can we tell how much you've actually learned?  "Solve this problem and email us the result" isn't good enough: you could get someone to do it for you [1], and even if you're honest, we can't tell how quickly you did it, how many blind alleys you went down, how often you did something in ten steps instead of one, and so on. In the short term, I think the solution is to do assessment in real time using desktop sharing, i.e., you share your desktop with me, I give you the problem to solve, and I watch you do it.  This won't scale to hundreds or thousands of learners, but it'll get us through the next six months.</p>
 <p>What will badges look like? A badge is just a small PNG file with a digital signature embedded in it (it's a neat little hack), so the graphic design is up to us. I like our current logo, but (a) it doesn't size down well, and (b) I've been wanting to redesign it anyway, since the blue-to-white fade in the background doesn't print well on t-shirts, coffee mugs, and other media. In keeping with our carpentry theme ("We're not teaching people how to build the Channel Tunnel, we're teaching them how to hang drywall"), I'd like an image that combines tools like hammers and saws with something like 1's and 0's to represent software, but I'm a lousy graphic designer&mdash;if any of our readers would like to take a crack at it, please let me know.</p>
 <p>Finally, and most importantly, how can we get existing institutions&mdash;specifically universities&mdash;to recognize badges in some way? As much as we'd like people to value skills for their own sake, everyone is always busy, and always has more to do than time to do it. Can we persuade a few schools to list badges as non-credit items on students' transcripts (just as they might presently list a short course in presentation skills or entrepreneurship that doesn't count toward degree requirements, but required some work on the student's part)?  If so, it would give people an extra incentive to complete the core curriculum, organize a workshop, or create some content for us, particularly in a tight job market where every small distinction counts.</p>
 <p>[1] It's unlikely that someone would cheat on a Software Carpentry exercise, but in general, if badges take off and actually start to matter, the people who sell college students essays on Steinbeck at $30 a pop will start offering to write their online exams for $50 each.</p>
+
+            <p><em>Originally posted 2012-01-24 by Greg Wilson in Community, Sloan Foundation.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'Badging';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2012/01/badging.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

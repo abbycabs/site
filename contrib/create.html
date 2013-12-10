@@ -1,15 +1,73 @@
----
-layout: base
-root: ..
-title: Make Things
----
-<p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link href="../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Make Things</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        
+          <h1 class="title">Make Things</h1>
+        
+        <p>
   Software Carpentry is an open project.
   Like all such projects,
   it needs your help to grow.
   If you see a mistake in on our website,
   please add a comment to the appropriate page
-  or <a href="mailto:{{site.contact}}">mail us</a>
+  or <a href="mailto:info@software-carpentry.org">mail us</a>
   and we'll fix it as quickly as we can.
 </p>
 
@@ -90,7 +148,7 @@ title: Make Things
 
   <p>
     Pull requests are always welcome,
-    or you can <a href="mailto:{{site.contact}}">mail us</a>
+    or you can <a href="mailto:info@software-carpentry.org">mail us</a>
     to talk about what you'd like to do
     and how we can help.
   </p>
@@ -107,16 +165,16 @@ title: Make Things
     and should be doable in five minutes or less;
     for examples,
     take a look at the "Challenges" sections of
-    <a href="{{site.github_io_url}}/bc/lessons/swc-shell/tutorial.html">our introduction to the Unix shell</a>.
+    <a href="http://swcarpentry.github.io/bc/lessons/swc-shell/tutorial.html">our introduction to the Unix shell</a>.
     We'd particularly like Python exercises that use
     <a href="#related">ipythonblocks and skimage.novice</a> in the IPython Notebook,
-    exercises for our <a href="{{site.github_io_url}}/bc/lessons/swc-web/tutorial.html">web programming lesson</a>,
+    exercises for our <a href="http://swcarpentry.github.io/bc/lessons/swc-web/tutorial.html">web programming lesson</a>,
     and ones for using Git and GitHub.
   </p>
 
   <p>
     For an example of what we'd like in a longer lesson,
-    please look at the <a href="{{page.root}}/v4/invperc/">invasion percolation example</a>,
+    please look at the <a href="../v4/invperc/">invasion percolation example</a>,
     which covers topics as diverse as restructuring code to make it more testable,
     performance profiling,
     and the advantages of lazy data structures.
@@ -124,10 +182,10 @@ title: Make Things
     which often makes them the most convincing part of our bootcamp.
     If you're looking for starting points,
     we'd like to rewrite our examples of
-    <a href="{{page.root}}/v4/setdict/phylogen.html">constructing phylogenetic trees</a>,
-    <a href="{{page.root}}/v4/media/steg.html">counting stars</a>,
+    <a href="../v4/setdict/phylogen.html">constructing phylogenetic trees</a>,
+    <a href="../v4/media/steg.html">counting stars</a>,
     and
-    <a href="{{page.root}}/v4/media/stars.html">steganography</a>.
+    <a href="../v4/media/stars.html">steganography</a>.
     We'd like to add
     a simple N-body simulation that included discussion of testing in the face of floating-point roundoff,
     calculating and visualizing spatial correlations between different data sets,
@@ -137,7 +195,7 @@ title: Make Things
     and some more gene sequence wrangling.
     If you'd like to tackle one of these,
     or have ideas of your own,
-    please <a href="mailto:{{site.contact}}">email us</a>:
+    please <a href="mailto:info@software-carpentry.org">email us</a>:
     we'd be happy to chat.
   </p>
 </div>
@@ -148,7 +206,7 @@ title: Make Things
   <p>
     If you want to help us by programming,
     there are lots of things we need.
-    Please <a href="mailto:{{site.contact}}">get in touch</a>
+    Please <a href="mailto:info@software-carpentry.org">get in touch</a>
     if you'd like to tackle any of these,
     or have projects of your own you'd like to suggest.
   </p>
@@ -181,7 +239,7 @@ title: Make Things
 
     <dt>Badging</dt>
     <dd>
-      We issue <a href="{{page.root}}/badges/index.html">badges</a> for instructors, organizers,
+      We issue <a href="../badges/index.html">badges</a> for instructors, organizers,
       and people who write lesson materials,
       and plan to start issuing them soon for people who've taken part in our bootcamps.
       However,
@@ -276,3 +334,58 @@ title: Make Things
   </dl>
 
 </div>
+
+        
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'Make Things';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+      </div>
+    </section>
+          <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20contrib/create.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

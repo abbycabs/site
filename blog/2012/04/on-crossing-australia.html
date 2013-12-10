@@ -1,16 +1,72 @@
----
-layout: blog
-date: 2012-04-06
-time: 09:00:00
-author: Greg Wilson
-title: On Crossing Australia (or, Further Thoughts on What to Teach Researchers about the Web)
-category: ["Education", "Opinion"]
----
-<p>A <a href="{{page.root}}/blog/2012/02/and-speaking-of-new.html">while back</a>, I blogged about Bret Victor's "<a href="http://vimeo.com/36579366">Inventing on Principle</a>" talk at CUSEC'12, which is an inspiring vision of what programming <em>could</em> be. <a href="http://www.starchamber.com/2012/04/tool-spinning-task-boxing-and-the-trade-off-between-usability-and-learning.html">Ned Gulley's thoughts</a> on it are more nuanced (and more interesting):</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: On Crossing Australia (or, Further Thoughts on What to Teach Researchers about the Web)</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">On Crossing Australia (or, Further Thoughts on What to Teach Researchers about the Web)</h1>
+            <!-- start content -->
+            <p>A <a href="/blog/2012/02/and-speaking-of-new.html">while back</a>, I blogged about Bret Victor's "<a href="http://vimeo.com/36579366">Inventing on Principle</a>" talk at CUSEC'12, which is an inspiring vision of what programming <em>could</em> be. <a href="http://www.starchamber.com/2012/04/tool-spinning-task-boxing-and-the-trade-off-between-usability-and-learning.html">Ned Gulley's thoughts</a> on it are more nuanced (and more interesting):</p>
 <blockquote><p>Victor's <em>real</em> power is his ability to rapidly create and deploy these tools. In a twinkling he can size up a task that is worth studying, put a box around it and spin a tool. He does this so effortlessly, with such mesmerizing legerdemain, that we lose sight of this meta-skill. What Victor was really doing in his talk was illustrating the power of tool spinning, the rapid creation of customized, context-sensitive, insight-generating tools...</p>
 <p>Don't use the thing Bret made. Do the thing that Bret does.</p></blockquote>
-<p>That last sentences crystallizes what I've been groping toward as I think about <a href="{{page.root}}/blog/2012/04/what-to-teach-researchers-about-the-web.html">what we should teach researchers about the web</a>. I want to give them the power to do whatever they want to, as effortlessly as possible, because (a) I can't anticipate what they'll actually need, and (b) what they need is changing all the time. The problem is that there's a wide gulf between simple things that are easy to do (e.g., tweaking CSS) and/or playing in a sandbox that we create (e.g., pointing an in-browser visualization tool at their own data) and being able to throw together something that we didn't anticipate (e.g., build even a small web app using jQuery and Django, or any comparable set of tools). It's sort of like Australia: lush and green in Sydney and Perth, but there's a loooooong trek through an inhospitable desert to get from hither to yon. By comparison, desktop programming (e.g., the media-based curriculum that Mark Guzdial and others developed) is a lot more like hiking from Halifax to Toronto: there are certainly difficult patches, but at no point do you find yourself stuck in the middle of nowhere [1]. That desert in web programming&mdash;the long, unrewarding gulf between the simple and the powerful&mdash;is what makes this hard.</p>
-<p>"But wait," I hear you say, "What is this 'gulf' you speak of? It only takes a few minutes to show someone how to write a simple CGI script, or to tweak some PHP to modify a WordPress plugin." Well, yes, but that's like saying that it only takes a few minutes to show someone how to start a car and get it out on the road. It's what we have to teach people so that they can survive what happens next that takes time. As I said in my <a href="{{page.root}}/blog/2012/04/what-to-teach-researchers-about-the-web.html">earlier post</a>, all we can teach people about server-side programming in a few hours is how to create security holes. You or I would know to scrub input before using it in a database query; we could tell novices to do that, but they wouldn't have the context to understand what that really meant, or how to do it properly. The best we could hope for is that they'd memorize a few rules, some of which some of them would then mis-apply.</p>
+<p>That last sentences crystallizes what I've been groping toward as I think about <a href="/blog/2012/04/what-to-teach-researchers-about-the-web.html">what we should teach researchers about the web</a>. I want to give them the power to do whatever they want to, as effortlessly as possible, because (a) I can't anticipate what they'll actually need, and (b) what they need is changing all the time. The problem is that there's a wide gulf between simple things that are easy to do (e.g., tweaking CSS) and/or playing in a sandbox that we create (e.g., pointing an in-browser visualization tool at their own data) and being able to throw together something that we didn't anticipate (e.g., build even a small web app using jQuery and Django, or any comparable set of tools). It's sort of like Australia: lush and green in Sydney and Perth, but there's a loooooong trek through an inhospitable desert to get from hither to yon. By comparison, desktop programming (e.g., the media-based curriculum that Mark Guzdial and others developed) is a lot more like hiking from Halifax to Toronto: there are certainly difficult patches, but at no point do you find yourself stuck in the middle of nowhere [1]. That desert in web programming&mdash;the long, unrewarding gulf between the simple and the powerful&mdash;is what makes this hard.</p>
+<p>"But wait," I hear you say, "What is this 'gulf' you speak of? It only takes a few minutes to show someone how to write a simple CGI script, or to tweak some PHP to modify a WordPress plugin." Well, yes, but that's like saying that it only takes a few minutes to show someone how to start a car and get it out on the road. It's what we have to teach people so that they can survive what happens next that takes time. As I said in my <a href="/blog/2012/04/what-to-teach-researchers-about-the-web.html">earlier post</a>, all we can teach people about server-side programming in a few hours is how to create security holes. You or I would know to scrub input before using it in a database query; we could tell novices to do that, but they wouldn't have the context to understand what that really meant, or how to do it properly. The best we could hope for is that they'd memorize a few rules, some of which some of them would then mis-apply.</p>
 <p>I was actually a bit surprised that <a href="http://computinged.wordpress.com/2012/04/06/a-nice-definition-of-computational-thinking-including-risks-and-cyber-security/">Mark Guzdial was surprised</a> by me including security in my list. If I give a teenager the keys to my car [2] and let him take it out on the road without suitable instruction, I think I'm morally liable for the resulting catastrophe. Similarly, as long as we were only teaching people how to build things that ran in the safety and privacy of their own machines, the worst they could do was delete their home directory (been there, done that&mdash;twice). But the web has changed this, just as it's changed everything else.</p>
 <p>So how do we close this gap? Partly, I think, by making things easier to drive: as <a href="http://hackeducation.com/2012/03/29/mozilla-webmaker-community-call-and-me/">Audrey Watters reminded us</a> in summing up the research she did for Mozilla, tools like <a href="http://en.wikipedia.org/wiki/HyperCard">HyperCard</a> put most of the power of "real" tools in the hands of <a href="http://en.wikipedia.org/wiki/End-user_development">end-user programmers</a>: educators, graphic artists, businesspeople, and everyone else who doesn't think of themselves as a software developer but wants to make something happen. <a href="http://pipes.yahoo.com/pipes/">Yahoo! Pipes</a>, <a href="http://ifttt.com/">If This Then That</a>, and things like them aren't nearly as powerful, yet, but I think they're more interesting than any number of "live coding in the browser" tools that still expect you to be typing Javascript into a text box.</p>
 <p>Which brings me back to <a href="http://computinged.wordpress.com/2012/04/06/a-nice-definition-of-computational-thinking-including-risks-and-cyber-security/">Mark Guzdial's post</a>, and to his discussion of Juha Sorva's wonderful work on <a href="http://www.uuhistle.org/index.php">UUhistle</a> (a program visualization tool):</p>
@@ -18,3 +74,62 @@ category: ["Education", "Opinion"]
 <p>To which I would add, "And most people <em>won't</em> learn how to program unless each step lets them do something they care about, safely, that they couldn't do before."</p>
 <p>[1] OK, it's not the smoothest analogy I've ever come up with, but you get the picture.</p>
 <p>[2] I don't actually drive (haven't in 20 years), but I've never let the facts get in the way of making a point :-)</p>
+
+            <p><em>Originally posted 2012-04-06 by Greg Wilson in Education, Opinion.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'On Crossing Australia (or, Further Thoughts on What to Teach Researchers about the Web)';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2012/04/on-crossing-australia.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

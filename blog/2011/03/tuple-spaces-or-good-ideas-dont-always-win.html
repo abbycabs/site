@@ -1,12 +1,68 @@
----
-layout: blog
-date: 2011-03-01
-time: 09:00:00
-author: Greg Wilson
-title: Tuple Spaces (or, Good Ideas Don't Always Win)
-category: ["Opinion"]
----
-<p>I've resisted adding a module on high-performance computing to this course for a lot of reasons: I think other things are more important, there's enough coverage elsewhere, the software is hard for novices to set up... But there's another reason, one that may not be as good, but still has a seat at the table. Deep down, the reason I'm reluctant to teach MPI (the de facto standard for parallel programming) is that there's a much better model out there, one that works on all kinds of hardware, is comprehensible to novices, and delivers good performance on a wide range of problems. Its name is tuple space, its most famous implementation is Linda, and unfortunately, for a lot of reasons that I still don't understand, it somehow became an "also ran" in parallel programming.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Tuple Spaces (or, Good Ideas Don't Always Win)</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">Tuple Spaces (or, Good Ideas Don't Always Win)</h1>
+            <!-- start content -->
+            <p>I've resisted adding a module on high-performance computing to this course for a lot of reasons: I think other things are more important, there's enough coverage elsewhere, the software is hard for novices to set up... But there's another reason, one that may not be as good, but still has a seat at the table. Deep down, the reason I'm reluctant to teach MPI (the de facto standard for parallel programming) is that there's a much better model out there, one that works on all kinds of hardware, is comprehensible to novices, and delivers good performance on a wide range of problems. Its name is tuple space, its most famous implementation is Linda, and unfortunately, for a lot of reasons that I still don't understand, it somehow became an "also ran" in parallel programming.</p>
 <p>How easy is Linda? The examples in <a href="http://portal.acm.org/citation.cfm?doid=2363.2433">this article</a>, and this <a href="http://www.amazon.com/How-Write-Parallel-Programs-Course/dp/026203171X/">well-written little book</a>, are pretty compelling, but since the first is behind a paywall, and the second is out of print, here's a short overview. A <em>tuple space</em> is, as its name suggests, a place where processes can put, read, and take tuples, which are in turn just sequences of values. ("job", 12, 1.23) is a tuple made up of a string, an integer, and a floating-point number; a tuple space can contain zero or more copies of that tuple, or of tuples containing other types of values, simple or complex.</p>
 <p>A process puts something in tuple space with put(value, value, ...). It can take something out with take(...), or copy something (leaving the original in tuple space) with copy(...).  The arguments to take(...) and copy(...) are either actual values, or variables with specific types; values match themselves, while types match things of that type.  For example:</p>
 <ul>
@@ -18,3 +74,62 @@ category: ["Opinion"]
 <p>There are non-blocking versions of take(...) and copy(...) called try_take and try_copy (the names vary from implementation to implementation) that either match right away and return true, assigning values to variables in their patterns, or fail to match, don't do any assignment, and return false.  There is also eval(...), which takes a function and some arguments as parameters and creates a new process.  Whatever (tuple of) values that function returns when it finishes executing is then put in tuple space&mdash;this is how one initial process can spawn many others.</p>
 <p><img src="tuplespace.png" /></p>
 <p>And that's it.  That's the whole thing. It's easy, easy, easy for beginners to understand&mdash;much easier than MPI.  And compile-time analysis of tuple in/out patterns can make it run efficiently in most cases; adhering to some simple patterns can help too.  But for a whole bunch of reasons, it never really took off: not as a language extension to C, not as JavaSpaces, not in various homebrew implementations for agile languages like Python, and that makes me sad.  It's as if the metric system had failed, and we had to do physics with foot-acres and what-not.  But I guess that's the world we live in...</p>
+
+            <p><em>Originally posted 2011-03-01 by Greg Wilson in Opinion.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'Tuple Spaces (or, Good Ideas Don't Always Win)';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2011/03/tuple-spaces-or-good-ideas-dont-always-win.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

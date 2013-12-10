@@ -1,12 +1,68 @@
----
-layout: blog
-date: 2011-12-20
-time: 10:00:00
-author: Greg Wilson
-title: What I've Learned So Far
-category: ["Education"]
----
-<p>I worked on <a href="http://software-carpentry.org">Software Carpentry</a> full-time for a year starting in May 2010. In that time I created over 140 PowerPoint decks, about 12 hours of video, and taught the course six times (twice online and four times in person). I also learned a few things that I hope other people will find useful:</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: What I've Learned So Far</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">What I've Learned So Far</h1>
+            <!-- start content -->
+            <p>I worked on <a href="http://software-carpentry.org">Software Carpentry</a> full-time for a year starting in May 2010. In that time I created over 140 PowerPoint decks, about 12 hours of video, and taught the course six times (twice online and four times in person). I also learned a few things that I hope other people will find useful:</p>
 <ol>
 <li><a href="#ineffective">Online teaching isn't as effective as in-person teaching.</a></li>
 <li><a href="#tools">Today's tools suck.</a></li>
@@ -25,7 +81,7 @@ category: ["Education"]
 <li>Embed the source code for all our example programs in the pages as well (assistive tools for the blind don't understand things that appear only as pixels in a screen capture, and neither do search engines).</li>
 <li>Embed the diagrams in a format I can hyperlink and dynamically reformat, e.g., as SVG than as JPEGs or PNGs.</li>
 </ol>
-<p>None of these things is particularly hard except the last&mdash;the tool <a href="http://third-bit.com/blog/archives/4111.html">I</a> <a href="{{page.root}}/blog/2010/11/ratios-and-rework.html">want</a> doesn't appear to exist yet. They'd all take time, though, both up front and for maintenance. Before anyone puts in that time, there's another point to consider:</p>
+<p>None of these things is particularly hard except the last&mdash;the tool <a href="http://third-bit.com/blog/archives/4111.html">I</a> <a href="/blog/2010/11/ratios-and-rework.html">want</a> doesn't appear to exist yet. They'd all take time, though, both up front and for maintenance. Before anyone puts in that time, there's another point to consider:</p>
 <p id="content"><strong>If content is king, then community is queen, pope, emperor, and president-for-life.</strong> And not just for users: it's at least as important for developers. I should have stopped creating new content in December 2010 and spent the next four months getting more people involved in the project. Running the course online the way we did wasn't nearly enough; only three grad students made episodes (for pay) since work on Version 4 started in May 2010, and only one volunteer has contributed stuff pro bono. (Thanks, <a href="http://www.biology.usu.edu/htm/our-people/faculty/memberID=3111">Ethan</a>&mdash;you're a star.) A few other people have helped teach the course, but its <a href="http://en.wikipedia.org/wiki/Bus_factor">bus factor</a> is still 1. That isn't just a threat to its future: if only one person is deeply into the project, who can they bounce ideas off? Who will hold down the fort when they're busy with <a href="http://third-bit.com/blog/archives/4165.html">other things</a>? And who will <a href="http://third-bit.com/blog/archives/4324.html">keep them going</a> when their enthusiasm flags?</p>
 <p>The answer to this one is something I've long resisted. Lots of open teaching hubs have sprung up in the past few years, like <a href="http://p2pu.org">P2PU</a>, <a href="http://www.udemy.com/">Udemy</a>, <a href="http://studentoffortune.com/">Student of Fortune</a>, and <a href="http://blueteach.com">BlueTeach</a>. They all have some kind of community tooling (some more than others), but none seem to offer better tools for building content than I'm using already. The main argument for moving <a href="http://software-carpentry.org">Software Carpentry</a> there is the same argument behind open source portals like <a href="http://sourceforge.net/">SourceForge</a> and <a href="http://github.com">GitHub</a>: better findability, the increased usability that comes from having a standard interface, and so on. The main argument against is the risk of platform capture; the real reason I haven't done it, though, is that I'm reluctant to see my pet project become just another bunch of pages on someone else's site. I'm sure I'll work through that eventually...</p>
 <p id="assessment">My final two takeaways are somewhat personal as well. <strong>If you don't know how to tell if you succeeded, you're going to fail.</strong> <a href="http://software-carpentry.org">Software Carpentry</a>'s goal is to help scientists and engineers use computers by teaching them basic, practical skills. I <em>think</em> I can tell who "gets it" in person, but I have no idea how to tell remotely. How long did it take someone to solve that exercise? How many blind alleys did they go down? And do they now understand the concepts well enough to apply them to the next problem they run into? Scores on timed drill exercises might tell us some things, but without (literally) years of painstaking refinement, they can't help us diagnose misconceptions [<a href="#2">2</a>].</p>
@@ -36,3 +92,62 @@ category: ["Education"]
 <p id="2">[2] As Will Rogers said, "It isn't what we don't know that gives us trouble, it's what we know that ain't so." One of the reasons <a href="http://en.wikipedia.org/wiki/Peer_instruction">peer instruction</a> is so effective is that it's better than lecturing at correcting students' misconceptions.</p>
 <p id="3">[3] If they go through the material in some kind of course. If they're dipping into it on their own, as they need it, then I have no idea how to tell how much we're helping.</p>
 <p id="4">[4] I've also discovered that most books about education are badly written&mdash;it's as if <a href="http://www.josseybass.com/WileyCDA/Section/id-131451.html">Jossey-Bass</a> took Strunk &amp; White, put "don't" in front of each recommendation, then gave it to their authors. I think this is one of the reasons people like me don't do their background research: it's hard to keep plugging away when it feels like being smothered under a pile of wet sheep. Of course, I could just be looking for excuses to skip the thinking bits and get back to coding.</p>
+
+            <p><em>Originally posted 2011-12-20 by Greg Wilson in Education.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'What I've Learned So Far';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2011/12/what-ive-learned-so-far.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

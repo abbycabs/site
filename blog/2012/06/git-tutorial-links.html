@@ -1,17 +1,140 @@
----
-layout: blog
-date: 2012-06-03
-time: 09:00:00
-author: Carlos Anderson
-title: Git tutorial links
-category: ["Tutorial"]
----
-<p>I promised to post some links related to the Git tutorial I taught on May 24, 2012. Most of my material was based on this excellent online book (free): <a href="http://git-scm.com/book/ch1-3.html">http://git-scm.com/book/ch1-3.html</a>. Here's another resource with help on specific and common Git commands: <a href="http://gitref.org/">http://gitref.org/</a>.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Git tutorial links</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">Git tutorial links</h1>
+            <!-- start content -->
+            <p>I promised to post some links related to the Git tutorial I taught on May 24, 2012. Most of my material was based on this excellent online book (free): <a href="http://git-scm.com/book/ch1-3.html">http://git-scm.com/book/ch1-3.html</a>. Here's another resource with help on specific and common Git commands: <a href="http://gitref.org/">http://gitref.org/</a>.</p>
 <p>Someone asked the differences between Git and Mercurial, but because I haven't used Mercurial I wasn't able to answer. I found these links that I hope are useful: <a href="http://www.wikivs.com/wiki/Git_vs_Mercurial">http://www.wikivs.com/wiki/Git_vs_Mercurial</a> and <a href="http://www.rockstarprogrammer.org/post/2008/apr/06/differences-between-mercurial-and-git/">http://www.rockstarprogrammer.org/post/2008/apr/06/differences-between-mercurial-and-git/</a>. Also, here's a video of Linus Torvalds himself (creator of the Linux kernel and Git) promoting Git (and putting down everything that is not Git):</p>
 
-{% assign video_title="Tech Talk: Linus Torvals on git" %}
-{% assign video_slug="4XpnKHJAok8" %}
-{% assign video_time="1:10:15" %}
-{% include youtube.html %}
+
+
+
+<div class="youtube">
+  <iframe title="Tech Talk: Linus Torvals on git"
+          src="http://www.youtube.com/embed/4XpnKHJAok8"
+          time="1:10:15"
+          width="640" height="506"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"></iframe>
+</div>
+
 
 <p>Finally, someone asked how to set up your own repository on a remote server so you can push and pull from your local computer. This is explained in the Git online book (<a href="http://git-scm.com/book/en/Git-on-the-Server-Getting-Git-on-a-Server">section 4.2</a>). Briefly, have your project in a directory on the server, then go into that directory and run "git init" (if you haven't already). Go up one directory (your project directory's parent), and run "git clone &mdash;bare project project.git" (where "project" is the name of your project directory). This will create a directory called project.git, in which a copy of your repository will be in, minus the "working" files (everything will be hidden, so that running the "ls" command won't show anything). Now from your local computer, you can clone this project by running "git clone user@server.univ.edu:projects/project.git", where "user@server.univ.edu" is your username and server address and "projects/project.git" is the location (relative to your home directory on the server) of your project.</p>
+
+            <p><em>Originally posted 2012-06-03 by Carlos Anderson in Tutorial.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'Git tutorial links';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2012/06/git-tutorial-links.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

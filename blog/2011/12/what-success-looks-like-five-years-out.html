@@ -1,12 +1,68 @@
----
-layout: blog
-date: 2011-12-24
-time: 10:00:00
-author: Greg Wilson
-title: What Success Looks Like Five Years Out
-category: ["Education"]
----
-<p>Having talked about <a href="{{page.root}}/blog/2011/12/what-ive-learned-so-far.html">what I've learned</a> and <a href="{{page.root}}/blog/2011/12/organizing-instruction-and-study-to-improve-student-learning.html">how well our teaching measures up</a>, I'd like to explore what success would actually look like for Software Carpentry. Our long-term objective is to make productive and reliable computing practices the norm in science and engineering. My model is the way statistics became a "normal" part of most scientists' training in the 20th Century. Most psychologists and geologists are emphatically not statisticians, but most of them know (or at least have known, at some point) what a t-test is, what a correlation coefficient means, and how to tell when they're out of their depth. Equally, most scientists should know how to pipe a few simple filters together to clean up their data, how to use version control to track and share their work, whether their computational results are as trustworthy as their experimental results [<a href="#1">1</a>], and when to go and talk to either a real numerical analyst or a professional software developer.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: What Success Looks Like Five Years Out</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">What Success Looks Like Five Years Out</h1>
+            <!-- start content -->
+            <p>Having talked about <a href="/blog/2011/12/what-ive-learned-so-far.html">what I've learned</a> and <a href="/blog/2011/12/organizing-instruction-and-study-to-improve-student-learning.html">how well our teaching measures up</a>, I'd like to explore what success would actually look like for Software Carpentry. Our long-term objective is to make productive and reliable computing practices the norm in science and engineering. My model is the way statistics became a "normal" part of most scientists' training in the 20th Century. Most psychologists and geologists are emphatically not statisticians, but most of them know (or at least have known, at some point) what a t-test is, what a correlation coefficient means, and how to tell when they're out of their depth. Equally, most scientists should know how to pipe a few simple filters together to clean up their data, how to use version control to track and share their work, whether their computational results are as trustworthy as their experimental results [<a href="#1">1</a>], and when to go and talk to either a real numerical analyst or a professional software developer.</p>
 <p>On a five-year timescale, this translates into three concrete goals:</p>
 <ol>
 <li><a href="#volume">We are helping thousands of people every year.</a></li>
@@ -20,15 +76,74 @@ category: ["Education"]
 </ol>
 <p>We need to do a lot to make this happen: create meta-content to tell people how best to teach and learn the actual content, build a distributed community, and so on. The key piece, though, is some kind of institutional recognition for participation, such as non-credit transcript items for grad students who organize workshops. Self-sacrifice for the general good only goes so far: given a choice between cranking out one more paper, however obscure, or organizing a workshop, most scientists have to do the former (at least until they have tenure), because the latter isn't taken into account by promotion scoring formulas. I think Mozilla's <a href="https://wiki.mozilla.org/Badges">Open Badging Initiative</a> is a good solution to the general problem of accrediting non-classroom competence, but we need to find a way to translate that into something that universities and industrial research labs can digest.</p>
 <p>Why not just get schools to offer Software Carpentry as a credit course? We've been down that road, and the short answer is, they mostly won't. Every curriculum is already over-full; if a geology department wants to run a course on programming skills, they have to cut thermodynamics, rock mechanics, or something else. I might believe our stuff is more important, but existing scientific disciplines don't consider it part of their core (not even computer science). Until we build a critical mass of supporters [<a href="#3">3</a>], we'll have to work in the institutional equivalent of that windowless room in the basement that still smells like the janitorial storage closet it once was.</p>
-<p id="impact"><strong>We know that what we're doing is helping.</strong> <a href="{{page.root}}/testimonials.html">Testimonials</a> from former students are heartwarming, but how do we know we're actually teaching the right things? I.e., how do we know we're actually showing scientists and engineers how to do more with computers, better, in less time? The only honest way to answer the question would be to do some in-depth qualitative studies of how scientists use computers right now in their day-to-day work, then go back and look at them weeks or months after they' had some training to see what had changed.</p>
+<p id="impact"><strong>We know that what we're doing is helping.</strong> <a href="/testimonials.html">Testimonials</a> from former students are heartwarming, but how do we know we're actually teaching the right things? I.e., how do we know we're actually showing scientists and engineers how to do more with computers, better, in less time? The only honest way to answer the question would be to do some in-depth qualitative studies of how scientists use computers right now in their day-to-day work, then go back and look at them weeks or months after they' had some training to see what had changed.</p>
 <p>I think this kind of study has to be done qualitatively, through in-person observation, for two reasons:</p>
 <ol>
 <li>We ran the <a href="survey-2009.pdf">largest survey ever done</a> of <a href="http://dl.acm.org/citation.cfm?id=1556928">how scientists develop and use software</a>. Almost 2000 people responded to dozens of questions, and while we discovered a lot about when and how they learn what they do know, it didn't tell us anything about how much they know. The problem was calibration: if someone says, "I'm an expert at Unix," does that mean, "I've hacked on the Linux kernel" or "I use a Mac when everyone around me uses a PC"? Follow-up questions uncovered both interpretations; without some probing one-to-one analysis as a foundation, we have no way to estimate their distribution.</li>
 <li>Our goal isn't really to change how quickly people do the same old things; it's to <em>change the things they do</em>. Someone who understands <a href="http://en.wikipedia.org/wiki/Analysis_of_variance">ANOVA</a> probably designs and runs their experiments differently (and more effectively) than someone who doesn't; similarly, someone who understands the value of unit testing probably writes more reusable and more reliable code. Time-on-task measurements don't reveal this.</li>
 </ol>
-<p>As <a href="{{page.root}}/blog/2011/11/show-me-the-data.html">I've said</a> many times before, though, nobody seems to want to fund this kind of study. I've personally applied to three different government agencies and four different companies, without luck, and I know other people who have similar stories. It wouldn't take much: $50K to get started, or even $250K to do the whole thing properly, is peanuts compared to what those same agencies and companies are throwing into high-performance computing, or to the cost of the time scientists are wasting by doing things inefficiently. But as I've also said many times before, most people would rather fail than change...</p>
+<p>As <a href="/blog/2011/11/show-me-the-data.html">I've said</a> many times before, though, nobody seems to want to fund this kind of study. I've personally applied to three different government agencies and four different companies, without luck, and I know other people who have similar stories. It wouldn't take much: $50K to get started, or even $250K to do the whole thing properly, is peanuts compared to what those same agencies and companies are throwing into high-performance computing, or to the cost of the time scientists are wasting by doing things inefficiently. But as I've also said many times before, most people would rather fail than change...</p>
 <p>Ranting aside, Software Carpentry needs to do this kind of study on a regular (ideally, continuous) basis in order to keep its offerings relevant and useful. That means we need to have stable long-term funding, and <em>that</em> brings us to the third (and possibly most important) point:</p>
 <p id="busfactor"><strong>We have a double-digit <a href="http://en.wikipedia.org/wiki/Bus_factor">bus factor</a>.</strong> Software Carpentry is still essentially a one-person show. If we're to help more people and do the kinds of studies needed to find out if we <em>are</em> actually helping, we need more people to get involved. I dislike the phrase "building community", but that's what we need to do.</p>
 <p id="1">[1] See Cameron Neylon's post on <a href="http://cameronneylon.net/blog/good-practice-in-research-coding-what-are-the-targets-and-how-do-we-get-there/">good practice in research coding</a> for a thought-provoking discussion of what it's fair to expect from scientists.</p>
-<p id="2">[2] Support could be either classical tech support ("Share your desktop with me for a minute, and I'll see if I can figure out why the Python Imaging Library won't install with JPEG support on your machine"), or personalized feedback and assessment ("I just looked at your solution to exercise 22, and here's what I think"). As I said in the <a href="{{page.root}}/blog/2011/12/organizing-instruction-and-study-to-improve-student-learning.html">previous post</a> in this series, research has shown that this kind of "deep feedback" is crucial to real learning, but it is exactly what automated grading of drill exercises <em>doesn't</em> provide.</p>
+<p id="2">[2] Support could be either classical tech support ("Share your desktop with me for a minute, and I'll see if I can figure out why the Python Imaging Library won't install with JPEG support on your machine"), or personalized feedback and assessment ("I just looked at your solution to exercise 22, and here's what I think"). As I said in the <a href="/blog/2011/12/organizing-instruction-and-study-to-improve-student-learning.html">previous post</a> in this series, research has shown that this kind of "deep feedback" is crucial to real learning, but it is exactly what automated grading of drill exercises <em>doesn't</em> provide.</p>
 <p id="3">[3] We actually only need supporters in two camps: journal editors (who could insist that scientists provide their code for peer review, and that those reviews actually get done), and funding bodies (who could insist that code actually be reusable). Given those requirements, it would be in most scientists' own interests to improve their computing practices. Oh, and I'd also like a pony for Christmas...</p>
+
+            <p><em>Originally posted 2011-12-24 by Greg Wilson in Education.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'What Success Looks Like Five Years Out';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2011/12/what-success-looks-like-five-years-out.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

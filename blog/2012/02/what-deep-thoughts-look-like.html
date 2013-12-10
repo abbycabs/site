@@ -1,12 +1,68 @@
----
-layout: blog
-date: 2012-02-22
-time: 11:00:00
-author: Greg Wilson
-title: What Deep Thoughts Look Like
-category: ["Education", "Assessment"]
----
-<p>Before writing <a href="{{page.root}}/blog/2012/02/assessment-redux.html">yesterday's post about assessment</a>, I should have explained what I mean by"fundamental concepts".  I'll start with Lewis Epstein's wonderful book <a href="http://www.amazon.com/Thinking-Physics-Lewis-C-Epstein/dp/0935218017"><em>Thinking Physics</em></a>:</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: What Deep Thoughts Look Like</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">What Deep Thoughts Look Like</h1>
+            <!-- start content -->
+            <p>Before writing <a href="/blog/2012/02/assessment-redux.html">yesterday's post about assessment</a>, I should have explained what I mean by"fundamental concepts".  I'll start with Lewis Epstein's wonderful book <a href="http://www.amazon.com/Thinking-Physics-Lewis-C-Epstein/dp/0935218017"><em>Thinking Physics</em></a>:</p>
 <p><img src="thinking-physics.jpg" /></p>
 <p>Here's a typical problem from the book. Put a block of ice in a bathtub, then fill the bathtub to the brim with water, so that the block is floating freely. When the ice melts, will the water level go up (causing a spill), go down, or stay the same? Hm... well, the ice displaces its own weight of water, so when it melts, it exactly fills the "hole" it made, so the water level stays the same.</p>
 <p>Now let's try something a bit more complicated. Put the same block of ice in the bathtub, but put an iron weight on top of it, and <em>then</em> fill the tub to the brim. Now what happens when the ice melts? Does the water level go up, go down, or stay the same? Epstein would say that if you can answer questions like that, then you can think physically. It isn't about calculation&mdash;as with Dan Meyer's "<a href="http://blog.mrmeyer.com/?p=12962">Joulies</a>", it's about understanding principles and following them through to conclusions.</p>
@@ -21,10 +77,69 @@ category: ["Education", "Assessment"]
 <li>the complementarity of algorithms and data structures</li>
 <li>code as data (and data as code)</li>
 </ul>
-<p>The Unix shell, Python, SQL, regular expressions, and what not are how we hook people ("Hey look, something useful") and how we get these principles across (as with most big ideas, any direct description is either incomprehensible or banal). However, these principles aren't natural laws in the way as F=ma and the Second Law of Thermodynamics&mdash;if you compare them to <a href="{{page.root}}/blog/2012/01/the-big-picture-2.html">the principles I listed a month ago</a>, there's overlap, but the lists aren't the same. So:</p>
+<p>The Unix shell, Python, SQL, regular expressions, and what not are how we hook people ("Hey look, something useful") and how we get these principles across (as with most big ideas, any direct description is either incomprehensible or banal). However, these principles aren't natural laws in the way as F=ma and the Second Law of Thermodynamics&mdash;if you compare them to <a href="/blog/2012/01/the-big-picture-2.html">the principles I listed a month ago</a>, there's overlap, but the lists aren't the same. So:</p>
 <ol>
 <li>What <em>is</em> the best way (or a good, stable way) to carve up this intellectual space?</li>
 <li>How do we tell what a particular person actually understands?</li>
 </ol>
 <p>"Write this program" is <em>not</em> an answer to the second problem&mdash;as many studies have shown, people can solve routine problems by rote without really understanding what they're doing. (This is the starting point for Eric Mazur's work on peer instruction, and the reason so many of us are so skeptical about things like the Khan Academy.)</p>
 <p>Can we just teach the tools (for some value of "just") and let the big ideas sort themselves out? The answer is clearly "yes", because that's what I did from 1998 to 2007. Does it work? I think the answer is "only partially":  some people generalize from specifics to principles correctly on their own, but many either don't do it at all, do it incompletely, or do it incorrectly. And does it matter? I think so: I think that if we want scientists (or anyone else) to use computing on their own, for their own ends, they need to be able to step past what we've shown them with good odds of success, and that certainly requires understanding "why" as well as "what".</p>
+
+            <p><em>Originally posted 2012-02-22 by Greg Wilson in Education, Assessment.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'What Deep Thoughts Look Like';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2012/02/what-deep-thoughts-look-like.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

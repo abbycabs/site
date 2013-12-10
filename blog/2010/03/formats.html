@@ -1,12 +1,68 @@
----
-layout: blog
-date: 2010-03-30
-time: 09:00:00
-author: Greg Wilson
-title: Formats
-category: ["Tooling"]
----
-<p>As I said in <a href="http://www.software-carpentry.org/blog/2010/03/25/software-carpentry-version-4-is-a-go/">last week's announcement</a>, and mentioned again in a <a href="http://www.software-carpentry.org/blog/2010/03/26/online-delivery/">later post</a>, one of the main goals of this rewrite is to make it possible for students to do the course when and where they want to. That means recording audio and video, but much of the material will probably still be textual: code samples (obviously), lecture notes (for those who prefer skimming to viewing, or who want to teach the material locally), and exercises will still be words on a virtual page. And even the AV material will (probably) be accompanied by scripts or transcripts, depending on what turns out to work best.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Formats</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">Formats</h1>
+            <!-- start content -->
+            <p>As I said in <a href="http://www.software-carpentry.org/blog/2010/03/25/software-carpentry-version-4-is-a-go/">last week's announcement</a>, and mentioned again in a <a href="http://www.software-carpentry.org/blog/2010/03/26/online-delivery/">later post</a>, one of the main goals of this rewrite is to make it possible for students to do the course when and where they want to. That means recording audio and video, but much of the material will probably still be textual: code samples (obviously), lecture notes (for those who prefer skimming to viewing, or who want to teach the material locally), and exercises will still be words on a virtual page. And even the AV material will (probably) be accompanied by scripts or transcripts, depending on what turns out to work best.</p>
 <p>Which brings up a question everyone working with computers eventually faces: what format(s) should material be stored in? For images, audio, and video, the choices are straightforward: SVG for line drawings, PNG for images, MP3 for audio, and MP4, MPEG, or FLV or video (I don't know enough yet to choose). But there's a bewildering variety of options for text, each with its pros and cons.</p>
 <ol>
 <li><strong>A</strong>uthoring tools: do authors need to use a specialized editor? If so, is it freely available for the three major platforms (Windows, Linux, and Mac)?</li>
@@ -137,3 +193,62 @@ category: ["Tooling"]
 <li>LaTeX: ah, LaTeX, my old nemesis&mdash;it has been a while, hasn't it? It plays nicely with version control; it handles cross-referencing, gives users fine control over layout&mdash;very fine control, if you want it&mdash;and there is even <a href="http://www.lyx.org/">a WYSIWYG editor</a>. On the downside, its syntax is complicated, but I've already mastered it, and so have  many other scientists. More importantly, though, my past attempts to produce pretty HTML from LaTeX using <a href="http://www.latex2html.org/">Latex2Html</a> and <a href="http://plastex.sourceforge.net/">Plastex</a> have been frustrating.</li>
 </ul>
 <p>So, does that mean LaTeX is the right answer? My scoring says I should&mdash;what do you think?</p>
+
+            <p><em>Originally posted 2010-03-30 by Greg Wilson in Tooling.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'Formats';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2010/03/formats.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

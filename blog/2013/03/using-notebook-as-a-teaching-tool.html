@@ -1,12 +1,68 @@
----
-layout: blog
-author: Greg Wilson
-title: Using the IPython Notebook as a Teaching Tool
-date: 2013-03-24
-time: 09:00:00
-category: ["Education", "Tooling"]
----
-<p>I had a fruitful discussion with Jon Pipitone today about using the IPython Notebook for teaching. Long story short, there are several possible approaches, but we can see problems with each. To set the stage, here are the two "pure" models most widely used for teaching programming today:</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Using the IPython Notebook as a Teaching Tool</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">Using the IPython Notebook as a Teaching Tool</h1>
+            <!-- start content -->
+            <p>I had a fruitful discussion with Jon Pipitone today about using the IPython Notebook for teaching. Long story short, there are several possible approaches, but we can see problems with each. To set the stage, here are the two "pure" models most widely used for teaching programming today:</p>
 <dl>
   <dt><em>Frozen</em>: the instructor embeds snippets of code in slides (which can be in LaTeX, PowerPoint, HTML, or some other format).</dt>
   <dd>
@@ -142,3 +198,62 @@ category: ["Education", "Tooling"]
 <p>The fundamental tension here is between using the notebook as a laboratory tool, and using it as a replacement for either or both of live coding and PowerPoint and its imitators.  There's no doubt in my mind that it's better than text-only interpreters for the former, but it still has a ways to go before it's credible as competition for the latter, or as a single-tool replacement for the combination of the two. I'd welcome your thoughts on where to go from here.</p>
 
 <p><em>Note: PowerPoint has lots of detractors, but I think most of their criticism is misguided.  <a href="http://www.edwardtufte.com/tufte/powerpoint">Edward Tufte</a> and others say that by encouraging point-form presentations, PowerPoint also encourages bland idiocy, but in my mind, that's like blaming fountain pens for bad poetry: any tool can be abused, and it isn't PowerPoint's fault if people don't use its whiteboarding capabilities.  Many other people dislike it because it's closed-source, not web-native, and doesn't play nicely with version control.  These criticisms are true, but the alternatives that most proponents of this point of view offer&mdash;some based on LaTeX, most based on HTML, CSS, and Javascript&mdash;are much more strongly biased toward the point-form idiocy Tufte et al criticize than PowerPoint ever was.  Yes, you can use an external tool to draw a diagram, export it as an SVG or PNG, and link to that from your slideshow, but most non-fanatics can see that PowerPoint is proof that going the long way around the houses like that isn't actually necessary.  If we want people to take the Notebook (or anything else) as a credible alternative to today's specialized slideshow tools, that's the ease of use we have to match or beat.</em></p>
+
+            <p><em>Originally posted 2013-03-24 by Greg Wilson in Education, Tooling.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'Using the IPython Notebook as a Teaching Tool';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2013/03/using-notebook-as-a-teaching-tool.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

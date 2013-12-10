@@ -1,17 +1,61 @@
----
-root: .
-nocomments: 
----
 <!DOCTYPE html>
 <html>
   <head>
-    {% include generic-header.html %}
-    <title>Software Carpentry{% if page.title %}: {{page.title}}{% endif %}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+<link href="./css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="./css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="./css/swc.css" />
+<link rel="stylesheet" type="text/css" href="./css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry</title>
   </head>
   <body>
 
 <header class="header home">
-  {% include navbar.html %}
+  <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='./index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="./bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="./contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="./team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="./blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="./faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="container">
     <div class="row-fluid">
         <h1>
@@ -30,7 +74,7 @@ nocomments:
 
         <div class="row-fluid pagination-centered">
             <div class="span4">
-              <h4><a href="{{page.root}}/team">About</a></h4>
+              <h4><a href="./team">About</a></h4>
               <p>
                 Software Carpentry is a volunteer organization
                 whose members teach basic software skills
@@ -41,26 +85,26 @@ nocomments:
               </p>
             </div>
             <div class="span4">
-              <h4><a href="{{page.root}}/bootcamps/index.html">Learn</a></h4>
+              <h4><a href="./bootcamps/index.html">Learn</a></h4>
               <p>
                 We run bootcamps all over the world,
                 and provide open access material for self-paced instruction.
                 To learn more,
-                please <a href="mailto:{{site.contact}}">email us</a>,
-                check out <a href="{{page.root}}/blog/index.html">our blog</a>,
-                or <a href="{{site.twitter_url}}">follow us on Twitter</a>.
+                please <a href="mailto:info@software-carpentry.org">email us</a>,
+                check out <a href="./blog/index.html">our blog</a>,
+                or <a href="https://twitter.com/swcarpentry">follow us on Twitter</a>.
               </p>
             </div>
 
             <div class="span4">
-              <h4><a href="{{page.root}}/contrib/training.html">Teach</a></h4>
+              <h4><a href="./contrib/training.html">Teach</a></h4>
               <p>
                 We run bootcamps all over the world,
                 and provide open access material for self-paced instruction.
                 To learn more,
-                please <a href="mailto:{{site.contact}}">email us</a>,
-                check out <a href="{{page.root}}/blog/index.html">our blog</a>,
-                or <a href="{{site.twitter_url}}">follow us on Twitter</a>.
+                please <a href="mailto:info@software-carpentry.org">email us</a>,
+                check out <a href="./blog/index.html">our blog</a>,
+                or <a href="https://twitter.com/swcarpentry">follow us on Twitter</a>.
               </p>
             </div>
 
@@ -74,28 +118,185 @@ nocomments:
         <div class="row-fluid ">
             <div class="span8">
 
-              {% for post in site.blog_recent %}
-                  <h4><a href="{{post.root}}/{{post.path}}">{{post.title}}</a></h4>
-                  <small>By {{post.author}} / <a href="{{post.root}}/{{post.path}}">{{post.date | date: "%-d %b %Y"}}</a> </small>
-                  <p>{{post.excerpt}} <a class="pull-right" href="{{post.root}}/{{post.path}}">...read more</a></p>
+              
+                  <h4><a href="../../../blog/2013/12/two-to-the-fifth-instructors.html">Two to the Fifth New Instructors</a></h4>
+                  <small>By Greg Wilson / <a href="../../../blog/2013/12/two-to-the-fifth-instructors.html">5 Dec 2013</a> </small>
+                  <p><p>
+  We are very pleased to welcome 32 new instructors
+  from six different countries
+  to the Software Carpentry team:
+  we look forward to working with them all in 2014 and beyond.
+</p>
+<table>
+  <tr>
+    <td>
+      <ul>
+	<li>Joshua Ainsley</li>
+	<li>Camille Avestruz</li>
+	<li>Philipp Bayer</li>
+	<li>Nichole Bennett</li>
+	<li>Cliburn Chan</li>
+	<li>Emily Davenport</li>
+	<li>Neal Davis</li>
+	<li>Gabriel A. Devenyi</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+	<li>Jonah Duckles</li>
+	<li>Jordan Fish</li>
+	<li>Julian Garcia</li>
+	<li>Molly Gibson</li>
+	<li>Ivan Gonzalez</li>
+	<li>Joshua Herr</li>
+	<li>James Hetherington</li>
+	<li>Chris Holdgraf</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+	<li>Damien Irving</li>
+	<li>Ted Kirkpatrick</li>
+	<li>Christina Koch</li>
+	<li>Igor Kozlov</li>
+	<li>Luke Lee</li>
+	<li>Matthew Lightman</li>
+	<li>Yuxi Luo</li>
+	<li>David Perez-Suarez</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+	<li>Bill Rowell</li>
+	<li>Martin Schilling</li>
+	<li>Raniere Silva</li>
+	<li>Rachel Slaybaugh</li>
+	<li>Shoaib Sufi</li>
+	<li>Gayathri Swaminathan</li>
+	<li>Amanda Whitlock</li>
+	<li>April Wright</li>
+      </ul>
+    </td>
+  </tr>
+</table> <a class="pull-right" href="../../../blog/2013/12/two-to-the-fifth-instructors.html">...read more</a></p>
                   <br /><br />
-              {% endfor %}
+              
+                  <h4><a href="../../../blog/2013/12/martin-jones-python-book.html">Advanced Python for Biologists</a></h4>
+                  <small>By Martin Jones / <a href="../../../blog/2013/12/martin-jones-python-book.html">5 Dec 2013</a> </small>
+                  <p><p>
+  When I was writing <cite>Python for Biologists</cite>
+  (see my <a href="{{page.root}}/blog/2013/10/python-for-biologists.html">previous guest post</a>)
+  I was extremely ruthless about leaving material out. I wanted the book
+  to cover pretty much the same set of language features that I teach in
+  my instructor-led introductory programming courses, which meant I had
+  to limit the scope of the book to what an average, motivated beginner
+  could take in in a full-time week of study. This restriction meant
+  that, while I think the overall balance of material in Python for
+  Biologists is still the most useful set for novice programmers, there
+  are big topics that didn't make the cut. There's no mention of
+  object-oriented or functional programming, nothing about Python's
+  extremely elegant comprehension syntax, and nothing on recursion. As I
+  was writing, I made a list of all these omissions, with the promise to
+  myself that I would write about them some day.
+</p> <a class="pull-right" href="../../../blog/2013/12/martin-jones-python-book.html">...read more</a></p>
+                  <br /><br />
+              
+                  <h4><a href="../../../blog/2013/12/edinburgh-feedback.html">Feedback from Edinburgh</a></h4>
+                  <small>By Mike Jackson / <a href="../../../blog/2013/12/edinburgh-feedback.html">5 Dec 2013</a> </small>
+                  <p><p>
+ On the 3rd of December, Software Carpentry returned to Edinburgh with
+ <a href="http://www.epcc.ed.ac.uk">EPCC</a> hosting a boot camp as
+ part of its involvement in both the <a
+ href="http://www.training.prace-ri.eu/">PRACE Advanced Training
+ Centre</a> and <a href="http://www.software.ac.uk">The Software
+ Sustainability Institute</a>.
+</p> <a class="pull-right" href="../../../blog/2013/12/edinburgh-feedback.html">...read more</a></p>
+                  <br /><br />
+              
+                  <h4><a href="../../../blog/2013/12/agu-session.html">Software and Research Session at AGU 2013</a></h4>
+                  <small>By Aleksandra Pawlik / <a href="../../../blog/2013/12/agu-session.html">2 Dec 2013</a> </small>
+                  <p><p>
+  A <a href="http://fallmeeting.agu.org/2013/events/th42c-software-and-research-town-hall/">Town Hall Session on "Software and Research"</a>
+  proposed by four <a href="http://www.software.ac.uk/">Software Sustainability Institute</a> Fellows
+  will be held at the American Geophysical Union (AGU) Fall Meeting in San Francisco.
+  If you are around,
+  come and join the session on Thursday, 12 December 2013, at 12:30 PM in Moscone West Room 2004.
+</p> <a class="pull-right" href="../../../blog/2013/12/agu-session.html">...read more</a></p>
+                  <br /><br />
+              
+                  <h4><a href="../../../blog/2013/11/wise-bootcamp-at-lbl.html">WiSE Bootcamp at Lawrence Berkeley National Laboratory</a></h4>
+                  <small>By Greg Wilson / <a href="../../../blog/2013/11/wise-bootcamp-at-lbl.html">29 Nov 2013</a> </small>
+                  <p><p>
+  We are very pleased to announce that
+  our second bootcamp for women in science and engineering
+  will be held at
+  <a href="http://www.lbl.gov/">Lawrence Berkeley National Laboratory</a>
+  on April 14-15, 2014.
+  This event is a sequel to
+  <a href="{{page.root}}/blog/2013/07/wise-roundup.html">our first WiSE bootcamp</a>
+  in Boston this past June,
+  and we hope to once again fill three rooms with over 120 learners.
+  If you are interested,
+  please mark the dates in your calendar&mdash;registration will open in January.
+</p> <a class="pull-right" href="../../../blog/2013/11/wise-bootcamp-at-lbl.html">...read more</a></p>
+                  <br /><br />
+              
 
             </div>
             <div class="span4">
               <h4>Upcoming Bootcamps</h4>
               <table class="table table-hover">
-                {% for bootcamp in site.bootcamps_upcoming %}
+                
                 <tr>
                   <td>
-                    <img src="{{page.root}}/assets/flags/{{site.flag_size}}/{{bootcamp.country}}.png" alt="{{bootcamp.country}}" />
-                  <a href="{% if bootcamp.url %}{{bootcamp.url}}{% else %}{{page.root}}/{{bootcamp.path}}{% endif %}">{{bootcamp.venue}}</a>
+                    <img src="./assets/flags/16/United-Kingdom.png" alt="United-Kingdom" />
+                  <a href="http://bendmorris.github.io/2013-12-12-glasgow/">Glasgow University</a>
                   <br />
-                {{bootcamp.humandate|replace: ' ', '&nbsp;'}}
+                Dec&nbsp;12-13,&nbsp;2013
               </td>
 
                 </tr>
-                {% endfor %}
+                
+                <tr>
+                  <td>
+                    <img src="./assets/flags/16/Canada.png" alt="Canada" />
+                  <a href="http://jooolia.github.io/2014-01-06-unb/">University of New Brunswick</a>
+                  <br />
+                Jan&nbsp;6-7,&nbsp;2014
+              </td>
+
+                </tr>
+                
+                <tr>
+                  <td>
+                    <img src="./assets/flags/16/United-Kingdom.png" alt="United-Kingdom" />
+                  <a href="http://sje30.github.io/2014-01-07-cam/">Centre for Mathematical Sciences, University of Cambridge</a>
+                  <br />
+                Jan&nbsp;7-8,&nbsp;2014
+              </td>
+
+                </tr>
+                
+                <tr>
+                  <td>
+                    <img src="./assets/flags/16/United-States.png" alt="United-States" />
+                  <a href="http://adina.github.io/2014-01-08-iastate/">Iowa State University</a>
+                  <br />
+                Jan&nbsp;8-9,&nbsp;2014
+              </td>
+
+                </tr>
+                
+                <tr>
+                  <td>
+                    <img src="./assets/flags/16/Canada.png" alt="Canada" />
+                  <a href="http://gvwilson.github.io/2014-01-13-toronto/">Library Sciences in Toronto</a>
+                  <br />
+                Jan&nbsp;13-14,&nbsp;2014
+              </td>
+
+                </tr>
+                
                 <tr>
                   <td><a class="pull-right" href="bootcamps/index.html#future">...see all</a></td>
                 </tr>
@@ -110,9 +311,26 @@ nocomments:
     </div>
 </section>
 
-  {% include footer.html %}
-  {% include generic-javascript.html %}
-  <script src="{{page.root}}/js/jquery.typer.js"></script>
+  <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="./license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20index.html">Bug Report</a>
+  </div>
+</footer>
+
+  <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-1.9.1.min.js"></script>
+<script src="./js/bootstrap/bootstrap.min.js"></script>
+
+  <script src="./js/jquery.typer.js"></script>
   <script>
     $('[data-typer-targets]').typer();
   </script>

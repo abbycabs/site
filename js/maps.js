@@ -1,5 +1,3 @@
----
----
 var SWC = SWC || {};
 
 SWC.maps = (function() {
@@ -58,24 +56,497 @@ SWC.maps = (function() {
     map           = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
     // Go over all the upcoming camps and create pins in the map
-    {% for bootcamp in site.bootcamps %}
-      {% if bootcamp.latlng and bootcamp.startdate >= site.today %}
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
         var marker = new google.maps.Marker({
-          position: new google.maps.LatLng({{bootcamp.latlng}}),
+          position: new google.maps.LatLng(55.87185,-4.29155),
           map: map,
-          title: "{{bootcamp.venue}}, {{bootcamp.humandate}}",
+          title: "Glasgow University, Dec 12-13, 2013",
           //icon: openPin,
           visible: true,
         });
 
         var info_string = '<div class="info-window">' +
-          '<h5><a href="{% if bootcamp.url %}{{bootcamp.url}}{% else %}{{page.root}}/{{bootcamp.path}}{% endif %}">{{bootcamp.venue|replace: '\'','\\\''}}</a></h5>' +
-          '<h6><a href="{{page.root}}/{{bootcamp.path}}">{{bootcamp.humandate}}</a></h6>' +
+          '<h5><a href="http://bendmorris.github.io/2013-12-12-glasgow/">Glasgow University</a></h5>' +
+          '<h6><a href="/">Dec 12-13, 2013</a></h6>' +
           '</div>';
 
             set_info_window(map, marker, info_window, info_string);
-      {% endif %}
-    {% endfor %}
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(45.947214,-66.640325),
+          map: map,
+          title: "University of New Brunswick, Jan 6-7, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://jooolia.github.io/2014-01-06-unb/">University of New Brunswick</a></h5>' +
+          '<h6><a href="/">Jan 6-7, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(52.209868,0.102439),
+          map: map,
+          title: "Centre for Mathematical Sciences, University of Cambridge, Jan 7-8, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://sje30.github.io/2014-01-07-cam/">Centre for Mathematical Sciences, University of Cambridge</a></h5>' +
+          '<h6><a href="/">Jan 7-8, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(43.64711,-79.39423),
+          map: map,
+          title: "Library Sciences in Toronto, Jan 13-14, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://gvwilson.github.io/2014-01-13-toronto/">Library Sciences in Toronto</a></h5>' +
+          '<h6><a href="/">Jan 13-14, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(41.492635,-71.422294),
+          map: map,
+          title: "Coastal Institute, University of Rhode Island, Jan 13-14, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://iglpdc.github.io/2014-01-13-uri/">Coastal Institute, University of Rhode Island</a></h5>' +
+          '<h6><a href="/">Jan 13-14, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.467972,-2.233154),
+          map: map,
+          title: "University of Manchester, Jan 14-15, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://apawlik.github.io/2014-01-14-manchester/">University of Manchester</a></h5>' +
+          '<h6><a href="/">Jan 14-15, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(37.4225,-122.1653),
+          map: map,
+          title: "Stanford University, Jan 27-28, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://arokem.github.io/2014-01-27-Stanford/">Stanford University</a></h5>' +
+          '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(40.093692, -88.237606),
+          map: map,
+          title: "University of Illinois, Computational Science and Engineering, Jan 30-31, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://uiuc-cse.github.io/2014-01-30-cse/">University of Illinois, Computational Science and Engineering</a></h5>' +
+          '<h6><a href="/">Jan 30-31, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(42.359392,-71.093271),
+          map: map,
+          title: "Massachusetts Institute of Technology, Jan 30-31, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://rhiever.github.io/2014-01-30-mit/">Massachusetts Institute of Technology</a></h5>' +
+          '<h6><a href="/">Jan 30-31, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(52.6217629,-1.2409930),
+          map: map,
+          title: "The Genome Analysis Centre (TGAC), Feb 3-4, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://apawlik.github.io/2014-02-03-TGAC/">The Genome Analysis Centre (TGAC)</a></h5>' +
+          '<h6><a href="/">Feb 3-4, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(-42.8806,147.3250),
+          map: map,
+          title: "AMOS conference, Feb 10-11, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://damienirving.github.io/2014-02-10-hobart/">AMOS conference</a></h5>' +
+          '<h6><a href="/">Feb 10-11, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(43.64711,-79.39423),
+          map: map,
+          title: "Mozilla Toronto, Feb 11-12, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://swcarpentry.github.io/2014-02-11-toronto/">Mozilla Toronto</a></h5>' +
+          '<h6><a href="/">Feb 11-12, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(-33.917410,151.231307),
+          map: map,
+          title: "University of New South Wales, Feb 13-14, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://karthik.github.io/2014-02-13-UNSW/">University of New South Wales</a></h5>' +
+          '<h6><a href="/">Feb 13-14, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(-33.883898,151.201013),
+          map: map,
+          title: "University of Technology, Sydney, Feb 18-19, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://karthik.github.io/2014-02-18-UTS/">University of Technology, Sydney</a></h5>' +
+          '<h6><a href="/">Feb 18-19, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
   }
 
   return maps;

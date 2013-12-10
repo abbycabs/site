@@ -1,12 +1,68 @@
----
-layout: blog
-date: 2005-12-23
-time: 09:00:00
-author: Greg Wilson
-title: "Procrastination: One of the Few Things in Life Nicer Than Toast"
-category: ["Tooling"]
----
-<p>I finished rewriting the build system for the <a href="http://www.software-carpentry.org">Software Carpentry</a> course notes yesterday.  Doing so was an extended form of procrastination: the system I built over the summer and used through the fall was adequate, but I wanted to clean a few things up, and then, well, I might as well make it easier for other instructors to add site-specific content, and make tables inclusions instead of inlining them, and mumble mumble mumble type type type...</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Procrastination: One of the Few Things in Life Nicer Than Toast</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">Procrastination: One of the Few Things in Life Nicer Than Toast</h1>
+            <!-- start content -->
+            <p>I finished rewriting the build system for the <a href="http://www.software-carpentry.org">Software Carpentry</a> course notes yesterday.  Doing so was an extended form of procrastination: the system I built over the summer and used through the fall was adequate, but I wanted to clean a few things up, and then, well, I might as well make it easier for other instructors to add site-specific content, and make tables inclusions instead of inlining them, and mumble mumble mumble type type type...</p>
 <p>Of course, none of this has actually advanced the <em>content</em> of the course one whit.  I have over seventy tickets to close, ranging in size from making sure that a particular Make example does what I claim to rewriting the lecture on security.  And diagrams: no one was happy with the isometric ones created this term (not least because they're kind of fuzzy), so I have over a hundred diagrams to re-do. In a perfect world, they'd be ready before I teach at the IASSE in mid-January.  In this universe, I'll be happy if they're in place for the <a href="http://www.aaas.org/meetings/Annual_Meeting/02_PE/PE_06_Career_Workshops.shtml#EssentialSoftware">Essential Software Skills for Research Scientists</a> workshop at the <a href="http://www.aaas.org/meetings/Annual_Meeting/">AAAS Annual Meeting</a> on February 17.</p>
 <p>We all do this.  We all fold laundry instead of paying bills, or invent an antigravity drive when we're supposed to be studying for an Economics final.  (OK, maybe that was just me.)  But it seems particularly common among software developers, many of whom would rather spend two hours creating a new (not better, just new) serialization class hierarchy than take five minutes to center-align the titles at the top of the product's help page.  One of the characters in Mark Costello's Big If (reviewed here) is a prime example: his company desperately needs him to add some new monsters to a video game, so he spends a week adding shadows to clouds.</p>
 <p>But back to the build system... What I have is a set of XML files marked up with a homegrown tag set, and what I want is some HTML pages.  The files are organized into several directories: the main page is in the root, while all of the lectures are in <code>lec/</code>, and site-specific content is in sub-directories underneath <code>sites/</code>.  Each directory that contains source XML files may also contain <code>img/</code>, <code>inc/</code>, and <code>tbl/</code> sub-directories; in turn, each of those has one sub-directory for each of the source files, which holds images, sample code inclusions, and tables.</p>
@@ -46,3 +102,62 @@ Each stage ought to be a filter of its own, and in fact I wrote them all that wa
 <p>It's a lot of code; it was a lot of work; I'm pleased with how smoothly it all runs; and most of the time I spent building it should probably have gone into upgrading the actual content of the course. But small(ish) tasks are seductive: you can start work at 8:30, confident that you'll have something to show (even if only to yourself) by noon.  Editing course notes, well, the payoff is usually a long way away, and may not come at all: people who read through the first, flawed, version of the notes probably aren't going to come back and tell you how much better the second version is.</p>
 <p>That last observation is the key ingredient of my cure for procrastination: find some partners.  I am always more productive when I'm working with people than I am on my own.  Not only does a small team wander down fewer blind alleys than someone working alone, team members can keep each other honest, and give each other feedback and encouragement.  They can also appreciate just how big an accomplishment it is to have replaced all the a's and b's in twenty-eight short examples of list manipulation with the names of minerals, beetles, and mathematicians.</p>
 <p>It's now ten to eleven, and I've managed to fend off productivity for almost an hour.  Should I look on eBay for a <a href="http://www.wacom.com/en/Products/Cintiq.aspx">WACOM Cintiq</a> tablet that I can afford?  It'd make drawing diagrams <em>much</em> more fun.  Or maybe I should try <a href="http://somethingaboutorange.com/mrl/projects/nose/">Nose</a>: Miles Thibault says it's much friendlier than the unit testing framework in the Python standard library.  Hm... A cup of tea will probably help me decide.  A cup of tea, and a slice of toast with strawberry jam...</p>
+
+            <p><em>Originally posted 2005-12-23 by Greg Wilson in Tooling.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'Procrastination: One of the Few Things in Life Nicer Than Toast';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2005/12/procrastination-one-of-the-few-things-in-life-nicer-than-toast.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

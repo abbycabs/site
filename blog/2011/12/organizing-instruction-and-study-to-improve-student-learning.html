@@ -1,12 +1,68 @@
----
-layout: blog
-date: 2011-12-24
-time: 09:00:00
-author: Greg Wilson
-title: Organizing Instruction and Study to Improve Student Learning
-category: ["Education"]
----
-<p>I had breakfast a couple of days ago with Jon Pipitone, a former student who has helped out with Software Carpentry off and on in the past. When we discussed my post summarizing <a href="{{page.root}}/blog/2011/12/what-ive-learned-so-far.html">what I've learned so far</a> about online education, he had several questions and suggestions (thanks, Jon). I'm still digesting everything he said, but there is one point I'd like to act on now.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2013-12-10T02:10:10Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Organizing Instruction and Study to Improve Student Learning</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-volunteer">
+            <a href="../../../contrib/training.html">Volunteer</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../team.html">About</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+        </ul>
+        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
+          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+          <input name="q" type="text" class="search-query" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section class="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span10 offset1">
+            <h1 class="title">Organizing Instruction and Study to Improve Student Learning</h1>
+            <!-- start content -->
+            <p>I had breakfast a couple of days ago with Jon Pipitone, a former student who has helped out with Software Carpentry off and on in the past. When we discussed my post summarizing <a href="/blog/2011/12/what-ive-learned-so-far.html">what I've learned so far</a> about online education, he had several questions and suggestions (thanks, Jon). I'm still digesting everything he said, but there is one point I'd like to act on now.</p>
 <p>Back in 2007, the US Department of Education's <a href="http://ies.ed.gov">Institute of Education Sciences</a> published a 60-page report <a href="http://ies.ed.gov/ncee/wwc/practiceguide.aspx?sid=1">Organizing Instruction and Study to Improve Student Learning</a>. It's a great resource: seven specific recommendations are summarized in clear language, along with the evidence that backs them up. The report even classifies that evidence into three levels:</p>
 <ul>
 <li>Strong: supported by studies with both high <em>internal</em> validity (i.e., ones whose designs can support causal conclusions) and high <em>external</em> validity (i.e., studies that include a wide enough range of participants and settings to support generalization). This includes the gold standard of experimental research: randomized double-blind trials.</li>
@@ -48,7 +104,7 @@ category: ["Education"]
 </ul>
 <p><strong>3. Combine graphics with verbal descriptions.</strong> The word "verbal" is important here. Research by Richard Mayer and others has shown that if you present images, text, and audio simultaneously, learning actually goes <em>down</em>, because the brain's two processing centers (linguistic and visual) are having two handle two streams of data each in order to recognize words in text and synchronize them with the audio and images. That said, we have to provide textual captions and transcripts for people with visual disabilities, people whose English comprehension isn't strong, and people who prefer to learn from the printed page. What we really need is tools that do a better job of disentangling different content streams (video, audio, narration, and diagrams); they are <a href="http://popcornjs.org/">starting to appear</a>, but the 21st Century replacement for PowerPoint that I really want doesn't exist yet, and we don't have the resources to create it.</p>
 <p><strong>4. Connect and integrate abstract and concrete representations of concepts.</strong> We certainly try to. I don't know how to gauge whether we succeed.</p>
-<p><strong>5a. Use pre-questions to introduce a new topic.</strong> The report recommends giving students a few minutes to tackle a problem on their own with what they already know to set the scene for introducing a new concept. We don't do this per se, though some lectures (like the ones on <a href="{{page.root}}/v4/regexp/">regular expressions</a> and <a href="{{page.root}}/v4/make/">Make</a>) do use a problem-led approach. Again, I doubt students working on their own would actually take the time to do the exercise unless we forced them to, but perhaps we could show them someone going up a couple of blind alleys (e.g., trying to parse text with substring calls instead of regular expressions) before introducing the "right" solution to the problem?</p>
+<p><strong>5a. Use pre-questions to introduce a new topic.</strong> The report recommends giving students a few minutes to tackle a problem on their own with what they already know to set the scene for introducing a new concept. We don't do this per se, though some lectures (like the ones on <a href="/v4/regexp/">regular expressions</a> and <a href="/v4/make/">Make</a>) do use a problem-led approach. Again, I doubt students working on their own would actually take the time to do the exercise unless we forced them to, but perhaps we could show them someone going up a couple of blind alleys (e.g., trying to parse text with substring calls instead of regular expressions) before introducing the "right" solution to the problem?</p>
 <p><strong>5b. Use quizzes to re-expose students to key content.</strong> I used to hate cumulative midterms and final exams because they forced me to dredge up things I hadn't used in weeks. Weeks! Now, as a teacher, I think they're great, and the evidence showing they reinforce learning is strong. But while we could make some sort of cumulative self-test available, most students wouldn't benefit come back to our site to do it, and so wouldn't benefit. Even if they did come back, we have no way to give them a meaningful assessment of their performance: the richer the question, the more ways to answer it there are, and the less useful automated marking would be.</p>
 <p><strong>6a. Teach students how to use delayed judgments of learning to identify content that needs further study.</strong> We can't do it. All we can do is tell them that they'll learn more if they come back and review things later to see how much they've actually understood, but (a) they've heard that before, and (b) if they're coming to our material for help with a specific problem that's in front of them right now, they're unlikely to make time in a month to review what they learned.</p>
 <p><strong>6b. Use tests and quizzes to identify content that needs to be learned.</strong> This recommendation is meant to be read from the student's point of view: they should use tests to figure out what they don't understand so that they can focus their review time more effectively. Again, we can create self-text exercises, but we have no practical way to give students useful feedback on any but the simplest.</p>
@@ -58,6 +114,65 @@ category: ["Education"]
 <li>Most students won't voluntarily revisit material (they're too busy solving their next problem).</li>
 <li>There's no practical way to assess how well they're doing on anything except simple drill exercises.</li>
 </ul>
-<p>The second worries me more. As I wrote <a href="{{page.root}}/blog/2011/11/the-ladder-of-abstraction-and-the-future-of-online-teaching.html">several weeks ago</a>:</p>
+<p>The second worries me more. As I wrote <a href="/blog/2011/11/the-ladder-of-abstraction-and-the-future-of-online-teaching.html">several weeks ago</a>:</p>
 <blockquote><p>To paraphrase Tolstoy, successful learners are all alike; every unsuccessful learner is unsuccessful in their own way. There's only one correct mental model of how regular expressions work, but there are dozens or hundreds of ways to misunderstand them, and each one requires a different corrective explanation. What's worse, as we shift from knowing that to knowing how&mdash;from memorizing the multiplication table to solving rope-and-pulley dynamics problems or using the Unix shell&mdash;the space of possible misconceptions grows very, very quickly, and with it, the difficulty of diagnosing and correcting misunderstandings.</p></blockquote>
 <p><a href="http://www.teaching.utoronto.ca/teaching/essentialinformation/profiles-innovation/peer-assessment.htm">Some research</a> has found that crowdsourcing assessment among peers can be just as effective as having someone more knowledgeable do the grading. We don't know if that works for programming, though, and even if it does, will enough people voluntarily give feedback on other people's work (promptly enough) to be useful? Locking down content until they have will just drive people away rather than helping them learn. Solving the "meaningful feedback" problem is, in my opinion, one of the biggest challenges open online learning faces; I'd welcome your thoughts on where to start.</p>
+
+            <p><em>Originally posted 2011-12-24 by Greg Wilson in Education.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = '';
+    var disqus_title = 'Organizing Instruction and Study to Improve Student Learning';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+      <a class="label swc-blue-bg" href="https://twitter.com/swcarpentry">Twitter</a>
+      <a class="label swc-blue-bg" href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a class="label swc-blue-bg" href="https://github.com/swcarpentry">GitHub</a>
+      <a class="label swc-blue-bg" href="irc://freenode/swcarpentry">IRC</a>
+      <a class="label swc-blue-bg" href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a class="label swc-blue-bg" href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a class="label swc-blue-bg" href="../../../license.html">License</a>
+      <a class="bugreport label swc-blue-bg" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2011/12/organizing-instruction-and-study-to-improve-student-learning.html">Bug Report</a>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>
