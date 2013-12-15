@@ -413,6 +413,40 @@ SWC.maps = (function() {
     
       
         var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(34.413963,-119.848947),
+          map: map,
+          title: "University of California Berkeley, Jan 18-19, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://swcarpentry.github.io/2014-01-18-ucb/">University of California Berkeley</a></h5>' +
+          '<h6><a href="/">Jan 18-19, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(45.530677,-73.624497),
+          map: map,
+          title: "CRIM (Montreal), Jan 20-21, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://gvwilson.github.io/2014-01-20-montreal/">CRIM (Montreal)</a></h5>' +
+          '<h6><a href="/">Jan 20-21, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
           position: new google.maps.LatLng(37.4225,-122.1653),
           map: map,
           title: "Stanford University, Jan 27-28, 2014",
@@ -422,6 +456,23 @@ SWC.maps = (function() {
 
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://arokem.github.io/2014-01-27-Stanford/">Stanford University</a></h5>' +
+          '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(25.7174346,-80.2781389),
+          map: map,
+          title: "University of Miami, Jan 27-28, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://jennybc.github.io/2014-01-27-miami/">University of Miami</a></h5>' +
           '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
           '</div>';
 
@@ -457,6 +508,23 @@ SWC.maps = (function() {
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://rhiever.github.io/2014-01-30-mit/">Massachusetts Institute of Technology</a></h5>' +
           '<h6><a href="/">Jan 30-31, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(34.412114,-119.842014),
+          map: map,
+          title: "University of California Santa Barbara, Jan 31-Feb 1, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://swcarpentry.github.io/2014-01-31-ucsb/">University of California Santa Barbara</a></h5>' +
+          '<h6><a href="/">Jan 31-Feb 1, 2014</a></h6>' +
           '</div>';
 
             set_info_window(map, marker, info_window, info_string);
@@ -542,6 +610,23 @@ SWC.maps = (function() {
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://karthik.github.io/2014-02-18-UTS/">University of Technology, Sydney</a></h5>' +
           '<h6><a href="/">Feb 18-19, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(34.413963,-119.848947),
+          map: map,
+          title: "Women in Science and Engineering, Apr 14-15, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://swcarpentry.github.io/2014-04-14-wise/">Women in Science and Engineering</a></h5>' +
+          '<h6><a href="/">Apr 14-15, 2014</a></h6>' +
           '</div>';
 
             set_info_window(map, marker, info_window, info_string);

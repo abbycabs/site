@@ -4,32 +4,12 @@
 		"selected_items":
 		[
 			[
-				"obj",
-				"object"
+				"scal",
+				"scale_counter"
 			],
 			[
-				"gene",
-				"genetic_position"
-			],
-			[
-				"_fet",
-				"_fetch_gff_gene"
-			],
-			[
-				"obje",
-				"object_store"
-			],
-			[
-				"tran",
-				"transcript"
-			],
-			[
-				"bio",
-				"bioproject"
-			],
-			[
-				"data",
-				"data_sources"
+				"change",
+				"change_type"
 			],
 			[
 				"refer",
@@ -147,78 +127,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "css/swc.css",
-			"settings":
-			{
-				"buffer_size": 6502,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_layouts/base.html",
-			"settings":
-			{
-				"buffer_size": 642,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_includes/footer.html",
-			"settings":
-			{
-				"buffer_size": 690,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_includes/generic-header.html",
-			"settings":
-			{
-				"buffer_size": 825,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_includes/navbar.html",
-			"settings":
-			{
-				"buffer_size": 1362,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_includes/generic-banner.html",
-			"settings":
-			{
-				"buffer_size": 203,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 3648,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/swc-bootstrap.css",
-			"settings":
-			{
-				"buffer_size": 2148,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_config.yml",
-			"settings":
-			{
-				"buffer_size": 344069,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -268,62 +176,28 @@
 	},
 	"file_history":
 	[
-		"/Volumes/wb-dev/website/conf/gbrowse/c_elegans_PRJNA13758.conf",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Service/genome.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Role/Service.pm",
-		"/Volumes/wb-dev/website/wormbase_local.conf",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Role/Object.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/Web/Controller/Search.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Gene.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Role/Sequence.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Clone.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Variation.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Service/epcr.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Service/gff_c_elegans.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Service/nucleotide_aligner.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Service/nearby_genes.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Transposon.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Sequence.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Protein.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Role/Position.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Transcript.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Pseudogene.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Pcr_oligo.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Operon.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Feature.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Cds.pm",
-		"/Volumes/wb-dev/website/conf/gbrowse/a_suum_PRJNA62057.conf",
-		"/Volumes/wb-dev/website/root/templates/classes/gene/sequences.tt2",
-		"/Volumes/wb-dev/website/lib/WormBase/API.pm",
-		"/Volumes/wb-dev/website/wormbase.conf",
-		"/Volumes/wb-dev/website/root/templates/classes/gene/expression.tt2",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Service/gff.pm",
+		"/Volumes/wb-dev/website/root/js/wormbase.js",
 		"/Volumes/wb-dev/website/root/templates/shared/page_elements.tt2",
-		"/Volumes/wb-dev/website/root/templates/classes/protein/sequence.tt2",
-		"/Volumes/wb-dev/website/root/templates/shared/widgets/location.tt2",
-		"/Volumes/wb-dev/website/lib/WormBase/API/ModelMap.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/Web.pm",
-		"/Volumes/wb-dev/website/root/templates/footer/default.tt2",
-		"/Volumes/wb-dev/website/extlib/lib/perl5/DBIx/Class/SQLAHacks/MySQL.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/Web/Controller/REST.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Service/Xapian.pm",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Transgene.pm",
-		"/Volumes/wb-dev/website/root/templates/classes/transgene/overview.tt2",
-		"/Volumes/wb-dev/website/root/templates/classes/protein/pfam_graph.tt2",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Expr_pattern.pm",
+		"/Volumes/wb-dev/website/wormbase.conf",
+		"/Volumes/wb-dev/website/lib/WormBase/Web/Controller/Search.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Role/Object.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Service/nucleotide_aligner.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Object.pm",
 		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Anatomy_term.pm",
 		"/Volumes/wb-dev/website/root/templates/config/main",
 		"/Volumes/wb-dev/website/root/templates/search/results.tt2",
-		"/Volumes/wb-dev/website/root/templates/boilerplate/html",
-		"/Volumes/wb-dev/website/root/js/pfam/domain_graphics.js",
 		"/Volumes/wb-dev/website/root/templates/search/gene.tt2",
-		"/Volumes/wb-dev/website/lib/WormBase/API/Service/tree.pm",
-		"/Volumes/wb-dev/website/root/templates/classes/strain/overview.tt2",
-		"/Volumes/wb-dev/website/root/templates/config/external_urls",
-		"/Users/acabunoc/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Volumes/wb-dev/website/t/api_tests/transgene.t",
-		"/Volumes/wb-dev/website/root/compound.idx",
+		"/Volumes/wb-dev/website/root/templates/boilerplate/html",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Expr_pattern.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Variation.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Service/Xapian.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/Web/Controller/Species.pm",
+		"/Volumes/wb-dev/website/lib/perl5/Bio/Species.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Service/nearby_genes.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Service/epic.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Gene.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Role/Service.pm",
 		"/Volumes/wb-dev/website/root/templates/shared/widgets/assemblies.tt2",
 		"/Volumes/wb-dev/website/root/docs/api/Anatomy_term.html",
 		"/Volumes/wb-dev/website/.git/hooks/post-receive",
@@ -335,23 +209,29 @@
 		"/Volumes/wb-dev/website/root/templates/classes/gene/phenotype.tt2",
 		"/Volumes/wb-dev/website/root/templates/classes/gene/overview.tt2",
 		"/Volumes/wb-dev/website/root/templates/feed/download.tt2",
-		"/Volumes/wb-dev/website/root/js/wormbase.js",
+		"/Volumes/wb-dev/website/lib/WormBase/Web/Controller/REST.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/ModelMap.pm",
+		"/Volumes/wb-dev/website/wormbase_local.conf",
+		"/Volumes/wb-dev/website/root/templates/config/external_urls",
 		"/Volumes/wb-dev/website/t/rest_tests/template.t",
 		"/Volumes/wb-dev/website/t/rest_tests/gene.t",
 		"/Volumes/wb-dev/website/lib/WormBase/API/Role/Variation.pm",
 		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Strain.pm",
 		"/Volumes/wb-dev/website/root/templates/classes/strain/contains.tt2",
 		"/Volumes/wb-dev/website/wormbase.sublime-workspace",
+		"/Volumes/wb-dev/website/lib/WormBase/Web.pm",
 		"/Volumes/wb-dev/website/node_modules/.bin/yuicompressor",
 		"/Volumes/wb-dev/website/t/api_tests/gene.t",
 		"/Volumes/wb-dev/website/wormbase_staging.conf",
 		"/Volumes/wb-dev/website/t/api_tests/disease.t",
 		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Disease.pm",
 		"/Volumes/wb-dev/website/lib/WormBase/Web/Controller/Tools.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Role/Sequence.pm",
 		"/Volumes/wb-dev/website/root/templates/classes/cds/overview.tt2",
 		"/Volumes/wb-dev/website/lib/WormBase/API/Role/Interaction.pm",
 		"/Volumes/wb-dev/website/lib/WormBase/Web/Controller/Root.pm",
 		"/Volumes/wb-dev/website/root/templates/search/paper.tt2",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Cds.pm",
 		"/Volumes/wb-dev/website/root/templates/classes/variation/molecular_details.tt2",
 		"/Volumes/wb-dev/website/Makefile.PL",
 		"/Volumes/wb-dev/website/Makefile",
@@ -360,8 +240,10 @@
 		"/Volumes/wb-dev/website/t/api_tests/template.t",
 		"/Volumes/wb-dev/website/root/templates/classes/gene/genetics.tt2",
 		"/Volumes/wb-dev/website/root/templates/classes/gene/homology.tt2",
+		"/Volumes/wb-dev/website/root/templates/classes/gene/expression.tt2",
 		"/Volumes/wb-dev/website/lib/WormBase/Web/Controller.pm",
 		"/Volumes/wb-dev/website/root/templates/classes/anatomy_term/associations.tt2",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Role/Position.pm",
 		"/Volumes/wb-dev/website/lib/WormBase/Web/View/TT.pm",
 		"/Volumes/wb-dev/website/t/rest_tests/mendeley.t",
 		"/Volumes/wb-dev/website/t/rest_tests/tools.t",
@@ -369,6 +251,7 @@
 		"/Volumes/wb-dev/website/root/templates/classes/variation/context.tt2",
 		"/Volumes/wb-dev/website/root/templates/status/404.tt2",
 		"/Volumes/wb-dev/website/root/js/jquery/plugins/tabletools/media/docs/symbols/TableTools.BUTTONS.html",
+		"/Users/acabunoc/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/acabunoc/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Volumes/wb-dev/website/lib/WormBase/Web/Controller/Auth.pm",
 		"/Volumes/wb-dev/website/root/templates/header/default.tt2",
@@ -377,8 +260,10 @@
 		"/Volumes/wb-dev/website/t/catalyst_startup.pm",
 		"/Volumes/wb-dev/website/t/rest.t",
 		"/Volumes/wb-dev/website/root/templates/classes/wbprocess/overview.tt2",
+		"/Volumes/wb-dev/website/root/templates/footer/default.tt2",
 		"/Volumes/wb-dev/website/lib/WormBase/API/Service/acedb.pm",
 		"/Volumes/wb-dev/website/lib/WormBase/API/Role/Service/gff.pm",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Service/gff.pm",
 		"/Volumes/wb-dev/website/script/wormbase_create.pl",
 		"/Volumes/wb-dev/website/extlib/lib/perl5/Bio/DB/GFF.pm",
 		"/Volumes/wb-dev/website/lib/WormBase/Web/ThirdParty/Mendeley.pm",
@@ -388,14 +273,37 @@
 		"/Volumes/wb-dev/website/root/templates/feed/issue.tt2",
 		"/Volumes/wb-dev/website/root/templates/shared/widgets/data_unavailable.tt2",
 		"/Volumes/wb-dev/website/root/templates/shared/generic/rest_widget.tt2",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Protein.pm",
 		"/Volumes/wb-dev/website/script/get_modules.sh",
 		"/Volumes/wb-dev/website/t/WormBase.t",
 		"/Volumes/wb-dev/website/root/templates/auth/login.tt2",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Pcr_oligo.pm",
 		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Phenotype.pm",
+		"/Volumes/wb-dev/website/root/templates/shared/widgets/location.tt2",
 		"/Volumes/wb-dev/website/root/templates/classes/expr_pattern/overview.tt2",
 		"/Volumes/wb-dev/website/root/templates/classes/expr_pattern/curated_images.tt2",
 		"/Volumes/wb-dev/website/root/templates/shared/widgets/summary.tt2",
-		"/Volumes/wb-dev/website/root/templates/classes/transcript/sequences.tt2"
+		"/Volumes/wb-dev/website/root/templates/classes/transcript/sequences.tt2",
+		"/Volumes/wb-dev/website/lib/WormBase/API/Object/Transcript.pm",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/lib/WormBase/API/Object/Phenotype.pm",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/root/templates/classes/gene/human_diseases.tt2",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/lib/WormBase/API/Role/Expr_pattern.pm",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/lib/WormBase/API/Object/Picture.pm",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/lib/WormBase/API/Object/Sequence.pm",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/lib/WormBase/API/Role/Sequence.pm",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/lib/WormBase/API/Object/Expr_profile.pm",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/root/templates/config/external_urls",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/lib/WormBase/API/Object/Rnai.pm",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/root/templates/classes/expr_pattern/curated_images.tt2",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/root/templates/classes/picture/lightbox.tt2",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/lib/WormBase/Web/Controller/Search.pm",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/lib/WormBase/API/Object/Transgene.pm",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/root/templates/classes/pcr_oligo/overview.tt2",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/root/templates/classes/pcr_oligo/sequence.tt2",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/root/templates/shared/page_elements.tt2",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/root/templates/config/main",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/lib/WormBase/API/Role/Object.pm",
+		"/home/acabunoc/.gvfs/sftp for acabunoc on wb-dev.oicr.on.ca/home/acabunoc/website/lib/WormBase/API/Object/Protein.pm"
 	],
 	"find":
 	{
@@ -406,9 +314,6 @@
 		"height": 0.0,
 		"where_history":
 		[
-			"/Volumes/wb-dev/website",
-			"/Volumes/wb-dev/website/root/",
-			"/Volumes/wb-dev/website/",
 			"/Volumes/wb-dev/website/lib/WormBase/API",
 			"/Volumes/wb-dev/website/lib/WormBase,/Volumes/wb-dev/website/root",
 			"/Volumes/wb-dev/website/lib/WormBase",
@@ -451,134 +356,134 @@
 		"case_sensitive": true,
 		"find_history":
 		[
-			"id1035",
-			"logo",
-			"navbar",
-			"font",
-			"navbar",
-			"concep",
-			"segment",
-			"_fetch_gff_gene",
-			"gene_models",
-			"get_features_by_name",
-			"segment(",
-			"GFF3",
-			"segment(",
-			"fetch_gff_gene",
-			"segment(",
-			"segment",
-			"segment(",
-			"_build__segments",
-			"segments",
-			"strand",
-			"print",
-			"c_ele",
-			"host",
-			"mysql.",
-			"mysql",
-			"die",
-			"host",
-			"die",
-			"host",
-			"hostname",
-			"host",
-			"basic",
-			"_print_protein",
-			"_print_spliced",
-			"unspliced",
-			"_print_spliced",
-			"print_sequence",
-			"_build_genomic_position",
-			"genomic_position",
-			"->features",
-			"->segment",
-			"segments",
-			"genomic_position",
-			"sequence",
-			"sequences",
-			"->segment(",
-			"_segments",
-			"cds",
-			"->segment",
-			"segments",
-			"features",
-			"pack_obj",
-			"ACE2WB_MAP",
-			"mysql.wor",
-			"sequences",
-			"genomic_position",
-			"genetic_position",
-			"_segments",
-			"_build_genomic_position",
-			"($",
-			"_build_genetic_position",
-			"genetic_position",
-			"_build__segments",
-			"segment",
-			"gff",
-			"genetic_position",
-			"_segments",
-			"_longest_segment",
-			"build__len",
-			"gff",
-			"get_features_by_name",
-			"fetch",
-			"services",
-			"gff_dsn",
-			"_fetch_gff_gene",
-			"features",
-			"get_feature_by_name",
-			"fetch_group",
-			"fe",
-			"connect",
-			"GFF",
-			"version",
-			"fetch_",
-			"fetch_group",
-			"js",
-			"fetch_group",
-			"gff2",
-			"gff3",
-			"<c_elega",
-			"c_elegans",
-			"b_malayi",
-			"pre_compile",
-			"$c",
-			"app",
-			"API",
-			"config",
-			"conf_dir",
-			"config",
-			"conf",
-			"database",
-			"config",
-			"data_sources",
-			"<b_malayi",
-			"gene_model",
-			"gene_models",
-			"getting",
-			"bioprojects",
-			"species_list",
-			"version",
-			"source",
-			"<b_malayi",
-			"<<",
-			" ",
-			"searchlink",
-			" ",
-			"Signal",
-			"Endo",
-			"Biologyof",
-			"caching_",
-			"<canvas>",
-			"canvas",
+			"summary",
+			"allResults",
+			"search_count",
+			"xapian",
+			"search",
+			"all",
+			"get_downed_hosts",
 			"expression_patterns",
 			"expression_patterns\n",
 			"expression_patterns",
 			"anatomy_term",
 			"associations",
 			"gbrowse",
-			"error"
+			"error",
+			"xapian->search",
+			"_setup_query",
+			"color:",
+			"fade",
+			"font-weight",
+			"	",
+			"biggest",
+			"config",
+			"configuration",
+			"config",
+			"seen",
+			"external_urls",
+			"_pack_obj",
+			"text2link",
+			"_all_proteins",
+			"Concis",
+			"description",
+			"_get_evidence",
+			"evidence_type",
+			"_get_evidence",
+			"evidence",
+			"SearchResult",
+			"_get_search_result",
+			"_popular",
+			"_get_widget_fields",
+			"references",
+			"<analysis>",
+			".\n",
+			"_pack_objects",
+			"feed",
+			"rest/feed",
+			"download",
+			"download.tt2",
+			"widget-feed",
+			"url",
+			"_ignored_interactions",
+			"references",
+			"	",
+			"rest/widget/",
+			"favourites",
+			"_get_interactions",
+			"_build__interactions",
+			"print",
+			"scalar",
+			"phenotype",
+			"_phenotypes",
+			"_build__phenotypes",
+			"Allele",
+			"scalar",
+			"'){\n",
+			"Allele",
+			"print",
+			"Variation",
+			"Allele",
+			"_get_count",
+			"XML",
+			"pseudogene",
+			"Curator_confirmed",
+			"evidence",
+			"YAML",
+			"Allele",
+			"_compile_nucleotide_changes",
+			"left_fl",
+			"nucleo",
+			"_compile_nucleotide_changes",
+			"->Allele",
+			"alleles",
+			"epic",
+			"schema",
+			"tools",
+			"_services",
+			"tool",
+			"<tools>",
+			"tool",
+			"alleles",
+			"Allele",
+			"_get_obj",
+			"external",
+			"]'));",
+			"self",
+			"phens",
+			"search",
+			"ref",
+			"allele",
+			"process",
+			"_process_variation",
+			"Allele",
+			"contain",
+			"content_type",
+			"       is  ($response->{'fields'}->{'name'}->{'data'}->{'id'}, 'WBGene00006763', 'matching accession');\n",
+			"TT",
+			"status_ok",
+			"404",
+			"white",
+			"operator",
+			"sortable",
+			"class",
+			"resources",
+			"species",
+			"resources",
+			"class",
+			"        \n",
+			"_longest_segment",
+			"_build_genomic_position",
+			"genomic",
+			"_longest_segment",
+			"longest_",
+			"genomic_position",
+			"_genomic_position",
+			"genomic_position",
+			"genomic_pos",
+			"_longest_segment",
+			"dataTable",
+			"get_session"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -586,7 +491,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			" ",
 			"        ",
 			"    ",
 			"         ",
@@ -610,255 +514,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "css/swc.css",
-					"settings":
-					{
-						"buffer_size": 6502,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6156,
-								6156
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 7310.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_layouts/base.html",
-					"settings":
-					{
-						"buffer_size": 642,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								477,
-								477
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "_includes/footer.html",
-					"settings":
-					{
-						"buffer_size": 690,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								587,
-								587
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_includes/generic-header.html",
-					"settings":
-					{
-						"buffer_size": 825,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								605,
-								605
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "_includes/navbar.html",
-					"settings":
-					{
-						"buffer_size": 1362,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								410,
-								410
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "_includes/generic-banner.html",
-					"settings":
-					{
-						"buffer_size": 203,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								203,
-								203
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 3648,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								899,
-								899
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 420.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "css/swc-bootstrap.css",
-					"settings":
-					{
-						"buffer_size": 2148,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								406,
-								406
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 207.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "_config.yml",
-					"settings":
-					{
-						"buffer_size": 344069,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								262803,
-								262803
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -904,236 +561,40 @@
 		"selected_items":
 		[
 			[
-				"gff.pm",
-				"website/lib/WormBase/API/Service/gff.pm"
+				"result",
+				"website/root/templates/search/results.tt2"
 			],
 			[
-				"role/sequence",
-				"website/lib/WormBase/API/Role/Sequence.pm"
-			],
-			[
-				"sequence.pm",
-				"website/lib/WormBase/API/Object/Sequence.pm"
-			],
-			[
-				"nucleotide",
-				"website/lib/WormBase/API/Service/nucleotide_aligner.pm"
-			],
-			[
-				"nearby_gene",
-				"website/lib/WormBase/API/Service/nearby_genes.pm"
-			],
-			[
-				"object.pm",
-				"website/lib/WormBase/API/Role/Object.pm"
-			],
-			[
-				"gff_c_",
-				"website/lib/WormBase/API/Service/gff_c_elegans.pm"
-			],
-			[
-				"epcr.pm",
-				"website/lib/WormBase/API/Service/epcr.pm"
-			],
-			[
-				"variation.pm",
-				"website/lib/WormBase/API/Object/Variation.pm"
-			],
-			[
-				"transposon.pm",
-				"website/lib/WormBase/API/Object/Transposon.pm"
-			],
-			[
-				"protein.pm",
-				"website/lib/WormBase/API/Object/Protein.pm"
-			],
-			[
-				"clone.pm",
-				"website/lib/WormBase/API/Object/Clone.pm"
-			],
-			[
-				"position.pm",
-				"website/lib/WormBase/API/Role/Position.pm"
-			],
-			[
-				"transcript.pm",
-				"website/lib/WormBase/API/Object/Transcript.pm"
-			],
-			[
-				"cds.pm",
-				"website/lib/WormBase/API/Object/Cds.pm"
-			],
-			[
-				"pseu",
-				"website/lib/WormBase/API/Object/Pseudogene.pm"
-			],
-			[
-				"pcr_oli",
-				"website/lib/WormBase/API/Object/Pcr_oligo.pm"
-			],
-			[
-				"operon.pm",
-				"website/lib/WormBase/API/Object/Operon.pm"
-			],
-			[
-				"feature.pm",
-				"website/lib/WormBase/API/Object/Feature.pm"
-			],
-			[
-				"gene.pm",
-				"website/lib/WormBase/API/Object/Gene.pm"
-			],
-			[
-				"role/seq",
-				"website/lib/WormBase/API/Role/Sequence.pm"
-			],
-			[
-				"feature.t",
-				"website/t/api_tests/features.t"
-			],
-			[
-				"c_ele",
-				"gbrowse/c_elegans_PRJNA13758.conf"
-			],
-			[
-				"genome.pm",
-				"website/lib/WormBase/API/Service/genome.pm"
-			],
-			[
-				"service.pm",
-				"website/lib/WormBase/API/Role/Service.pm"
-			],
-			[
-				"role/se",
-				"website/lib/WormBase/API/Role/Sequence.pm"
-			],
-			[
-				"a_sum",
-				"gbrowse/a_suum_PRJNA62057.conf"
-			],
-			[
-				"wormbase_loca",
-				"website/wormbase_local.conf"
-			],
-			[
-				"role/obj",
-				"website/lib/WormBase/API/Role/Object.pm"
-			],
-			[
-				"search.pm",
-				"website/lib/WormBase/Web/Controller/Search.pm"
-			],
-			[
-				"root.pm",
-				"website/lib/WormBase/Web/Controller/Root.pm"
-			],
-			[
-				"c_elegan",
-				"gbrowse/c_elegans_PRJNA13758.conf"
-			],
-			[
-				"position",
-				"website/lib/WormBase/API/Role/Position.pm"
+				"result_li",
+				"website/root/templates/search/result_list.tt2"
 			],
 			[
 				"page_ele",
 				"website/root/templates/shared/page_elements.tt2"
 			],
 			[
-				"protein/sequ",
-				"website/root/templates/classes/protein/sequence.tt2"
+				"rest.pm",
+				"website/lib/WormBase/Web/Controller/REST.pm"
 			],
 			[
-				"modelmap",
-				"website/lib/WormBase/API/ModelMap.pm"
-			],
-			[
-				"gene/expr",
-				"website/root/templates/classes/gene/expression.tt2"
-			],
-			[
-				"web.pm",
-				"website/lib/WormBase/Web.pm"
-			],
-			[
-				"position.",
-				"website/lib/WormBase/API/Role/Position.pm"
+				"summary.",
+				"website/root/templates/shared/widgets/summary.tt2"
 			],
 			[
 				"wormbase.conf",
 				"website/wormbase.conf"
 			],
 			[
-				"location.",
-				"website/root/templates/shared/widgets/location.tt2"
+				"wormbase.js",
+				"website/root/js/wormbase.js"
 			],
 			[
-				"pseudogene",
-				"website/lib/WormBase/API/Object/Pseudogene.pm"
+				"search.pm",
+				"website/lib/WormBase/Web/Controller/Search.pm"
 			],
 			[
-				"footer/def",
-				"website/root/templates/footer/default.tt2"
-			],
-			[
-				"mysql.pm",
-				"website/extlib/lib/perl5/DBIx/Class/SQLAHacks/MySQL.pm"
-			],
-			[
-				"gene/sequences",
-				"website/root/templates/classes/gene/sequences.tt2"
-			],
-			[
-				"role/servi",
-				"website/lib/WormBase/API/Role/Service.pm"
-			],
-			[
-				"api.pm",
-				"website/lib/WormBase/API.pm"
-			],
-			[
-				"service",
-				"website/lib/WormBase/API/Role/Service.pm"
-			],
-			[
-				"api/role/obj",
-				"website/lib/WormBase/API/Role/Object.pm"
-			],
-			[
-				"transgene.pm",
-				"website/lib/WormBase/API/Object/Transgene.pm"
-			],
-			[
-				"transgene/over",
-				"website/root/templates/classes/transgene/overview.tt2"
-			],
-			[
-				"js/pfam/",
-				"website/root/js/pfam/domain_graphics.js"
-			],
-			[
-				"pfam",
-				"website/root/templates/classes/protein/pfam_graph.tt2"
-			],
-			[
-				"rest.pm",
-				"website/lib/WormBase/Web/Controller/REST.pm"
-			],
-			[
-				"role/obje",
-				"website/lib/WormBase/API/Role/Object.pm"
-			],
-			[
-				"protein",
-				"website/lib/WormBase/API/Object/Protein.pm"
-			],
-			[
-				"transgene/overview",
-				"website/root/templates/classes/transgene/overview.tt2"
-			],
-			[
-				"strain/overvie",
-				"website/root/templates/classes/strain/overview.tt2"
+				"xapian.pm",
+				"website/lib/WormBase/API/Service/Xapian.pm"
 			],
 			[
 				"main",
@@ -1144,16 +605,56 @@
 				"website/root/templates/config/external_urls"
 			],
 			[
-				"page_",
-				"website/root/templates/shared/page_elements.tt2"
+				"api.pm",
+				"website/lib/WormBase/API.pm"
 			],
 			[
-				"transgene.t",
-				"website/t/api_tests/transgene.t"
+				"controller/spec",
+				"website/lib/WormBase/Web/Controller/Species.pm"
 			],
 			[
-				"wormbase_lo",
-				"website/wormbase_local.conf"
+				"species.pm",
+				"website/lib/perl5/Bio/Species.pm"
+			],
+			[
+				"nucleo",
+				"website/lib/WormBase/API/Service/nucleotide_aligner.pm"
+			],
+			[
+				"nearby_genes",
+				"website/lib/WormBase/API/Service/nearby_genes.pm"
+			],
+			[
+				"epic.pm",
+				"website/lib/WormBase/API/Service/epic.pm"
+			],
+			[
+				"nearby_",
+				"website/lib/WormBase/API/Service/nearby_genes.pm"
+			],
+			[
+				"object.pm",
+				"website/lib/WormBase/API/Role/Object.pm"
+			],
+			[
+				"gene.pm",
+				"website/lib/WormBase/API/Object/Gene.pm"
+			],
+			[
+				"xapian",
+				"website/lib/WormBase/API/Service/Xapian.pm"
+			],
+			[
+				"role/service",
+				"website/lib/WormBase/API/Role/Service.pm"
+			],
+			[
+				"wormbase.o",
+				"website/wormbase.conf"
+			],
+			[
+				"variation.pm",
+				"website/lib/WormBase/API/Object/Variation.pm"
 			],
 			[
 				"object.",
@@ -1192,10 +693,6 @@
 				"website/root/templates/search/results.tt2"
 			],
 			[
-				"xapian.pm",
-				"website/lib/WormBase/API/Service/Xapian.pm"
-			],
-			[
 				"search/gene",
 				"website/root/templates/search/gene.tt2"
 			],
@@ -1220,6 +717,10 @@
 				"website/lib/WormBase/API/Role/Variation.pm"
 			],
 			[
+				"web.pm",
+				"website/lib/WormBase/Web.pm"
+			],
+			[
 				"web.com",
 				"website/node_modules/.bin/yuicompressor"
 			],
@@ -1230,6 +731,10 @@
 			[
 				"object",
 				"website/lib/WormBase/API/Role/Object.pm"
+			],
+			[
+				"page_",
+				"website/root/templates/shared/page_elements.tt2"
 			],
 			[
 				"wormbase_prod",
@@ -1260,20 +765,28 @@
 				"website/lib/WormBase/Web/Controller/Tools.pm"
 			],
 			[
-				"result",
-				"website/root/templates/search/result_list.tt2"
+				"modelmap",
+				"website/lib/WormBase/API/ModelMap.pm"
 			],
 			[
-				"wormbase.js",
-				"website/root/js/wormbase.js"
+				"role/obj",
+				"website/lib/WormBase/API/Role/Object.pm"
 			],
 			[
 				"download",
 				"website/root/templates/feed/download.tt2"
 			],
 			[
+				"role/se",
+				"website/lib/WormBase/API/Role/Sequence.pm"
+			],
+			[
 				"page",
 				"website/root/templates/shared/page_elements.tt2"
+			],
+			[
+				"cds.pm",
+				"website/lib/WormBase/API/Object/Cds.pm"
 			],
 			[
 				"cds/over",
@@ -1298,6 +811,10 @@
 			[
 				"root",
 				"website/lib/WormBase/Web/Controller/Root.pm"
+			],
+			[
+				"wormbase_loca",
+				"website/wormbase_local.conf"
 			],
 			[
 				"strain.pm",
@@ -1340,10 +857,6 @@
 				"website/root/templates/classes/gene/genetics.tt2"
 			],
 			[
-				"xapian",
-				"website/lib/WormBase/API/Service/Xapian.pm"
-			],
-			[
 				"search.",
 				"website/lib/WormBase/Web/Controller/Search.pm"
 			],
@@ -1384,12 +897,20 @@
 				"website/root/js/jquery/plugins/tabletools/media/docs/symbols/TableTools.BUTTONS.html"
 			],
 			[
+				"root.pm",
+				"website/lib/WormBase/Web/Controller/Root.pm"
+			],
+			[
 				"mendel",
 				"website/t/rest_tests/mendeley.t"
 			],
 			[
 				"template.t",
 				"website/t/rest_tests/template.t"
+			],
+			[
+				"wormbase_lo",
+				"website/wormbase_local.conf"
 			],
 			[
 				"wormbase.env",
@@ -1412,8 +933,144 @@
 				"website/lib/WormBase/Web/Controller/Tools.pm"
 			],
 			[
+				"position",
+				"website/lib/WormBase/API/Role/Position.pm"
+			],
+			[
+				"role/seq",
+				"website/lib/WormBase/API/Role/Sequence.pm"
+			],
+			[
 				"acedb",
 				"website/lib/WormBase/API/Service/acedb.pm"
+			],
+			[
+				"wormbase_create",
+				"website/script/wormbase_create.pl"
+			],
+			[
+				"wormbase_local",
+				"website/wormbase_local.conf"
+			],
+			[
+				"service.pm",
+				"website/lib/WormBase/API/Role/Service.pm"
+			],
+			[
+				"gff.pm",
+				"website/extlib/lib/perl5/Bio/DB/GFF.pm"
+			],
+			[
+				"disease.pm",
+				"website/lib/WormBase/API/Object/Disease.pm"
+			],
+			[
+				"process/ov",
+				"website/root/templates/classes/wbprocess/overview.tt2"
+			],
+			[
+				"footer/d",
+				"website/root/templates/footer/default.tt2"
+			],
+			[
+				"protein.pm",
+				"website/lib/WormBase/API/Object/Protein.pm"
+			],
+			[
+				"restwidget",
+				"website/root/templates/shared/generic/rest_widget.tt2"
+			],
+			[
+				"widget_",
+				"website/root/templates/shared/widgets/data_unavailable.tt2"
+			],
+			[
+				"issue.",
+				"website/root/templates/feed/issue.tt2"
+			],
+			[
+				"issue_em",
+				"website/root/templates/feed/issue_email.tt2"
+			],
+			[
+				"search_bar",
+				"website/root/templates/boilerplate/search_bar.tt2"
+			],
+			[
+				"issue_box",
+				"website/root/templates/boilerplate/issue_box.tt2"
+			],
+			[
+				"gff.",
+				"website/lib/WormBase/API/Service/gff.pm"
+			],
+			[
+				"transcript.pm",
+				"website/lib/WormBase/API/Object/Transcript.pm"
+			],
+			[
+				"transcript/se",
+				"website/root/templates/classes/transcript/sequences.tt2"
+			],
+			[
+				"summary",
+				"website/root/templates/shared/widgets/summary.tt2"
+			],
+			[
+				"header/def",
+				"website/root/templates/header/default.tt2"
+			],
+			[
+				"expr_pa",
+				"website/lib/WormBase/API/Object/Expr_pattern.pm"
+			],
+			[
+				"expr_curat",
+				"website/root/templates/classes/expr_pattern/curated_images.tt2"
+			],
+			[
+				"expr_pattern/ov",
+				"website/root/templates/classes/expr_pattern/overview.tt2"
+			],
+			[
+				"position.pm",
+				"website/lib/WormBase/API/Role/Position.pm"
+			],
+			[
+				"location.",
+				"website/root/templates/shared/widgets/location.tt2"
+			],
+			[
+				"phe",
+				"website/lib/WormBase/API/Object/Phenotype.pm"
+			],
+			[
+				"phenoty",
+				"website/lib/WormBase/API/Object/Phenotype.pm"
+			],
+			[
+				"phenotype.pm",
+				"website/lib/WormBase/API/Object/Phenotype.pm"
+			],
+			[
+				"external_urls",
+				"website/root/templates/config/external_urls"
+			],
+			[
+				"rnai.pm",
+				"website/lib/WormBase/API/Object/Rnai.pm"
+			],
+			[
+				"expr_pro",
+				"website/lib/WormBase/API/Object/Expr_profile.pm"
+			],
+			[
+				"role/seque",
+				"website/lib/WormBase/API/Role/Sequence.pm"
+			],
+			[
+				"sequence.pm",
+				"website/lib/WormBase/API/Object/Sequence.pm"
 			]
 		],
 		"width": 0.0
@@ -1427,9 +1084,9 @@
 		"width": 0.0
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 231.0,
+	"side_bar_width": 171.0,
 	"status_bar_visible": true
 }
