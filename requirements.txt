@@ -1,3 +1,2 @@
 PyYAML
 requests>=2
-ts==2.0.1
