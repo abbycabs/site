@@ -308,20 +308,7 @@ SWC.maps = (function() {
       
     
       
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(55.87185,-4.29155),
-          map: map,
-          title: "Glasgow University, Dec 12-13, 2013",
-          //icon: openPin,
-          visible: true,
-        });
-
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://bendmorris.github.io/2013-12-12-glasgow/">Glasgow University</a></h5>' +
-          '<h6><a href="/">Dec 12-13, 2013</a></h6>' +
-          '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+    
       
     
       
@@ -396,6 +383,23 @@ SWC.maps = (function() {
     
       
         var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(43.07718,-89.40399),
+          map: map,
+          title: "University of Wisconsin-Madison, Jan 13-14, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://uw-madison-aci.github.io/2014-01-13-wisc/">University of Wisconsin-Madison</a></h5>' +
+          '<h6><a href="/">Jan 13-14, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
           position: new google.maps.LatLng(53.467972,-2.233154),
           map: map,
           title: "University of Manchester, Jan 14-15, 2014",
@@ -447,7 +451,7 @@ SWC.maps = (function() {
     
       
         var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(37.4225,-122.1653),
+          position: new google.maps.LatLng(37.4225, 122.1653),
           map: map,
           title: "Stanford University, Jan 27-28, 2014",
           //icon: openPin,
@@ -456,6 +460,23 @@ SWC.maps = (function() {
 
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://arokem.github.io/2014-01-27-Stanford/">Stanford University</a></h5>' +
+          '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(39.1663815,-86.526621),
+          map: map,
+          title: "Indiana University, Jan 27-28, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://swcarpentry.github.io/2014-01-27-indiana/">Indiana University</a></h5>' +
           '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
           '</div>';
 
@@ -610,6 +631,23 @@ SWC.maps = (function() {
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://karthik.github.io/2014-02-18-UTS/">University of Technology, Sydney</a></h5>' +
           '<h6><a href="/">Feb 18-19, 2014</a></h6>' +
+          '</div>';
+
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(40.46871,-3.94383),
+          map: map,
+          title: "ESAC, Feb 24-25, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://justincely.github.io/2014-02-24-esac/">ESAC</a></h5>' +
+          '<h6><a href="/">Feb 24-25, 2014</a></h6>' +
           '</div>';
 
             set_info_window(map, marker, info_window, info_string);

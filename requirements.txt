@@ -1,2 +1,3 @@
-PyYAML==3.10
-requests==2.0.1
+PyYAML
+requests>=2
+ts==2.0.1
