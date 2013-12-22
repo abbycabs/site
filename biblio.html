@@ -26,24 +26,23 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a href='./index.html' id="nav-logo" class="pull-left"></a>
+      <a href="./index.html" id="nav-logo" class="pull-left"></a>
       <div class="nav-collapse collapse pull-right">
         <ul class="nav">
-
           <li id="nav-bootcamps">
             <a href="./bootcamps/index.html">Bootcamps</a>
           </li>
-          <li id="nav-volunteer">
-            <a href="./contrib/training.html">Volunteer</a>
-          </li>
-          <li id="nav-about">
-            <a href="./team.html">About</a>
+          <li id="nav-lessons">
+            <a href="./v4/index.html">Lessons</a>
           </li>
           <li id="nav-blog">
             <a href="./blog/index.html">Blog</a>
           </li>
           <li id="nav-faq">
             <a href="./faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="./pages/index.html">More...</a>
           </li>
         </ul>
         <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
@@ -54,6 +53,7 @@
     </div>
   </div>
 </div>
+
     </header>
     
     <section id="title" class="content">
@@ -122,7 +122,7 @@
 
 <h2>Books</h2>
 <div class="media">
-  <img class="book-cover media-object pull-left" src="./assets/books/1934356271.jpg" />
+  <img class="book-cover media-object pull-left" src="./img/books/1934356271.jpg" />
   <div class="media-body">
     <p>Jennifer Campbell, Paul Gries, Jason Montojo, and Greg Wilson: <a
     href="http://www.amazon.com/gp/product/1934356271/"><cite>Practical
@@ -136,7 +136,7 @@
 </div>
 
 <div class="media">
-  <img class="book-cover media-object pull-left" src="./assets/books/0131177052.jpg" />
+  <img class="book-cover media-object pull-left" src="./img/books/0131177052.jpg" />
   <div class="media-body">
     <p>Michael Feathers: <a
     href="http://www.amazon.com/gp/product/0131177052/"><cite>Working
@@ -154,7 +154,7 @@
 </div>
 
 <div class="media">
-  <img class="book-cover media-object pull-left" src="./assets/books/0321118030.jpg" />
+  <img class="book-cover media-object pull-left" src="./img/books/0321118030.jpg" />
   <div class="media-body">
     <p>Chris Fehily: <a
     href="http://www.amazon.com/gp/product/0321118030/"><cite>SQL</cite></a>.
@@ -167,7 +167,7 @@
 </div>
 
 <div class="media">
-  <img class="book-cover media-object pull-left" src="./assets/books/0596007590.jpg" />
+  <img class="book-cover media-object pull-left" src="./img/books/0596007590.jpg" />
   <div class="media-body">
     <p>Karl Fogel: <a
     href="http://www.amazon.com/gp/product/0596007590/"><cite>Producing Open
@@ -183,7 +183,7 @@
 </div>
 
 <div class="media">
-  <img class="book-cover media-object pull-left" src="./assets/books/0878933913.jpg" />
+  <img class="book-cover media-object pull-left" src="./img/books/0878933913.jpg" />
   <div class="media-body">
     <p>Steve Haddock and Casey Dunn: <a
     href="http://www.amazon.com/gp/product/0878933913/"><cite>Practical
@@ -197,7 +197,7 @@
 </div>
 
 <div class="media">
-  <img class="book-cover media-object pull-left" src="./assets/books/1430322640.jpg" />
+  <img class="book-cover media-object pull-left" src="./img/books/1430322640.jpg" />
   <div class="media-body">
     <p>Henrik Kniberg: <a
     href="http://www.amazon.com/gp/product/1430322640/"><cite>Scrum and XP
@@ -210,7 +210,7 @@
 </div>
 
 <div class="media">
-  <img class="book-cover media-object pull-left" src="./assets/books/0735619670.jpg" />
+  <img class="book-cover media-object pull-left" src="./img/books/0735619670.jpg" />
   <div class="media-body">
     <p>Steve McConnell: <a
     href="http://www.amazon.com/gp/product/0735619670/"><cite>Code Complete: A
@@ -225,7 +225,7 @@
 </div>
 
 <div class="media">
-  <img class="book-cover media-object pull-left" src="./assets/books/0596808321.jpg" />
+  <img class="book-cover media-object pull-left" src="./img/books/0596808321.jpg" />
   <div class="media-body">
     <p>Andy Oram and Greg Wilson (editors): <a
     href="http://www.amazon.com/gp/product/0596808321/"><cite>Making Software:
@@ -241,7 +241,7 @@
 </div>
 
 <div class="media">
-  <img class="book-cover media-object pull-left" src="./assets/books/0321636783.jpg" />
+  <img class="book-cover media-object pull-left" src="./img/books/0321636783.jpg" />
   <div class="media-body">
     <p>Deborah S. Ray and Eric J. Ray: <a
     href="http://www.amazon.com/gp/product/0321636783/"><cite>Unix and Linux:
@@ -1299,24 +1299,20 @@ Those Who Will Not Learn From History...
 
       </div>
     </section>
-    <footer class="content">
+    <!-- FIXME: need to vertically center or bottom-align the logo and text -->
+<footer class="content">
   <div class="container">
-      <ul>
-        <img src="./img/software-carpentry-banner-white.png" width="200px" />
-      </ul>
-
-      <ul>
-        <li><a href="https://twitter.com/swcarpentry">Twitter</a></li>
-        <li><a href="irc://freenode/swcarpentry">IRC</a></li>
-        <li><a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a></li>
-        <li><a href="https://www.google.com/+Software-carpentryOrg">Google+</a></li>
-        <li><a href="http://software-carpentry.org/feed.xml">RSS</a></li>
-      </ul>
-      <ul>
-        <li><a href="https://github.com/swcarpentry">GitHub</a></li>
-        <li><a href="./license.html">License</a></li>
-        <li><a class="bugreport" href="mailto:info@software-carpentry.org?subject=bug%20in%20biblio.html">Bug Report</a></li>
-      </ul>
+    <!-- <img src="./img/software-carpentry-banner-white.png" width="200px" /> -->
+    <div class="links">
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="./license.html">License</a>
+      <a class="bugreport" href="mailto:info@software-carpentry.org?subject=bug%20in%20biblio.html">Bug Report</a>
+    </div>
   </div>
 </footer>
 
@@ -1336,6 +1332,12 @@ Those Who Will Not Learn From History...
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>
+ s.parentNode.insertBefore(ga, s);
   })();
 </script>
 

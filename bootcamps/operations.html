@@ -26,24 +26,23 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a href='../index.html' id="nav-logo" class="pull-left"></a>
+      <a href="../index.html" id="nav-logo" class="pull-left"></a>
       <div class="nav-collapse collapse pull-right">
         <ul class="nav">
-
           <li id="nav-bootcamps">
             <a href="../bootcamps/index.html">Bootcamps</a>
           </li>
-          <li id="nav-volunteer">
-            <a href="../contrib/training.html">Volunteer</a>
-          </li>
-          <li id="nav-about">
-            <a href="../team.html">About</a>
+          <li id="nav-lessons">
+            <a href="../v4/index.html">Lessons</a>
           </li>
           <li id="nav-blog">
             <a href="../blog/index.html">Blog</a>
           </li>
           <li id="nav-faq">
             <a href="../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../pages/index.html">More...</a>
           </li>
         </ul>
         <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
@@ -54,6 +53,7 @@
     </div>
   </div>
 </div>
+
     </header>
     
     <section id="title" class="content">
@@ -78,11 +78,11 @@
 <h2>Checklists</h2>
 
 <ul>
-  <li><a href="checklists/host.html">Host</a></li>
-  <li><a href="checklists/admin.html">Admin</a></li>
-  <li><a href="checklists/lead_instructor.html">Lead Instructor</a></li>
-  <li><a href="checklists/instructors.html">Instructors</a></li>
-  <li><a href="checklists/helpers.html">Helpers</a></li>
+  <li><a href="../bootcamps/checklists/host.html">Host</a></li>
+  <li><a href="../bootcamps/checklists/admin.html">Admin</a></li>
+  <li><a href="../bootcamps/checklists/lead_instructor.html">Lead Instructor</a></li>
+  <li><a href="../bootcamps/checklists/instructors.html">Instructors</a></li>
+  <li><a href="../bootcamps/checklists/helpers.html">Helpers</a></li>
 </ul>
 
 <hr />
@@ -101,28 +101,28 @@
 
 <ul>
   <li>
-    The <a href="checklists/host.html">host</a>,
+    The <a href="../bootcamps/checklists/host.html">host</a>,
     the principal local contact for the bootcamp.
   </li>
   <li>
-    The <a href="checklists/instructors.html">instructors</a>, who
+    The <a href="../bootcamps/checklists/instructors.html">instructors</a>, who
     present the tutorials and lead the practical exercises.
   </li>
   <li>
-    The <a href="checklists/lead_instructor.html">lead instructor</a>,
+    The <a href="../bootcamps/checklists/lead_instructor.html">lead instructor</a>,
     is in charge of deciding what will be taught by whom 
     and ensuring the teaching aspects of the bootcamp go smoothly.
     Software Carpentry admin decides which instructor will be 
     the lead instructor.
   </li>
   <li>
-    <a href="checklists/helpers.html">Helpers</a> 
+    <a href="../bootcamps/checklists/helpers.html">Helpers</a> 
     provide assistance during practical sessions, 
     update and answer questions on the bootcamp Etherpad, 
     and help with various practical matters.
   </li>
   <li>
-    <a href="checklists/admin.html">Software Carpentry admin</a>
+    <a href="../bootcamps/checklists/admin.html">Software Carpentry admin</a>
     advises and helps the host with bootcamp organization,
     matches hosts with instructors,
     sets up registration and assessments,
@@ -616,7 +616,7 @@
     <p>
       Once the webpage is set up,
       the host will start spreading the word about the bootcamp
-      using our <a href="../assets/sample_ad.html">example
+      using our <a href="../bootcamps/sample_ad.html">example
         text</a> or something more creative. 
       The host can
       tweet and blog about the event, 
@@ -1032,10 +1032,9 @@
       <li>how to <a href="../blog/2013/06/after-wise.html">get 
         more help</a> with the topics they have learned about</li>
       <li>how to get involved with Software Carpentry
-	by <a href="../contrib/training.html">hosting or teaching a bootcamp</a>,
-	<a href="../contrib/discuss.html">joining our discussions</a>,
-	helping us <a href="../contrib/create.html">create material</a>,
-	or <a href="../contrib/partner.html">becoming a partner</a>.
+	by <a href="../pages/training.html">hosting or teaching a bootcamp</a>,
+	<a href="../pages/discuss.html">joining our discussions</a>,
+	or helping us <a href="../pages/create.html">create material</a>.
       </li>
       <li>how to participate in any follow-up sessions the host is planning</li>
     </ul>
@@ -1111,24 +1110,20 @@
 
       </div>
     </section>
-    <footer class="content">
+    <!-- FIXME: need to vertically center or bottom-align the logo and text -->
+<footer class="content">
   <div class="container">
-      <ul>
-        <img src="../img/software-carpentry-banner-white.png" width="200px" />
-      </ul>
-
-      <ul>
-        <li><a href="https://twitter.com/swcarpentry">Twitter</a></li>
-        <li><a href="irc://freenode/swcarpentry">IRC</a></li>
-        <li><a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a></li>
-        <li><a href="https://www.google.com/+Software-carpentryOrg">Google+</a></li>
-        <li><a href="http://software-carpentry.org/feed.xml">RSS</a></li>
-      </ul>
-      <ul>
-        <li><a href="https://github.com/swcarpentry">GitHub</a></li>
-        <li><a href="../license.html">License</a></li>
-        <li><a class="bugreport" href="mailto:info@software-carpentry.org?subject=bug%20in%20bootcamps/operations.html">Bug Report</a></li>
-      </ul>
+    <!-- <img src="../img/software-carpentry-banner-white.png" width="200px" /> -->
+    <div class="links">
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../license.html">License</a>
+      <a class="bugreport" href="mailto:info@software-carpentry.org?subject=bug%20in%20bootcamps/operations.html">Bug Report</a>
+    </div>
   </div>
 </footer>
 

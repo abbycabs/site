@@ -26,24 +26,23 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a href='../../../index.html' id="nav-logo" class="pull-left"></a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
       <div class="nav-collapse collapse pull-right">
         <ul class="nav">
-
           <li id="nav-bootcamps">
             <a href="../../../bootcamps/index.html">Bootcamps</a>
           </li>
-          <li id="nav-volunteer">
-            <a href="../../../contrib/training.html">Volunteer</a>
-          </li>
-          <li id="nav-about">
-            <a href="../../../team.html">About</a>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
           </li>
           <li id="nav-blog">
             <a href="../../../blog/index.html">Blog</a>
           </li>
           <li id="nav-faq">
             <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">More...</a>
           </li>
         </ul>
         <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
@@ -54,6 +53,7 @@
     </div>
   </div>
 </div>
+
     </header>
     <section id="title" class="content">
         <div class="container">
@@ -63,7 +63,7 @@
     <section class="content">
       <div class="container">
             <!-- start content -->
-            <p>[<a href="dictionary_blog_post.txt">Code</a>]</p>
+            <p>[Code]</p>
 <p>Today I would like to share with other scientists the power of <a href="http://docs.python.org/tutorial/datastructures.html#dictionaries">dictionaries</a>. I recently learned about this data structure during a software carpentry <a href="/bootcamps/">bootcamp</a> that <a href="http://third-bit.com/">Greg Wilson</a> and <a href="http://whitelab.weecology.org/">Ethan White</a> organized. Greg and Jason Pell (from Michigan State) visited Utah State University for a two day boot camp where <a href="http://mcglinn.web.unc.edu/">I am a postdoc studying</a> patterns of biodiversity. During that time we covered a <a href="/bootcamps/2012-04-utahstate.html">whole slew of topics,</a> but today I wanted to demonstrate how dictionaries helped to significantly speed up my Python code.</p>
 <p>Before we begin this demonstration let's import two necessary libraries into our Python interpreter. We'll import division from __future__ so that Python carries out <a href="http://www.python.org/dev/peps/pep-0238/">'true' division instead of 'classic' division</a>, and we'll import time from time so that we can time how much time our functions take to run.</p>
 <pre># import division so that we are using 'true' division
@@ -224,24 +224,20 @@ print test_time2
 
       </div>
     </section>
-    <footer class="content">
+    <!-- FIXME: need to vertically center or bottom-align the logo and text -->
+<footer class="content">
   <div class="container">
-      <ul>
-        <img src="../../../img/software-carpentry-banner-white.png" width="200px" />
-      </ul>
-
-      <ul>
-        <li><a href="https://twitter.com/swcarpentry">Twitter</a></li>
-        <li><a href="irc://freenode/swcarpentry">IRC</a></li>
-        <li><a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a></li>
-        <li><a href="https://www.google.com/+Software-carpentryOrg">Google+</a></li>
-        <li><a href="http://software-carpentry.org/feed.xml">RSS</a></li>
-      </ul>
-      <ul>
-        <li><a href="https://github.com/swcarpentry">GitHub</a></li>
-        <li><a href="../../../license.html">License</a></li>
-        <li><a class="bugreport" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2012/05/dictionaries-are-a-scientists-friend.html">Bug Report</a></li>
-      </ul>
+    <!-- <img src="../../../img/software-carpentry-banner-white.png" width="200px" /> -->
+    <div class="links">
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2012/05/dictionaries-are-a-scientists-friend.html">Bug Report</a>
+    </div>
   </div>
 </footer>
 
