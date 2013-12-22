@@ -203,5 +203,3 @@ $(OUT)/%.jpg : %.jpg
 $(OUT)/%.gif : %.gif
 	@mkdir -p $$(dirname $@)
 	cp $< $@
-)
-	cp $< $@
