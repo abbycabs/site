@@ -312,141 +312,23 @@ SWC.maps = (function() {
       
     
       
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(45.947214,-66.640325),
-          map: map,
-          title: "University of New Brunswick, Jan 6-7, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://jooolia.github.io/2014-01-06-unb/">University of New Brunswick</a></h5>' +
-          '<h6><a href="/">Jan 6-7, 2014</a></h6>' +
-          '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
-      
     
       
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(52.209868,0.102439),
-          map: map,
-          title: "Centre for Mathematical Sciences, University of Cambridge, Jan 7-8, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://sje30.github.io/2014-01-07-cam/">Centre for Mathematical Sciences, University of Cambridge</a></h5>' +
-          '<h6><a href="/">Jan 7-8, 2014</a></h6>' +
-          '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+    
       
     
       
     
       
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(43.64711,-79.39423),
-          map: map,
-          title: "Library Sciences in Toronto, Jan 13-14, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://gvwilson.github.io/2014-01-13-toronto/">Library Sciences in Toronto</a></h5>' +
-          '<h6><a href="/">Jan 13-14, 2014</a></h6>' +
-          '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+    
       
     
       
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(41.492635,-71.422294),
-          map: map,
-          title: "Coastal Institute, University of Rhode Island, Jan 13-14, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://iglpdc.github.io/2014-01-13-uri/">Coastal Institute, University of Rhode Island</a></h5>' +
-          '<h6><a href="/">Jan 13-14, 2014</a></h6>' +
-          '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+    
       
     
       
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(43.07718,-89.40399),
-          map: map,
-          title: "University of Wisconsin-Madison, Jan 13-14, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://uw-madison-aci.github.io/2014-01-13-wisc/">University of Wisconsin-Madison</a></h5>' +
-          '<h6><a href="/">Jan 13-14, 2014</a></h6>' +
-          '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
-      
     
-      
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(53.467972,-2.233154),
-          map: map,
-          title: "University of Manchester, Jan 14-15, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://apawlik.github.io/2014-01-14-manchester/">University of Manchester</a></h5>' +
-          '<h6><a href="/">Jan 14-15, 2014</a></h6>' +
-          '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
-      
-    
-      
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(34.413963,-119.848947),
-          map: map,
-          title: "University of California Berkeley, Jan 18-19, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://swcarpentry.github.io/2014-01-18-ucb/">University of California Berkeley</a></h5>' +
-          '<h6><a href="/">Jan 18-19, 2014</a></h6>' +
-          '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
-      
-    
-      
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(45.530677,-73.624497),
-          map: map,
-          title: "CRIM (Montreal), Jan 20-21, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://gvwilson.github.io/2014-01-20-montreal/">CRIM (Montreal)</a></h5>' +
-          '<h6><a href="/">Jan 20-21, 2014</a></h6>' +
-          '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
       
     
       
@@ -457,29 +339,10 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://arokem.github.io/2014-01-27-Stanford/">Stanford University</a></h5>' +
           '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
-      
-    
-      
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(39.1663815,-86.526621),
-          map: map,
-          title: "Indiana University, Jan 27-28, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://swcarpentry.github.io/2014-01-27-indiana/">Indiana University</a></h5>' +
-          '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
-          '</div>';
-
             set_info_window(map, marker, info_window, info_string);
       
     
@@ -491,12 +354,10 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://jennybc.github.io/2014-01-27-miami/">University of Miami</a></h5>' +
           '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
           '</div>';
-
             set_info_window(map, marker, info_window, info_string);
       
     
@@ -508,29 +369,25 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://uiuc-cse.github.io/2014-01-30-cse/">University of Illinois, Computational Science and Engineering</a></h5>' +
           '<h6><a href="/">Jan 30-31, 2014</a></h6>' +
           '</div>';
-
             set_info_window(map, marker, info_window, info_string);
       
     
       
         var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(42.359392,-71.093271),
+          position: new google.maps.LatLng(42.361947,-71.090936),
           map: map,
-          title: "Massachusetts Institute of Technology, Jan 30-31, 2014",
+          title: "Massachusetts Institute of Technology, Jan 30 - Feb 1, 2014",
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="http://rhiever.github.io/2014-01-30-mit/">Massachusetts Institute of Technology</a></h5>' +
-          '<h6><a href="/">Jan 30-31, 2014</a></h6>' +
+          '<h5><a href="http://geocarpentry.github.io/2014-01-30-mit/">Massachusetts Institute of Technology</a></h5>' +
+          '<h6><a href="/">Jan 30 - Feb 1, 2014</a></h6>' +
           '</div>';
-
             set_info_window(map, marker, info_window, info_string);
       
     
@@ -542,12 +399,10 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://swcarpentry.github.io/2014-01-31-ucsb/">University of California Santa Barbara</a></h5>' +
           '<h6><a href="/">Jan 31-Feb 1, 2014</a></h6>' +
           '</div>';
-
             set_info_window(map, marker, info_window, info_string);
       
     
@@ -559,12 +414,10 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://apawlik.github.io/2014-02-03-TGAC/">The Genome Analysis Centre (TGAC)</a></h5>' +
           '<h6><a href="/">Feb 3-4, 2014</a></h6>' +
           '</div>';
-
             set_info_window(map, marker, info_window, info_string);
       
     
@@ -576,12 +429,10 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://damienirving.github.io/2014-02-10-hobart/">AMOS conference</a></h5>' +
           '<h6><a href="/">Feb 10-11, 2014</a></h6>' +
           '</div>';
-
             set_info_window(map, marker, info_window, info_string);
       
     
@@ -593,12 +444,10 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://swcarpentry.github.io/2014-02-11-toronto/">Mozilla Toronto</a></h5>' +
           '<h6><a href="/">Feb 11-12, 2014</a></h6>' +
           '</div>';
-
             set_info_window(map, marker, info_window, info_string);
       
     
@@ -610,12 +459,10 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://karthik.github.io/2014-02-13-UNSW/">University of New South Wales</a></h5>' +
           '<h6><a href="/">Feb 13-14, 2014</a></h6>' +
           '</div>';
-
             set_info_window(map, marker, info_window, info_string);
       
     
@@ -627,12 +474,25 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://karthik.github.io/2014-02-18-UTS/">University of Technology, Sydney</a></h5>' +
           '<h6><a href="/">Feb 18-19, 2014</a></h6>' +
           '</div>';
-
+            set_info_window(map, marker, info_window, info_string);
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(49.276765,-122.917957),
+          map: map,
+          title: "Simon Fraser University, Feb 22 and Mar 1, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://bernhardkonrad.github.io/2014-02-22-SFU/">Simon Fraser University</a></h5>' +
+          '<h6><a href="/">Feb 22 and Mar 1, 2014</a></h6>' +
+          '</div>';
             set_info_window(map, marker, info_window, info_string);
       
     
@@ -644,12 +504,10 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://justincely.github.io/2014-02-24-esac/">ESAC</a></h5>' +
           '<h6><a href="/">Feb 24-25, 2014</a></h6>' +
           '</div>';
-
             set_info_window(map, marker, info_window, info_string);
       
     
@@ -661,12 +519,10 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://swcarpentry.github.io/2014-04-14-wise/">Women in Science and Engineering</a></h5>' +
           '<h6><a href="/">Apr 14-15, 2014</a></h6>' +
           '</div>';
-
             set_info_window(map, marker, info_window, info_string);
       
     
@@ -680,8 +536,24 @@ SWC.maps = (function() {
     },
     info_window   = new google.maps.InfoWindow({}),
     map           = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+    var markers = [];
+    var mcOptions = {
+          zoomOnClick: false,
+          maxZoom: 5,
+          gridSize: 25,
+          minimumClusterSize: 1
+        }
+    var oms = new OverlappingMarkerSpiderfier(map,{markersWontMove: true, markersWontHide: true, keepSpiderfied: true});
+	var iw = new google.maps.InfoWindow();
+	oms.addListener('click', function(marker, event) {
+		iw.setContent(marker.desc);
+		iw.open(map, marker);
+	});
+	oms.addListener('spiderfy', function(markers) {
+		iw.close();
+	});
 
-    // Go over all the upcoming camps and create pins in the map
+    // Go over all the previous camps and create pins in the map
     
       
         var marker = new google.maps.Marker({
@@ -691,13 +563,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2011-11-07-toronto/index.html">University of Toronto</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2011-11-07-toronto/index.html">University of Toronto</a></h5>' +
           '<h6><a href="/bootcamps/2011-11-07-toronto/index.html">Nov 7-8, 2011</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -708,13 +580,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-01-18-stsci/index.html">Space Telescope Science Institute</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-01-18-stsci/index.html">Space Telescope Science Institute</a></h5>' +
           '<h6><a href="/bootcamps/2012-01-18-stsci/index.html">Jan 18-19, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -725,13 +597,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-02-20-itcp/index.html">International Centre for Theoretical Physics</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-02-20-itcp/index.html">International Centre for Theoretical Physics</a></h5>' +
           '<h6><a href="/bootcamps/2012-02-20-itcp/index.html">Feb 20 - March 2, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -742,13 +614,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-02-23-toronto/index.html">University of Toronto</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-02-23-toronto/index.html">University of Toronto</a></h5>' +
           '<h6><a href="/bootcamps/2012-02-23-toronto/index.html">February 23-24, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -759,13 +631,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-03-07-indiana/index.html">Indiana University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-03-07-indiana/index.html">Indiana University</a></h5>' +
           '<h6><a href="/bootcamps/2012-03-07-indiana/index.html">March 7-8, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -776,13 +648,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-03-26-mbari/index.html">Monterey Bay Aquarium Research Institute</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-03-26-mbari/index.html">Monterey Bay Aquarium Research Institute</a></h5>' +
           '<h6><a href="/bootcamps/2012-03-26-mbari/index.html">March 26-27, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -793,13 +665,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-03-28-nersc/index.html">NERSC</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-03-28-nersc/index.html">NERSC</a></h5>' +
           '<h6><a href="/bootcamps/2012-03-28-nersc/index.html">March 28-29, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -810,13 +682,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-04-02-chicago/index.html">University of Chicago</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-04-02-chicago/index.html">University of Chicago</a></h5>' +
           '<h6><a href="/bootcamps/2012-04-02-chicago/index.html">April 2-3, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -827,13 +699,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-04-14-utahstate/index.html">Utah State University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-04-14-utahstate/index.html">Utah State University</a></h5>' +
           '<h6><a href="/bootcamps/2012-04-14-utahstate/index.html">April 14-15, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -844,13 +716,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-04-30-ucl/index.html">University College London</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-04-30-ucl/index.html">University College London</a></h5>' +
           '<h6><a href="/bootcamps/2012-04-30-ucl/index.html">April 30 - May 1, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -861,13 +733,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-05-07-michiganstate/index.html">Michigan State University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-05-07-michiganstate/index.html">Michigan State University</a></h5>' +
           '<h6><a href="/bootcamps/2012-05-07-michiganstate/index.html">May 7-8, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -878,13 +750,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-05-14-newcastle/index.html">Newcastle University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-05-14-newcastle/index.html">Newcastle University</a></h5>' +
           '<h6><a href="/bootcamps/2012-05-14-newcastle/index.html">May 14-15, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -895,13 +767,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-05-16-alberta/index.html">University of Alberta</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-05-16-alberta/index.html">University of Alberta</a></h5>' +
           '<h6><a href="/bootcamps/2012-05-16-alberta/index.html">May 16-17, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -912,13 +784,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-05-22-ubc/index.html">University of British Columbia</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-05-22-ubc/index.html">University of British Columbia</a></h5>' +
           '<h6><a href="/bootcamps/2012-05-22-ubc/index.html">May 22-23, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -929,13 +801,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-06-18-jhu/index.html">Johns Hopkins University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-06-18-jhu/index.html">Johns Hopkins University</a></h5>' +
           '<h6><a href="/bootcamps/2012-06-18-jhu/index.html">June 18-19, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -946,13 +818,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-06-28-inria/index.html">INRIA Paris</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-06-28-inria/index.html">INRIA Paris</a></h5>' +
           '<h6><a href="/bootcamps/2012-06-28-inria/index.html">June 28-29, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -963,13 +835,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-07-09-mit/index.html">MIT</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-07-09-mit/index.html">MIT</a></h5>' +
           '<h6><a href="/bootcamps/2012-07-09-mit/index.html">July 9-10, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -980,13 +852,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-07-12-waterloo/index.html">University of Waterloo</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-07-12-waterloo/index.html">University of Waterloo</a></h5>' +
           '<h6><a href="/bootcamps/2012-07-12-waterloo/index.html">July 12-13, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -997,13 +869,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-07-16-halifax/index.html">Halifax</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-07-16-halifax/index.html">Halifax</a></h5>' +
           '<h6><a href="/bootcamps/2012-07-16-halifax/index.html">July 16-17, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1014,13 +886,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-07-19-utsc/index.html">University of Toronto (Scarborough)</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-07-19-utsc/index.html">University of Toronto (Scarborough)</a></h5>' +
           '<h6><a href="/bootcamps/2012-07-19-utsc/index.html">July 19-20, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1031,13 +903,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-09-13-dafx/index.html">DAFx Conference</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-09-13-dafx/index.html">DAFx Conference</a></h5>' +
           '<h6><a href="/bootcamps/2012-09-13-dafx/index.html">Sept 13-14, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1048,13 +920,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-09-17-oslo/index.html">University of Oslo</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-09-17-oslo/index.html">University of Oslo</a></h5>' +
           '<h6><a href="/bootcamps/2012-09-17-oslo/index.html">Sept 17-18, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1065,13 +937,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-09-28-columbia/index.html">Columbia University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-09-28-columbia/index.html">Columbia University</a></h5>' +
           '<h6><a href="/bootcamps/2012-09-28-columbia/index.html">Sept 28-29, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1082,13 +954,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-10-08-purdue/index.html">Purdue University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-10-08-purdue/index.html">Purdue University</a></h5>' +
           '<h6><a href="/bootcamps/2012-10-08-purdue/index.html">Oct 8-9, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1099,13 +971,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-10-17-lbl/index.html">Lawrence Berkeley National Laboratory</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-10-17-lbl/index.html">Lawrence Berkeley National Laboratory</a></h5>' +
           '<h6><a href="/bootcamps/2012-10-17-lbl/index.html">Oct 17-18, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1116,13 +988,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-10-18-ubc/index.html">University of British Columbia</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-10-18-ubc/index.html">University of British Columbia</a></h5>' +
           '<h6><a href="/bootcamps/2012-10-18-ubc/index.html">Oct 18-19, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1133,13 +1005,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-10-20-ucb/index.html">University of California Berkeley</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-10-20-ucb/index.html">University of California Berkeley</a></h5>' +
           '<h6><a href="/bootcamps/2012-10-20-ucb/index.html">Oct 20-21, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1150,13 +1022,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-10-22-newcastle/index.html">University of Newcastle</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-10-22-newcastle/index.html">University of Newcastle</a></h5>' +
           '<h6><a href="/bootcamps/2012-10-22-newcastle/index.html">Oct 22-23, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1167,13 +1039,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-10-23-caltech/index.html">Caltech</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-10-23-caltech/index.html">Caltech</a></h5>' +
           '<h6><a href="/bootcamps/2012-10-23-caltech/index.html">Oct 23-24, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1184,13 +1056,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-10-25-gmu/index.html">George Mason University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-10-25-gmu/index.html">George Mason University</a></h5>' +
           '<h6><a href="/bootcamps/2012-10-25-gmu/index.html">Oct 25-26, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1201,13 +1073,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-10-30-oxford/index.html">Oxford University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-10-30-oxford/index.html">Oxford University</a></h5>' +
           '<h6><a href="/bootcamps/2012-10-30-oxford/index.html">Oct 30-31, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1218,13 +1090,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-11-08-mcmaster/index.html">McMaster University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-11-08-mcmaster/index.html">McMaster University</a></h5>' +
           '<h6><a href="/bootcamps/2012-11-08-mcmaster/index.html">Nov 8-9, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1235,13 +1107,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-11-10-wustl/index.html">Washington University in St. Louis</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-11-10-wustl/index.html">Washington University in St. Louis</a></h5>' +
           '<h6><a href="/bootcamps/2012-11-10-wustl/index.html">Nov 10-11, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1252,13 +1124,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-11-15-scripps/index.html">Scripps Research Institute</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-11-15-scripps/index.html">Scripps Research Institute</a></h5>' +
           '<h6><a href="/bootcamps/2012-11-15-scripps/index.html">Nov 15-16, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1269,13 +1141,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-11-28-unc/index.html">University of North Carolina</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-11-28-unc/index.html">University of North Carolina</a></h5>' +
           '<h6><a href="/bootcamps/2012-11-28-unc/index.html">Nov 28-29, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1286,13 +1158,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-11-30-hawaii/index.html">University of Hawaii</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-11-30-hawaii/index.html">University of Hawaii</a></h5>' +
           '<h6><a href="/bootcamps/2012-11-30-hawaii/index.html">Nov 30 - Dec 1, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1303,13 +1175,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-12-04-edinburgh/index.html">University of Edinburgh</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-12-04-edinburgh/index.html">University of Edinburgh</a></h5>' +
           '<h6><a href="/bootcamps/2012-12-04-edinburgh/index.html">Dec 4-5, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1320,13 +1192,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2012-12-10-uta/index.html">University of Texas (Austin)</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2012-12-10-uta/index.html">University of Texas (Austin)</a></h5>' +
           '<h6><a href="/bootcamps/2012-12-10-uta/index.html">Dec 10-11, 2012</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1337,13 +1209,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-01-11-ubc/index.html">University of British Columbia</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-01-11-ubc/index.html">University of British Columbia</a></h5>' +
           '<h6><a href="/bootcamps/2013-01-11-ubc/index.html">Jan 11 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1354,13 +1226,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-01-12-chicago/index.html">University of Chicago</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-01-12-chicago/index.html">University of Chicago</a></h5>' +
           '<h6><a href="/bootcamps/2013-01-12-chicago/index.html">Jan 12-13, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1371,13 +1243,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-01-12-mcgill/index.html">McGill University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-01-12-mcgill/index.html">McGill University</a></h5>' +
           '<h6><a href="/bootcamps/2013-01-12-mcgill/index.html">Jan 12-13, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1388,13 +1260,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-01-12-waterloo/index.html">University of Waterloo</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-01-12-waterloo/index.html">University of Waterloo</a></h5>' +
           '<h6><a href="/bootcamps/2013-01-12-waterloo/index.html">Jan 12-13, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1405,13 +1277,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-01-21-ubc/index.html">University of British Columbia</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-01-21-ubc/index.html">University of British Columbia</a></h5>' +
           '<h6><a href="/bootcamps/2013-01-21-ubc/index.html">Jan 21-22, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1422,13 +1294,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-01-22-tum/index.html">Technische Universitat Munchen</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-01-22-tum/index.html">Technische Universitat Munchen</a></h5>' +
           '<h6><a href="/bootcamps/2013-01-22-tum/index.html">Jan 22-23, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1439,13 +1311,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-01-24-camh/index.html">Mozilla Foundation</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-01-24-camh/index.html">Mozilla Foundation</a></h5>' +
           '<h6><a href="/bootcamps/2013-01-24-camh/index.html">Jan 24-25, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1456,13 +1328,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-01-25-tuebingen/index.html">Max Planck Institute Tuebingen</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-01-25-tuebingen/index.html">Max Planck Institute Tuebingen</a></h5>' +
           '<h6><a href="/bootcamps/2013-01-25-tuebingen/index.html">Jan 25-25, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1473,13 +1345,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-01-30-columbia/index.html">Columbia University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-01-30-columbia/index.html">Columbia University</a></h5>' +
           '<h6><a href="/bootcamps/2013-01-30-columbia/index.html">Jan 30 - Feb 2, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1490,13 +1362,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-01-31-vt/index.html">Virginia Tech</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-01-31-vt/index.html">Virginia Tech</a></h5>' +
           '<h6><a href="/bootcamps/2013-01-31-vt/index.html">Jan 31 - Feb 1, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1507,13 +1379,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-02-05-ubc/index.html">University of British Columbia</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-02-05-ubc/index.html">University of British Columbia</a></h5>' +
           '<h6><a href="/bootcamps/2013-02-05-ubc/index.html">Feb 5-6, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1524,13 +1396,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-02-07-macquarie/index.html">Macquarie University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-02-07-macquarie/index.html">Macquarie University</a></h5>' +
           '<h6><a href="/bootcamps/2013-02-07-macquarie/index.html">Feb 7-8, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1541,13 +1413,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-02-14-amos/index.html">AMOS Conference (Melbourne)</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-02-14-amos/index.html">AMOS Conference (Melbourne)</a></h5>' +
           '<h6><a href="/bootcamps/2013-02-14-amos/index.html">Feb 14-15, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1558,13 +1430,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-02-25-uwash/index.html">University of Washington</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-02-25-uwash/index.html">University of Washington</a></h5>' +
           '<h6><a href="/bootcamps/2013-02-25-uwash/index.html">Feb 25-26, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1575,13 +1447,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-03-04-lbl/index.html">Lawrence Berkeley National Laboratory</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-03-04-lbl/index.html">Lawrence Berkeley National Laboratory</a></h5>' +
           '<h6><a href="/bootcamps/2013-03-04-lbl/index.html">March 4-5 and March 6-7, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1592,13 +1464,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-03-07-virginia/index.html">University of Virginia</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-03-07-virginia/index.html">University of Virginia</a></h5>' +
           '<h6><a href="/bootcamps/2013-03-07-virginia/index.html">March 7-8, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1609,13 +1481,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-03-20-aub/index.html">American University of Beirut</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-03-20-aub/index.html">American University of Beirut</a></h5>' +
           '<h6><a href="/bootcamps/2013-03-20-aub/index.html">March 20-21, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1626,13 +1498,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-03-23-utahstate/index.html">Utah State University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-03-23-utahstate/index.html">Utah State University</a></h5>' +
           '<h6><a href="/bootcamps/2013-03-23-utahstate/index.html">March 23-24, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1643,13 +1515,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-03-24-kaust/index.html">King Abdullah University of Science and Technology</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-03-24-kaust/index.html">King Abdullah University of Science and Technology</a></h5>' +
           '<h6><a href="/bootcamps/2013-03-24-kaust/index.html">March 24-25, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1660,13 +1532,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-04-04-arizona/index.html">University of Arizona</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-04-04-arizona/index.html">University of Arizona</a></h5>' +
           '<h6><a href="/bootcamps/2013-04-04-arizona/index.html">April 4-5, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1677,13 +1549,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-04-04-ucl/index.html">University College London</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-04-04-ucl/index.html">University College London</a></h5>' +
           '<h6><a href="/bootcamps/2013-04-04-ucl/index.html">April 4 and 8, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1694,13 +1566,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-04-08-stellenbosch/index.html">Stellenbosch University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-04-08-stellenbosch/index.html">Stellenbosch University</a></h5>' +
           '<h6><a href="/bootcamps/2013-04-08-stellenbosch/index.html">April 8-9, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1711,13 +1583,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-04-11-egi/index.html">EGI Forum, Manchester</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-04-11-egi/index.html">EGI Forum, Manchester</a></h5>' +
           '<h6><a href="/bootcamps/2013-04-11-egi/index.html">April 11, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1728,13 +1600,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-04-13-ucb/index.html">University of California Berkeley</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-04-13-ucb/index.html">University of California Berkeley</a></h5>' +
           '<h6><a href="/bootcamps/2013-04-13-ucb/index.html">April 13-14, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1745,13 +1617,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-04-18-manchester/index.html">University of Manchester</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-04-18-manchester/index.html">University of Manchester</a></h5>' +
           '<h6><a href="/bootcamps/2013-04-18-manchester/index.html">April 18-19, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1762,13 +1634,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-04-20-paris/index.html">Telecom ParisTech</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-04-20-paris/index.html">Telecom ParisTech</a></h5>' +
           '<h6><a href="/bootcamps/2013-04-20-paris/index.html">April 20-21, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1779,13 +1651,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-04-27-umaryland/index.html">University of Maryland, Baltimore</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-04-27-umaryland/index.html">University of Maryland, Baltimore</a></h5>' +
           '<h6><a href="/bootcamps/2013-04-27-umaryland/index.html">April 27-28, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1796,13 +1668,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-04-29-wisc/index.html">University of Wisconsin - Madison</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-04-29-wisc/index.html">University of Wisconsin - Madison</a></h5>' +
           '<h6><a href="/bootcamps/2013-04-29-wisc/index.html">April 29-30, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1813,13 +1685,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-02-vu/index.html">Vrije Universiteit, Amsterdam</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-02-vu/index.html">Vrije Universiteit, Amsterdam</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-02-vu/index.html">May 2-3, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1830,13 +1702,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-06-geomar/index.html">GEOMAR (Kiel)</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-06-geomar/index.html">GEOMAR (Kiel)</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-06-geomar/index.html">May 6-7, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1847,13 +1719,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-06-hhmi/index.html">Howard Hughes Medical Institute</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-06-hhmi/index.html">Howard Hughes Medical Institute</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-06-hhmi/index.html">May 6-7, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1864,13 +1736,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-06-stanford/index.html">Stanford University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-06-stanford/index.html">Stanford University</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-06-stanford/index.html">May 6-7, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1881,13 +1753,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-09-lbl/index.html">Lawrence Berkeley National Laboratory</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-09-lbl/index.html">Lawrence Berkeley National Laboratory</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-09-lbl/index.html">May 9-10, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1898,13 +1770,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-09-mozilla/index.html">Mozilla Foundation (Toronto)</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-09-mozilla/index.html">Mozilla Foundation (Toronto)</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-09-mozilla/index.html">May 9-10, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1915,13 +1787,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-09-oxford/index.html">University of Oxford</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-09-oxford/index.html">University of Oxford</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-09-oxford/index.html">May 9-10, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1932,13 +1804,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-13-ucdavis/index.html">University of California Davis</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-13-ucdavis/index.html">University of California Davis</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-13-ucdavis/index.html">May 13-14, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1949,13 +1821,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-16-nescent/index.html">NESCent</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-16-nescent/index.html">NESCent</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-16-nescent/index.html">May 16-17, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1966,13 +1838,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-18-krakow/index.html">Jagiellonian University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-18-krakow/index.html">Jagiellonian University</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-18-krakow/index.html">May 18-19, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -1983,13 +1855,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-20-duke/index.html">Duke University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-20-duke/index.html">Duke University</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-20-duke/index.html">May 20-21, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2000,13 +1872,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-23-ucar/index.html">NCAR</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-23-ucar/index.html">NCAR</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-23-ucar/index.html">May 23-24, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2017,13 +1889,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-23-umass/index.html">University of Massachusetts Amherst</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-23-umass/index.html">University of Massachusetts Amherst</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-23-umass/index.html">May 23-24, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2034,13 +1906,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-05-30-alberta/index.html">University of Alberta</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-05-30-alberta/index.html">University of Alberta</a></h5>' +
           '<h6><a href="/bootcamps/2013-05-30-alberta/index.html">May 30-31, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2051,13 +1923,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-06-03-southampton/index.html">University of Southampton</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-06-03-southampton/index.html">University of Southampton</a></h5>' +
           '<h6><a href="/bootcamps/2013-06-03-southampton/index.html">June 3-4, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2068,13 +1940,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-06-03-tufts/index.html">Tufts University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-06-03-tufts/index.html">Tufts University</a></h5>' +
           '<h6><a href="/bootcamps/2013-06-03-tufts/index.html">June 3-4, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2085,13 +1957,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-06-04-dssg/index.html">Data Science for Social Good</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-06-04-dssg/index.html">Data Science for Social Good</a></h5>' +
           '<h6><a href="/bootcamps/2013-06-04-dssg/index.html">June 4-5 and June 17-18, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2102,13 +1974,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-06-06-sfu/index.html">Simon Fraser University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-06-06-sfu/index.html">Simon Fraser University</a></h5>' +
           '<h6><a href="/bootcamps/2013-06-06-sfu/index.html">June 6-7, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2119,13 +1991,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-06-10-salk/index.html">Salk Institute</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-06-10-salk/index.html">Salk Institute</a></h5>' +
           '<h6><a href="/bootcamps/2013-06-10-salk/index.html">June 10-11, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2136,13 +2008,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-06-17-chicago/index.html">University of Chicago</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-06-17-chicago/index.html">University of Chicago</a></h5>' +
           '<h6><a href="/bootcamps/2013-06-17-chicago/index.html">June 17-18, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2153,13 +2025,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-06-24-wise/index.html">Women in Science and Engineering (Boston)</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-06-24-wise/index.html">Women in Science and Engineering (Boston)</a></h5>' +
           '<h6><a href="/bootcamps/2013-06-24-wise/index.html">June 24-25, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2170,13 +2042,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-06-25-scipy/index.html">SciPy 2013</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-06-25-scipy/index.html">SciPy 2013</a></h5>' +
           '<h6><a href="/bootcamps/2013-06-25-scipy/index.html">June 25, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2187,13 +2059,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-07-01-christchurch/index.html">eResearch New Zealand</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-07-01-christchurch/index.html">eResearch New Zealand</a></h5>' +
           '<h6><a href="/bootcamps/2013-07-01-christchurch/index.html">July 1-4, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2204,13 +2076,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-07-01-oklahoma/index.html">University of Oklahoma</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-07-01-oklahoma/index.html">University of Oklahoma</a></h5>' +
           '<h6><a href="/bootcamps/2013-07-01-oklahoma/index.html">July 1-2, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2221,13 +2093,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-07-03-oslo/index.html">University of Oslo</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-07-03-oslo/index.html">University of Oslo</a></h5>' +
           '<h6><a href="/bootcamps/2013-07-03-oslo/index.html">July 3-4, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2238,13 +2110,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-07-08-wuhan/index.html">Wuhan Institute of Virology</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-07-08-wuhan/index.html">Wuhan Institute of Virology</a></h5>' +
           '<h6><a href="/bootcamps/2013-07-08-wuhan/index.html">July 8-9, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2255,13 +2127,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-07-11-indiana/index.html">Indiana University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-07-11-indiana/index.html">Indiana University</a></h5>' +
           '<h6><a href="/bootcamps/2013-07-11-indiana/index.html">July 11-12, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2272,13 +2144,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-07-15-bath/index.html">University of Bath</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-07-15-bath/index.html">University of Bath</a></h5>' +
           '<h6><a href="/bootcamps/2013-07-15-bath/index.html">July 15-16, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2289,13 +2161,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-07-15-vt/index.html">Virginia Tech</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-07-15-vt/index.html">Virginia Tech</a></h5>' +
           '<h6><a href="/bootcamps/2013-07-15-vt/index.html">July 15-16, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2306,13 +2178,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-07-16-cuahsi/index.html">CUAHSI Water Data Center</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-07-16-cuahsi/index.html">CUAHSI Water Data Center</a></h5>' +
           '<h6><a href="/bootcamps/2013-07-16-cuahsi/index.html">July 16-17, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2323,13 +2195,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-07-18-notredame/index.html">University of Notre Dame</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-07-18-notredame/index.html">University of Notre Dame</a></h5>' +
           '<h6><a href="/bootcamps/2013-07-18-notredame/index.html">July 18-19, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2340,13 +2212,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-07-18-washington/index.html">University of Washington</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-07-18-washington/index.html">University of Washington</a></h5>' +
           '<h6><a href="/bootcamps/2013-07-18-washington/index.html">July 18-19, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2357,13 +2229,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-07-27-cmu/index.html">Carnegie Mellon University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-07-27-cmu/index.html">Carnegie Mellon University</a></h5>' +
           '<h6><a href="/bootcamps/2013-07-27-cmu/index.html">July 27-28, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2374,13 +2246,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-08-04-esa/index.html">Ecological Society of America Annual Meeting</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-08-04-esa/index.html">Ecological Society of America Annual Meeting</a></h5>' +
           '<h6><a href="/bootcamps/2013-08-04-esa/index.html">Aug 4, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2391,13 +2263,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-08-22-ku/index.html">University of Kansas</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-08-22-ku/index.html">University of Kansas</a></h5>' +
           '<h6><a href="/bootcamps/2013-08-22-ku/index.html">Aug 22-23, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2408,13 +2280,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://swcarpentry.github.io/2013-08-23-harvard/">Harvard University</a></h5>' +
           '<h6><a href="/">August 23-24, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2425,13 +2297,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-08-27-erdc/index.html">US Army Engineer Research and Development Center</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-08-27-erdc/index.html">US Army Engineer Research and Development Center</a></h5>' +
           '<h6><a href="/bootcamps/2013-08-27-erdc/index.html">Aug 27-29, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2442,13 +2314,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-08-28-wisc/index.html">University of Wisconsin - Madison</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-08-28-wisc/index.html">University of Wisconsin - Madison</a></h5>' +
           '<h6><a href="/bootcamps/2013-08-28-wisc/index.html">Aug 28-29, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2459,13 +2331,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-09-05-iowa/index.html">University of Iowa</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-09-05-iowa/index.html">University of Iowa</a></h5>' +
           '<h6><a href="/bootcamps/2013-09-05-iowa/index.html">Sept 5-6, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2476,13 +2348,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-09-12-bristol/index.html">University of Bristol</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-09-12-bristol/index.html">University of Bristol</a></h5>' +
           '<h6><a href="/bootcamps/2013-09-12-bristol/index.html">Sept 12-13, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2493,13 +2365,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://arokem.github.io/2013-09-16-ISI/">University of Southern California</a></h5>' +
           '<h6><a href="/">Sept 16-17, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2510,13 +2382,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://swcarpentry.github.io/2013-09-16-stsci/">Space Telescope Science Institute</a></h5>' +
           '<h6><a href="/">Sept 16-17, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2527,13 +2399,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://jdblischak.github.io/2013-09-19-chicago/">University of Chicago</a></h5>' +
           '<h6><a href="/">Sept 19-20, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2544,13 +2416,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-09-21-uwaterloo/index.html">University of Waterloo</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-09-21-uwaterloo/index.html">University of Waterloo</a></h5>' +
           '<h6><a href="/bootcamps/2013-09-21-uwaterloo/index.html">Sept 21-22, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2561,13 +2433,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-09-23-msu/index.html">Michigan State University</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-09-23-msu/index.html">Michigan State University</a></h5>' +
           '<h6><a href="/bootcamps/2013-09-23-msu/index.html">Sept 23-26, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2578,13 +2450,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-09-24-acpfgA/index.html">Australian Bioinformatics Network: Adelaide</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-09-24-acpfgA/index.html">Australian Bioinformatics Network: Adelaide</a></h5>' +
           '<h6><a href="/bootcamps/2013-09-24-acpfgA/index.html">Sep 24-26, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2595,13 +2467,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-09-26-ubc/index.html">University of British Columbia</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-09-26-ubc/index.html">University of British Columbia</a></h5>' +
           '<h6><a href="/bootcamps/2013-09-26-ubc/index.html">Sept 26-27, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2612,13 +2484,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-10-01-acpfgM/index.html">Australian Bioinformatics Network: Melbourne</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-10-01-acpfgM/index.html">Australian Bioinformatics Network: Melbourne</a></h5>' +
           '<h6><a href="/bootcamps/2013-10-01-acpfgM/index.html">Oct 1-3, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2629,13 +2501,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://jdblischak.github.io/2013-10-03-pasteur/">Institut Pasteur</a></h5>' +
           '<h6><a href="/">Oct 03-04, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2646,13 +2518,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://swcarpentry.github.io/2013-10-09-canberra/">CSIRO/ANU</a></h5>' +
           '<h6><a href="/">October 9-10, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2663,13 +2535,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://jdblischak.github.io/2013-10-17-uic/">University of Illinois at Chicago</a></h5>' +
           '<h6><a href="/">Oct 17-18, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2680,13 +2552,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://swcarpentry.github.io/2013-10-24-greenwich/">Greenwich, England</a></h5>' +
           '<h6><a href="/">Oct 24-25, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2697,13 +2569,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://justincely.github.io/2013-10-25-columbia/">Columbia University and CUSP</a></h5>' +
           '<h6><a href="/">October 25-26, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2714,13 +2586,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-10-29-vertpaleo/index.html">Society of Vertebrate Paleontology Annual Meeting</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-10-29-vertpaleo/index.html">Society of Vertebrate Paleontology Annual Meeting</a></h5>' +
           '<h6><a href="/bootcamps/2013-10-29-vertpaleo/index.html">Oct 29, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2731,13 +2603,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://chryswoods.github.io/2013-11-14-exeter/">Exeter University</a></h5>' +
           '<h6><a href="/">November 14-15, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2748,13 +2620,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="/bootcamps/2013-11-14-whoi/index.html">Woods Hole Scientific Community</a></h5>' +
+          '<h5><a href="/Users/acabunoc/Projects/sc-site/bootcamps/2013-11-14-whoi/index.html">Woods Hole Scientific Community</a></h5>' +
           '<h6><a href="/bootcamps/2013-11-14-whoi/index.html">Nov 14-15, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2765,13 +2637,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://damienirving.github.io/2013-11-25-unimelb/">University of Melbourne</a></h5>' +
           '<h6><a href="/">Nov 25 & 27/Dec 2 & 4, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2782,13 +2654,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://mikej888.github.io/2013-12-03-edinburgh/">The University of Edinburgh</a></h5>' +
           '<h6><a href="/">Dec 3-4, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2799,13 +2671,13 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://wltrimbl.github.io/2013-12-03-sesync/">National Socio-Environmental Synthesis Center (SESYNC)</a></h5>' +
           '<h6><a href="/">Dec 3-6, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
@@ -2816,76 +2688,1195 @@ SWC.maps = (function() {
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
           '<h5><a href="http://bendmorris.github.io/2013-12-12-glasgow/">Glasgow University</a></h5>' +
           '<h6><a href="/">Dec 12-13, 2013</a></h6>' +
           '</div>';
-
-            set_info_window(map, marker, info_window, info_string);
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(50.735788,-3.535033),
           map: map,
-          title: "Exeter University, November 14-15, 2013",
+          title: "Dundee University, Dec 16-17, 2013",
           //icon: openPin,
           visible: true,
         });
-
         var info_string = '<div class="info-window">' +
-          '<h5><a href="http://davidmam.github.io/2013-12-16-dundee/">Exeter University</a></h5>' +
-          '<h6><a href="/">November 14-15, 2013</a></h6>' +
+          '<h5><a href="http://gvwilson.github.io/2013-12-16-dundee/">Dundee University</a></h5>' +
+          '<h6><a href="/">Dec 16-17, 2013</a></h6>' +
           '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(45.947214,-66.640325),
+          map: map,
+          title: "University of New Brunswick, Jan 6-7, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://jooolia.github.io/2014-01-06-unb/">University of New Brunswick</a></h5>' +
+          '<h6><a href="/">Jan 6-7, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(52.209868,0.102439),
+          map: map,
+          title: "Centre for Mathematical Sciences, University of Cambridge, Jan 7-8, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://sje30.github.io/2014-01-07-cam/">Centre for Mathematical Sciences, University of Cambridge</a></h5>' +
+          '<h6><a href="/">Jan 7-8, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(43.64711,-79.39423),
+          map: map,
+          title: "Library Sciences in Toronto, Jan 13-14, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://gvwilson.github.io/2014-01-13-toronto/">Library Sciences in Toronto</a></h5>' +
+          '<h6><a href="/">Jan 13-14, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(41.492635,-71.422294),
+          map: map,
+          title: "Coastal Institute, University of Rhode Island, Jan 13-14, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://iglpdc.github.io/2014-01-13-uri/">Coastal Institute, University of Rhode Island</a></h5>' +
+          '<h6><a href="/">Jan 13-14, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(43.07718,-89.40399),
+          map: map,
+          title: "University of Wisconsin-Madison, Jan 13-14, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://uw-madison-aci.github.io/2014-01-13-wisc/">University of Wisconsin-Madison</a></h5>' +
+          '<h6><a href="/">Jan 13-14, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(53.467972,-2.233154),
+          map: map,
+          title: "University of Manchester, Jan 14-15, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://apawlik.github.io/2014-01-14-manchester/">University of Manchester</a></h5>' +
+          '<h6><a href="/">Jan 14-15, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(34.413963,-119.848947),
+          map: map,
+          title: "University of California Berkeley, Jan 18-19, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://swcarpentry.github.io/2014-01-18-ucb/">University of California Berkeley</a></h5>' +
+          '<h6><a href="/">Jan 18-19, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(45.530677,-73.624497),
+          map: map,
+          title: "CRIM (Montreal), Jan 20-21, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://gvwilson.github.io/2014-01-20-montreal/">CRIM (Montreal)</a></h5>' +
+          '<h6><a href="/">Jan 20-21, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(32.301199,-90.871617),
+          map: map,
+          title: "US Army Engineer Research and Development Center, January 21-22, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://geocarpentry.github.io/2014-01-21-erdc/">US Army Engineer Research and Development Center</a></h5>' +
+          '<h6><a href="/">January 21-22, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    var mc = new MarkerClusterer(map,markers,mcOptions);
+  }
 
-            set_info_window(map, marker, info_window, info_string);
-      
+  maps.instructors = function() {
+    var mapOptions = {
+      zoom: 2,
+      center: new google.maps.LatLng(25,8),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    },
+    info_window   = new google.maps.InfoWindow({}),
+    map           = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+    var markers = [];
+    var mcOptions = {
+          maxZoom: null,
+          gridSize: 25,
+          minimumClusterSize: 1
+        }
+    // Go over all airports to read instructor location
     
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(30.194444,-97.669722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(30.194444,-97.669722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(-27.384167,153.1175),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.364167,-71.005),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.364167,-71.005),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.364167,-71.005),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.364167,-71.005),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(51.3825,-2.718889),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(39.175278,-76.668333),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(39.175278,-76.668333),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(39.175278,-76.668333),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(39.175278,-76.668333),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(49.012778,2.55),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(-43.489167,172.532222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(32.898611,-80.040278),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(40.039167,-88.278056),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(-33.964722,18.601667),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(38.851944,-77.0375),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(38.851944,-77.0375),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(39.858333,-104.666944),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(56.4525,-3.025833),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.212222,-83.353333),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(55.95,-3.3725),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(55.95,-3.3725),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(53.630278,9.988056),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(38.944444,-77.455556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(29.980278,-95.339722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(39.717222,-86.294167),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(39.717222,-86.294167),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(40.795,-73.1),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.050558,-94.233336),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(50.0775,19.784722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.778611,-84.587222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.778611,-84.587222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.778611,-84.587222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.778611,-84.587222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.778611,-84.587222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.778611,-84.587222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.778611,-84.587222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.778611,-84.587222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.778611,-84.587222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(42.778611,-84.587222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(51.505,0.054167),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(40.777222,-73.8725),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(40.777222,-73.8725),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(40.777222,-73.8725),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(40.777222,-73.8725),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(51.148056,-0.190278),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(51.4775,-0.461389),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(51.4775,-0.461389),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(51.4775,-0.461389),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(51.4775,-0.461389),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(51.4775,-0.461389),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(53.353611,-2.274722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(53.353611,-2.274722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(53.353611,-2.274722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(39.2975,-94.713889),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(41.785833,-87.752222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(-37.673333,144.843333),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(43.139722,-89.3375),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(43.139722,-89.3375),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(48.353611,11.785833),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(55.0375,-1.691667),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.721111,-122.220556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.721111,-122.220556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.721111,-122.220556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.721111,-122.220556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.721111,-122.220556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.721111,-122.220556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(26.195556,127.645833),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(35.393056,-97.600556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(35.393056,-97.600556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(41.979444,-87.904444),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(41.979444,-87.904444),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(48.725278,2.359444),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(60.193889,11.100278),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(60.193889,11.100278),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(40.491389,-80.232778),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(35.8775,-78.787222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(35.8775,-78.787222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(35.8775,-78.787222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(47.448889,-122.309167),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(47.448889,-122.309167),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.618889,-122.374722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.618889,-122.374722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.618889,-122.374722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.618889,-122.374722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(1.355556,103.987222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(37.361667,-121.928889),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(40.788333,-111.9775),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(40.788333,-111.9775),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(33.675556,-117.868056),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(50.95,-1.356667),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(50.95,-1.356667),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(38.7475,-90.359722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(38.7475,-90.359722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(48.689722,9.221944),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(-33.946111,151.177222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(-33.946111,151.177222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(-33.946111,151.177222),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(45.827778,13.466389),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(32.116111,-110.941389),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(-23.008056,-47.134444),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(53.309722,-113.579722),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(44.880833,-63.508611),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(45.468056,-73.741389),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(49.195,-123.181944),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(49.195,-123.181944),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(49.195,-123.181944),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(49.195,-123.181944),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(49.195,-123.181944),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(49.195,-123.181944),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(49.195,-123.181944),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(49.195,-123.181944),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(43.677222,-79.630556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(43.677222,-79.630556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(43.677222,-79.630556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(43.677222,-79.630556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(43.677222,-79.630556),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+        
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(36.516667,103.621667),
+              map: map,
+              visible: false // marker not shown directly, just clustered
+	        });
+    	    markers.push(marker); // For clustering
+		
+	
+    var mc = new MarkerClusterer(map,markers,mcOptions);
   }
 
   return maps;

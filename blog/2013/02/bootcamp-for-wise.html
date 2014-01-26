@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
 <link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
 <link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
-<meta http-equiv="last-modified" content="2013-12-21T03:40:36Z" />
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,8 +27,8 @@
         <span class="icon-bar"></span>
       </a>
       <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
-      <div class="nav-collapse collapse pull-right">
-        <ul class="nav">
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
           <li id="nav-bootcamps">
             <a href="../../../bootcamps/index.html">Bootcamps</a>
           </li>
@@ -42,13 +42,13 @@
             <a href="../../../faq.html">FAQ</a>
           </li>
           <li id="nav-about">
-            <a href="../../../pages/index.html">More...</a>
+            <a href="../../../pages/index.html">About</a>
           </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
         </ul>
-        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
-          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
-          <input name="q" type="text" class="search-query" placeholder="Search" />
-        </form>
       </div>
     </div>
   </div>
@@ -65,61 +65,6 @@
             <!-- start content -->
             <p>This summer <a href="http://numfocus.org/">NumFOCUS</a> and <a href="http://software-carpentry.org/">Software Carpentry</a> are hosting a <a href="http://numfocus.org/numfocus-is-currently-raising-funds-for-the-following/boot-camp-for-women-in-science-engineering/">software skills boot camp for women in science and engineering</a> in Boston. We are <a href="http://numfocus.org/numfocus-is-currently-raising-funds-for-the-following/boot-camp-for-women-in-science-engineering/">seeking sponsorship</a> from companies and others who would like to help raise the $6000 needed to make this happen.  We'd appreciate your support, and would be grateful if you'd help spread the word.</p>
 
-<div class="row">
-  <div class="span3 offset1">
-  </div>
-  <div class="span5">
-  </div>
-</div>
-<div class="row">
-  <div class="span3 offset1">
-    <h5>PayPal</h5>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="Z7HBSHRQJZ9UG">
-      <input type="image"
-        src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" 
-        border="0"
-        name="submit" alt="PayPal - The safer, easier way to pay online!">
-    </form>
-    <script type="text/javascript"> 
-    function validateAmount(amount){
-      if(amount.value.match( /^[0-9]+(\.([0-9]+))?$/)){
-        return true;
-      }else{
-        alert('You must enter a valid donation.');
-        amount.focus();
-        return false;
-      }
-    }
-    </script>
-  </div>
-  <div class="span3">
-    <h5>Google Checkout</h5>
-    <form
-      action="https://checkout.google.com/cws/v2/Donations/112611646391039/checkoutForm"
-      id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" onSubmit="return
-      validateAmount(this.item_price_1)" target="_top">
-        <input name="item_name_1" type="hidden" value="Software Carpentry"/>
-        <input name="item_description_1" type="hidden" 
-          value="Donate to NumFOCUS with the full donation amount going to Software Carpentry."/>
-        <input name="item_quantity_1" type="hidden" value="1"/>
-        <input name="item_currency_1" type="hidden" value="USD"/>
-        <input name="item_is_modifiable_1" type="hidden" value="true"/>
-        <input name="item_min_price_1" type="hidden" value="0.01"/>
-        <input name="item_max_price_1" type="hidden" value="25000.0"/>
-        <input name="_charset_" type="hidden" value="utf-8"/>
-        <input  id="item_price_1" name="item_price_1" 
-          onfocus="this.style.color='black'; this.value='';" 
-          size="6" style="color:grey;" type="text" value="Enter Amount"/>
-        <input alt="Donate"
-          src="https://checkout.google.com/buttons/donateNow.gif?merchant_id=112611646391039&amp;w=115&amp;h=50&amp;style=white&amp;variant=text&amp;loc=en_US"
-          type="image"/>
-    </form>
-  </div>
-</div>
-<p>Suggested minimum donation: $10</p>
-
             <p><em>Originally posted 2013-02-27 by Greg Wilson in Community.</em></p>
             <!-- end content -->
             
@@ -127,8 +72,8 @@
   <script type="text/javascript">
     var disqus_shortname = 'software-carpentry';
     var disqus_developer = 1;
-    var disqus_identifier = '';
-    var disqus_title = 'A Bootcamp for Women in Science and Engineering';
+    var disqus_identifier = "";
+    var disqus_title = '<p>A Bootcamp for Women in Science and Engineering</p>';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -145,6 +90,7 @@
     <footer class="content">
   <div class="container">
     <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
       <a href="https://twitter.com/swcarpentry">Twitter</a>
       <a href="http://software-carpentry.org/feed.xml">RSS</a>
       <a href="https://github.com/swcarpentry">GitHub</a>
@@ -152,7 +98,7 @@
       <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
       <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
       <a href="../../../license.html">License</a>
-      <a class="bugreport" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2013/02/bootcamp-for-wise.html">Bug Report</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2013/02/bootcamp-for-wise.html">Bug Report</a>
     </div>
   </div>
 </footer>

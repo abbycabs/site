@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="../css/swc.css" />
 <link rel="stylesheet" type="text/css" href="../css/swc-bootstrap.css" />
 <link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
-<meta http-equiv="last-modified" content="2013-12-21T03:40:36Z" />
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,8 +27,8 @@
         <span class="icon-bar"></span>
       </a>
       <a href="../index.html" id="nav-logo" class="pull-left"></a>
-      <div class="nav-collapse collapse pull-right">
-        <ul class="nav">
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
           <li id="nav-bootcamps">
             <a href="../bootcamps/index.html">Bootcamps</a>
           </li>
@@ -42,13 +42,13 @@
             <a href="../faq.html">FAQ</a>
           </li>
           <li id="nav-about">
-            <a href="../pages/index.html">More...</a>
+            <a href="../pages/index.html">About</a>
           </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
         </ul>
-        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
-          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
-          <input name="q" type="text" class="search-query" placeholder="Search" />
-        </form>
       </div>
     </div>
   </div>
@@ -91,7 +91,7 @@
 </ul>
 <p>
   We now have over 100 qualified <a href="../pages/team.html">instructors</a>,
-  who ran over <a href="../bootcamps/past.html">100 events</a>
+  who ran over <a href="../bootcamps/previous.html">100 events</a>
   for over 4300 scientists in a dozen countries in 2013.
   All of our <a href="../v4/index.html">lesson materials</a> are freely reusable
   under the <a href="../license.html#cc-by">Creative Commons - Attribution license</a>,
@@ -131,7 +131,7 @@
 
 <div class="row-fluid pagination-centered">
 
-  <div class="span6" style="padding-bottom:15px">
+  <div class="span4" style="padding-bottom:15px">
     <h4>Our Audience</h4>
     <p>
       Learn <a href="audience.html">who we're trying to help</a>,
@@ -140,7 +140,7 @@
     </p>
   </div>
 
-  <div class="span6" style="padding-bottom:15px">
+  <div class="span4" style="padding-bottom:15px">
     <h4>Our Supporters</h4>
     <p>
       Find out more about <a href="sponsors.html">the sponsors</a> who make Software Carpentry possible,
@@ -148,6 +148,22 @@
     </p>
   </div>
 
+  <div class="span4" style="padding-bottom:15px">
+    <h4>Recommended Reading</h4>
+    <p>
+      If you are interested in our work,
+      you may also enjoy <a href="../bib/bib.html">these books and papers</a>.
+      Suggestions for additions are always welcome.
+    </p>
+  </div>
+
+</div>
+
+<div class="row-fluid pagination-centered">
+  <div class="span12">
+    <p><a href="http://mozillascience.org"><img src="../img/mozilla-science-lab.png" alt="Mozilla Science Lab logo" width="350px" /></a></p>
+    <p>Software Carpentry is a project of the <a href="http://mozillascience.org">Mozilla Science Lab</a></p>
+  </div>
 </div>
 
             
@@ -155,8 +171,8 @@
   <script type="text/javascript">
     var disqus_shortname = 'software-carpentry';
     var disqus_developer = 1;
-    var disqus_identifier = '';
-    var disqus_title = 'About Us';
+    var disqus_identifier = "";
+    var disqus_title = '<p>About Us</p>';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -172,6 +188,7 @@
     <footer class="content">
   <div class="container">
     <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
       <a href="https://twitter.com/swcarpentry">Twitter</a>
       <a href="http://software-carpentry.org/feed.xml">RSS</a>
       <a href="https://github.com/swcarpentry">GitHub</a>
@@ -179,7 +196,7 @@
       <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
       <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
       <a href="../license.html">License</a>
-      <a class="bugreport" href="mailto:info@software-carpentry.org?subject=bug%20in%20pages/index.html">Bug Report</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20pages/index.html">Bug Report</a>
     </div>
   </div>
 </footer>
