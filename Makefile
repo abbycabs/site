@@ -180,31 +180,3 @@ $(OUT)/index.html : _config.yml $(SRC_HTML)
 # Make the Jekyll configuration file by adding harvested information to a fixed starting point.
 _config.yml : ./bin/preprocess.py $(SRC_CONFIG) $(SRC_BLOG) $(SRC_BOOTCAMP_PAGES)
 	python ./bin/preprocess.py -c ./config -o $(OUT) -s $(SITE)
-OUT)/feed.xml : ./bin/make_rss_feed.py $(OUT)/index.html
-	@mkdir -p $$(dirname $@)
-	python ./bin/make_rss_feed.py -o $(OUT) -s $(SITE)
-
-# Make the site pages (including blog posts).
-$(OUT)/index.html : _config.yml $(SRC_HTML)
-	jekyll build -d $(OUT)
-
-# Make the Jekyll configuration file by adding harvested information to a fixed starting point.
-_config.yml : ./bin/preprocess.py $(SRC_CONFIG) $(SRC_BLOG) $(SRC_BOOTCAMP_PAGES)
-	python ./bin/preprocess.py -c ./config -o $(OUT) -s $(SITE)
-
-# Copy image files.  Most of these rules shouldn't be exercised,
-# because Jekyll is supposed to copy files, but some versions only
-# appear to pick up images referenced by generated HTML pages, not
-# ones referenced by CSS files.
-
-$(OUT)/%.png : %.png
-	@mkdir -p $$(dirname $@)
-	cp $< $@
-
-$(OUT)/%.jpg : %.jpg
-	@mkdir -p $$(dirname $@)
-	cp $< $@
-
-$(OUT)/%.gif : %.gif
-	@mkdir -p $$(dirname $@)
-	cp $< $@
