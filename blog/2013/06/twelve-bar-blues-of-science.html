@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: The Twelve Bar Blues of Open Science</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>The Twelve Bar Blues of Open Science</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <!-- start excerpt -->
+<p>
+  Most musicians can play along with a twelve-bar blues
+  once they know what the key and tempo are.
+  Many kinds of scientific work are equally well structured:
+  the results aren't predictable&mdash;it wouldn't be research if they were&mdash;but
+  the equipment setup, sample preparation, note-taking, statistics, and write-up
+  are (mostly) structured in ways that other scientists are familiar with.
+  This lets them pick up each other's projects more quickly;
+  it also gives scientists more time to do what's unique about a particular project
+  because they don't have to spend time thinking about the things that aren't.
+</p>
+<!-- end excerpt -->
+<p>
+  Open science&mdash;by which I mean all the new ways of doing science
+  that the web has inspired&mdash;isn't there yet.
+  Many people have tools and techniques that work well for them,
+  but every setup is one-of-a-kind,
+  and everyone has had to assemble the pieces for themselves.
+  I think we could do better,
+  and the thing I think about when I think that is Ruby on Rails.
+</p>
+<p>
+  A lot of Ruby on Rails' original simplicity is now hidden under
+  a mass of extensions and auxiliary tools,
+  but when it first appeared in 2004,
+  it was a minor revolution.
+  One reason was the "create a blog in 15 minutes" screencast
+  that showed people just how easy simple things could be.
+  Another was its emphasis on <em>convention over configuration</em>:
+  instead of letting web developers do things however they wanted,
+  it said,
+  "Here's where stuff is and here's how it works."
+  Once a competent developer knew what the application was supposed to do,
+  she could (almost) immediately start building
+  the things that were specific to it,
+  and other competent developers could join in (more) easily.
+  What's more,
+  Rails' predictable structure and workflow made it easier for newcomers to adopt&mdash;certainly
+  easier than contemporary competitors,
+  which all-too-often required novices to make key decisions
+  before they had the knowledge or experience to do so well.
+</p>
+<p>
+  So what's the equivalent for science?
+  What would be in a combined template/tool/framework/worldview
+  for small- to medium-sized scientific projects
+  that would let scientists do science our way with near-zero startup overhead?
+  (Note that I'm <em>not</em> asking,
+  "What web programming framework should they use?")
+  A few things I want are:
+</p>
+<ol>
+  <li>
+    <em>Data organized in a particular way.</em>
+    I'd use William Stafford Noble's
+    "<a href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000424">A Quick Guide to Organizing Computational Biology Projects</a>"
+    as a starting point,
+    though it's obviously not right for all cases.
+    I also realize that projects using
+    <a href="http://www.slideshare.net/c.titus.brown/2013-siamcsebigdata">Data of Unusual Size</a>
+    will probably store metadata and slices locally,
+    rather than entire data sets,
+    but that's no worse than the diversity of data, images, and auxiliary files stored by some small web apps.
+  </li>
+  <li>
+    <em>Scripts too.</em>
+    The little bits of code used to do "last lap" statistics,
+    create graphs,
+    and so on should be in a predictable place,
+    and be invokeable in uniform ways.
+  </li>
+  <li>
+    <em>Everything automatically accessible on the web, for the long term.</em>
+    As soon as I create a project,
+    other scientists should be able to query my data&mdash;not just download it,
+    but query it.
+    <a href="http://en.wikipedia.org/wiki/Open_Data_Protocol">OData</a>
+    and
+    <a href="http://en.wikipedia.org/wiki/GData">GData</a>
+    are a step toward a solution for data;
+    the scientific equivalent of <code>rails new project</code>
+    should automatically generate the wrappers needed to pull a project's data and metadata.
+    Everything else should automatically be accessible too:
+    every paper, figure, or table should have a DOI and be searchable and fetchable.
+    And note that "accessible" doesn't just mean "the bits are available":
+    without correct documentation of formats and semantics&mdash;which most scientists
+    never quite get around to writing by hand&mdash;data rusts
+    almost as quickly as code.
+  </li>
+  <li>
+    <em>Standard commands to tie it all together.</em>
+    I mentioned <code>rails new project</code> a moment ago;
+    Rails, Django, and other frameworks of the same ilk
+    create a command application for each project
+    so that people can add new features in a reliable, findable way with a few keystrokes.
+    Science projects should have something similar for adding new data sets, producing new results, etc.
+  </li>
+  <li>
+    <em>Pluggable.</em>
+    Rails didn't just put the application code and data in particular places;
+    it also provided slots for adding new management commands and analysis tools.
+  </li>
+  <li>
+    <em>Forkable and mergeable.</em>
+    Whatever Rails-like system scientists use <em>must</em> play nicely with version control,
+    because as I wrote <a href="/blog/2013/05/what-does-victory-look-like.html">a couple of weeks ago</a>,
+    future scientists won't submit, publish, and download papers:
+    they will fork and merge projects.
+  </li>
+  <li>
+    <em>Federated.</em>
+    The web lets us access information stored anywhere on the planet;
+    ironically, our response so far has been to centralize like never before.
+    Wikipedia, Facebook, and GitHub are effectively all single points of failure:
+    one court order,
+    change of policy,
+    or
+    (as we recently discovered with
+    <a href="http://www.newyorker.com/online/blogs/elements/2013/04/elsevier-mendeley-journals-science-software.html">Mendeley</a>)
+    ideologically incompatible acquisition
+    can have wide-reaching impact.
+    We know how to distribute information so that it can survive
+    the disappearance of its initial host&mdash;BitTorrent is just one example.
+    I hope that whatever else "Science on Rails" is,
+    it will be robustly federated from the ground up.
+  </li>
+</ol>
+<p>
+  What else would you add to this list?
+  What would you want to see in a framework for 4&times;8 projects
+  (i.e., ones where four people work together for eight months to produce a result)?
+  What pieces of the solution are already out there,
+  waiting to be integrated?
+</p>
+
+            <p><em>Originally posted 2013-06-19 by Greg Wilson in Community.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>The Twelve Bar Blues of Open Science</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2013/06/twelve-bar-blues-of-science.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Second Dry-Run of DiRAC Driver's License Exam</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>Second Dry-Run of DiRAC Driver's License Exam</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p>
+Back in August we did an <a href="/blog/2012/08/alpha-test-of-drivers-license-exam.html">alpha test of our driver's licence</a> for <a href="http://www.stfc.ac.uk/Our+Research/24711.aspx">DiRAC</a> in conjunction with <a href="http://www.software.ac.uk">The Software Sustainability Institute</a>. In the spirit of iterative development, we revised our test in light of our experiences and two weeks ago we did a 2nd dry-run. Four researchers based at University College London kindly agreed to take part as examinees, Dr. Jeremy Yates of DiRAC made the local arrangements, and James Hetherington of UCL, a newly-appointed <a href="http://www.software.ac.uk/fellowship-programme">fellow</a> of The Software Sustainability Institute, provided local assistance.
+</p>
+<p>
+In light of the alpha test, we'd made the following changes,
+</p>
+<ul>
+<li>
+Examinees were told that they could use the web, "man" pages and any other resources a software developer uses day-to-day - we're not testing recall but assessing real working practices.
+</li>
+<li>
+After consultation with Jeremy, we replaced Subversion with Git for the version control tasks. To avoid having to set-up examinee-specific accounts, we provided a local Git repository to examinees as part of a ZIP file containing all the exam material.
+</li>
+<li>
+The expectation to use version control at each stage, to add answers, was made more explicit.
+</li>
+<li>
+We added an example of a Python test function and a command-line invocation of "nosetests", for examinees that haven't written a Python unit test or used "nosetests" before.
+</li>
+</ul>
+<p>
+We alloted one hour to the dry-run but, on the day, extended this to two hours. Within this time the examinees attempted all the exercises (version control, shell, automation and Make and unit testing) bar a code review exercise. Experiences and observations included:
+</p>
+<ul>
+<li>
+Examinees learned what they needed on-the-fly (especially for Make and Git) looking everything up online and discussing it. The examinees felt that a primer or more preparation time would have been useful.
+</li>
+<li>
+We allowed examinees to share hints and tips, as asking colleagues is a great way to get help. However, in the test, examinees shouldn't share the actual answers to the exercises!
+</li>
+<li>
+We allowed examinees to write shell scripts in Python or Ruby, rather than constraining them to Bash, as we're assessing knowledge of concepts not specific tools.
+</li>
+<li>
+A non-standard Makefile, with no default target, and a less-than-clear question meant that the Make question devoured a lot of time and had to be curtailed. While some examinees had used Make before, this had been to compile code, not to regenerate data files.
+</li>
+<li>
+Running the test remotely is possible but examinees (and the examiner!) need a local expert in the room with them.
+</li>
+</ul>
+<p>
+Despite these challenges, the examinees stated that they'd learned a lot and the test was valuable in highlighting things that they didn't know. This is a very good outcome and one which we'd hope such a test would achieve.
+</p>
+<p>
+We are now implementing changes in light of the above and will be doing a 3rd dry-run week beginning 25th February. We have also drafted a certificate which all researchers who complete the test will receive (along with a Mozilla open badge) when it goes live:
+</p>
+<p><img src="swc-ssi-certificate.png" alt="Certificate"/></p>
+<p>
+We look forward to reporting on our experiences of our next dry-run
+</p>
+
+            <p><em>Originally posted 2013-02-13 by Mike Jackson in Community, Education.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>Second Dry-Run of DiRAC Driver&#8217;s License Exam</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2013/02/dirac-dry-run-two.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Record and Playback</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>Record and Playback</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p>The biggest bottleneck Software Carpentry faces right now is a shortage of experienced instructors. To help fix that, we are going to record a complete presentation of our core two-day material so that people who want to teach it themselves can see <em>how</em> we say things, as well as <em>what</em> we say [<a href="#1">1</a>, <a href="#2">2</a>].</p>
+<p>As soon as we say "record", though, we have to ask, what exactly are we recording? Audio and video of a presenter in front of a whiteboard? Sure&mdash;that helps humanize the presentation. But what about the presenter's desktop? Viewers definitely need to see it, but should they see an MP4 in which the text on the presenter's screen appears as colored pixels arranged in the shapes of characters, or should we record the characters directly? I think the latter is by far the best option, since:</p>
+<ol>
+<li>it's much more compact (compare the size of an MP4 of an hour's typing with the size of the text typed);</li>
+<li>it can be copied and pasted (when you freeze a movie and copy what's on your screen, what you get is an image rather than a chunk of program text you can run yourself);</li>
+<li>it's searchable (same reason as above);</li>
+<li>it's more accessible to people with visual disabilities; and</li>
+<li>it's more likely to be future-proof and device-proof. If I record a video, I'm specifying a display mode as well as content; if I record what I've typed, and present that to you, you (or someone mediating between us) can decide how to style it, whether to use a one- or two-column display, and so on.</li>
+</ol>
+<p>Enter the Unix <code>script</code> command. As <a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?script">its <code>man</code> page</a> says, it records everything printed to a terminal in a file for later inspection. Suppose, for example, that I run the following commands at a shell prompt (with italics showing output):</p>
+<pre>$ script ~/log.txt
+<em>Script started, file is /home/gvw/log.txt</em>
+$ pwd
+<em>/home/gvw/swc</em>
+$ ls
+<em>3.0 4.0 5.0 LICENSE.txt book data links.html papers research scraps</em>
+$ cd papers
+$ svn st
+$ exit
+<em>Script done, file is /home/gvw/log.txt</em>
+$</pre>
+<p>When I'm done, the file <code>~/log.txt</code> contains:</p>
+<pre>Script started on Mon Jul 30 11:21:24 2012
+$ pwd^M
+/home/Owner/swc^M
+$ ls^M
+3.0  4.0  5.0  LICENSE.txt  book  data  links.html  papers  research  scraps^M
+$ cd pp^H^[[Kapet^H^[[Krs^M
+$ svn st^M
+$ exit^M
+
+Script done on Mon Jul 30 11:21:42 2012</pre>
+<p>The <code>^M</code> and <code>^H^[[K</code> text is a literal transcript of what happens when the Enter and Backspace keys are pressed. In theory, this can be replayed to show people later exactly how something was done, keystroke by keystroke. All we need is timing, and <code>script</code> can deliver that:</p>
+<pre>Options:
+    ...     ...
+    -t      Output timing data to standard error. This data contains two
+            fields, separated by a space. The first field indicates how much
+            time elapsed since the previous output. The second field indicates
+            how many characters were output this time. This information can be
+            used to replay typescripts with realistic typing and output delays.</pre>
+<p>So in theory, if we redirect <code>script</code>'s standard error to a file, we can use it to replay text at the correct speed. But if we actually do that, any error messages produced by the commands we're typing wind up in that file as well, instead of in our log file. That's a problem...</p>
+<p>There's another problem too. <code>script</code> is designed to capture line printer sessions, not interactive cursor-based work. Its <code>man</code> page even warns about this:</p>
+<pre>Certain interactive commands, such as vi(1), create garbage in the typescript
+file.  Script works best with commands that do not manipulate the screen, the
+results are meant to emulate a hardcopy terminal.</pre>
+<p>This means that a recording of an interactive editing session, even one using something as simple as <a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?nano">nano</a>, is much harder to replay. And we <em>do</em> want to replay this kind of work, because (a) our chances of typing in a 20-line function interactively without mistakes are low, and (b) we want people to see that we don't actually enter code in print order, but instead create placeholder lines that are later filled in, indent things under <code>if</code> or <code>else</code> statements when we realize there are extra cases to handle, and so on. (Remember, we're trying to teach the "how" as well as the "what".)</p>
+<p>This leaves us with a few options:</p>
+<ol>
+<li>Abandon the idea of recording the text itself, and only record pixels. I'm going to cross this one off the list unilaterally.</li>
+<li>Figure out how to do what we want with the existing <code>script</code> command. <a href="/blog/2012/07/software-carpentry-needs-you.html">Your help</a> would be appreciated.</li>
+<li>Hack <code>script</code> (which is, after all, open source) to do what we want. If we go down this path, we'd appreciate help with it as well.</li>
+<li>Find another way to do what we want. By this point, you probably aren't surprised by me inviting pointers and proposals.</li>
+</ol>
+<p>No matter which of these options we pick, we're going to want to synchronize replay of interactive typing sessions with audio voiceovers in the browser. Luckily, <a href="http://popcornjs.org/">Popcorn.js</a> has been designed to do (almost) exactly that: it can tweak the content of a web page in sync with (for example) time marks in an audio file, so rewind/pause/fast forward would all do what we want. Before we can do that, though, we need to capture raw data; if you'd like to assist, please <a href="mailto:admin@software-carpentry.org">get in touch</a>.</p>
+<p id="1">[1] We have such a recording from a March 2012 workshop in Indiana, but our delivery has evolved a fair bit since then.</p>
+<p id="2">[2] People who want to learn the material might find these recordings useful too, but both our past experience and a whole lot of educational research tells us that canned presentations aren't actually very effective for most novices.</p>
+
+            <p><em>Originally posted 2012-07-30 by Greg Wilson in Content, Tooling.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>Record and Playback</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2012/07/record-and-playback.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

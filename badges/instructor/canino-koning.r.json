@@ -1,0 +1,16 @@
+{
+ "badge": "http://software-carpentry.org/badges/class/instructor.json", 
+ "image": "http://software-carpentry.org/img/badges/instructor.png", 
+ "issuedOn": "2013-04-25", 
+ "recipient": {
+  "hashed": true, 
+  "identity": "sha256$55e27982f5e6cc120d390b783acdecd521b1e9637bedb0281d17a91e57523ed8", 
+  "salt": "software-carpentry", 
+  "type": "email"
+ }, 
+ "uid": "sha256$55e27982f5e6cc120d390b783acdecd521b1e9637bedb0281d17a91e57523ed8", 
+ "verify": {
+  "type": "hosted", 
+  "url": "http://software-carpentry.org/badges/instructor/canino-koning.r.json"
+ }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Teaching R at UBC</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>Teaching R at UBC</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p>This January we ran a second R-based bootcamp at the University of British Columbia over three days.  It was taught by myself, Rick White, Bernhard Konrad, Davor Cubric and Jenny Bryan.  The first day was a week before the last two days, and covered a basic introduction to R.  The last two days was an advanced R workshop / Software Carpentry.  We covered the following topics:</p>
+
+<ul>
+  <li>Version control with git</li>
+  <li>Regular expressions</li>
+  <li>Advanced graphics with <a href="http://docs.ggplot2.org/current/">ggplot2</a></li>
+  <li>Writing functions</li>
+  <li>Reproducible research using <a href="http://yihui.name/knitr/">knitr</a></li>
+  <li>S3 Objects and classes</li>
+  <li>R package creation</li>
+</ul>
+
+<p>This probably represents a strong divergence from a normal software carpentry workshop in that we were very heavily focused on the giving people the advanced skills they were interested in learning in a particular computing environment, in this case R.  So here are some thoughts on what worked and what didn't work.</p>
+
+<h2>What Worked</h2>
+
+<p><em>A common programming environment:</em>  By far the most striking difference between this workshop and the one we ran in the past was that everything just worked.  In fact we did away with helpers all together because we didn't need them.  As opposed to past workshops where we tried to teach everyone in the environment they liked to work in with R (console, emacs, Tinn-R, Eclipse etc..) we insisted everyone install <a href="http://www.rstudio.com/ide/">RStudio</a>.  The beauty is that RStudio just works no matter what the platform.  Because everything we taught was within R everyone could just do everything.  Frankly it was glorious.</p>
+
+<p><em>Catering to people's needs:</em>  Before we began this workshop we sent out a comprehensive survey to all the people on the waiting list for the previous workshop.  We asked them to rank the topics they were interested in and this allowed us to teach effectively to our audience. While graphics might seem way off the map for us as an organization it's what people wanted and we were able to provide them with that.</p>
+
+<p><em>The language people use ties it together:</em> We all walked away from the workshop feeling that showing people how to do things like version control and regular expressions <em>in the enviroment they use day to day</em> really helped solidify it for them.  We didn't use regular expressions or Git abstractly from R, but showed them: "Here's how you can do these things in R, which is great because you use R every day."</p>
+
+<h2>What didn't work</h2>
+
+<p><em>People don't always know what they want:</em> While we had great luck catering to some needs (think ggplot2), people don't always know what they want.  Despite high interest on our survey about packages and objects, most people left the last afternoon, leaving only 5 for the last 2 sessions.  Most people said: "I'll never make a package, so I don't care." Also it might be just too much.  We're considering cutting some material down, cutting some sections and combining our R workshop into 3 days, 9-3 each day on a MWF.</p>
+
+<p><em>If it seems like enough material make it shorter:</em> Every section we taught ran over in time.  Those that came in close always worked through one of two methods. We either skipped student exercises and just lectured and had the students type along with us or had an erratic pace.  This lead to people commenting that things  went from easy to hard too fast.  This was because we'd linger too long in the beginning on the basics and then realize time was short and jump to the advanced material with no bridge between.  The lesson for us was less material with more student exercises is always better.</p>
+ 
+
+            <p><em>Originally posted 2013-01-30 by Ted Hart in University of British Columba.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>Teaching R at <span class="caps">UBC</span></p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2013/01/ubc-swc-r.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

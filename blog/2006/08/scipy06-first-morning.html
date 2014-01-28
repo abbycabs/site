@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: SciPy'06: First Morning</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>SciPy'06: First Morning</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p><strong>Guido van Rossum's Keynote</strong></p>
+<ul>
+<li>Python 2.5 coming Real Soon (Sept 12)</li>
+<li>Python 3000 is a brand-new revision of the language
+<ul>
+<li>Name chosen as a dig at Windows 2000, and so that it couldn't possibly be late</li>
+</ul>
+</li>
+<li>Fix design bugs dating from 1990-91 + get rid of deprecated features</li>
+<li>First time Guido has allowed himself to be backward incompatible</li>
+<li>Need process, but don't want to become C++ or the next Perl 6</li>
+<li>Alpha early 2007, final a year later (early 2008)</li>
+<li>Cares a <em>lot</em> about bringing users with him
+<ul>
+<li>Will go as far as 2.9 (run out of digits)</li>
+</ul>
+</li>
+<li>Changes:
+<ul>
+<li>New keywords allowed</li>
+<li>dict.keys(), range(), zip() won't return lists</li>
+<li>All strings Unicode; mutable 'bytes' data type</li>
+<li>Binary file I/O redesign</li>
+<li>Drop  as an alias for !=</li>
+<li>Etc.</li>
+</ul>
+</li>
+<li>See PEP 3099 for things that won't happen (e.g., programmable syntax)</li>
+<li>Can't do perfect mechanical translation (dynamic languages)
+<ul>
+<li>Use pychecker-like tool to handle 80% of cases</li>
+<li>Create instrumented Python 2.x that warns about "doomed" constructs</li>
+</ul>
+</li>
+<li>See <a href="http://www.python.org/dev/peps/pep-3100/">PEP 3100</a> for the laundry list</li>
+<li>Small points
+<ul>
+<li>Kill classic classes</li>
+<li>Exceptions must derive from BaseException</li>
+<li>int/int will return a float</li>
+<li>Remove last differences between int and long</li>
+<li>Absolute import by default</li>
+<li>Kill sys.exc_type and friends</li>
+<li>Kill dict.has_key, file.xreadlines()</li>
+<li>Kill apply(), input(), buffer(), coerce()</li>
+<li>Kill ancient library modules; more stdlib cleanup</li>
+<li>exec becomes a funciton again</li>
+<li>Kill `x` in favor of repr(x)</li>
+<li>Change except clause syntax to exception E1, E2, E3 as err
+<ul>
+<li>Means "as" becomes a keyword</li>
+</ul>
+</li>
+<li>[f(x) for x in S] becoms sugar for list(f(x) for x in S)
+<ul>
+<li>General trend in Python away from lists toward more abstract structures</li>
+</ul>
+</li>
+<li>Kill raise E, arg in favor of raise E(arg)</li>
+<li>zip becomes izip</li>
+</ul>
+</li>
+<li>lambda lives!</li>
+<li>String types reform (bytes and str instead of str and unicode)
+<ul>
+<li>All data s either ibnary or text (conversions happen at I/O time)</li>
+<li>Different APIs for binary and text streams</li>
+</ul>
+</li>
+<li>New standard I/O stack
+<ul>
+<li>C stdio has too many problems</li>
+<li>Borrow from Java streams API (bleah)</li>
+</ul>
+</li>
+<li>Print becomes a function (boo)
+<ul>
+<li>See <a href="http://mail.python.org/pipermail/python-dev/2005-September/056154.html">mailing list thread</a> for justification</li>
+<li><em>But I think that putting the output file at the end in print(x, y, file=z) is going to trip people up</em></li>
+</ul>
+</li>
+<li>Dict views instead of lists
+<ul>
+<li>dict.keys() and dict.items() return a set view</li>
+<li>dict.views() will return a bag (multiset) view</li>
+<li>Can delete from (but not add to) a view
+<ul>
+<li>Modifies the dict accordingly</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Drop default implementations of comparison operators
+<ul>
+<li>&lt;, &lt;=, etc., currently compare by address &mdash; will raise TypeError</li>
+<li>== and != should remain (useful)</li>
+</ul>
+</li>
+<li>Generic and overloaded functions (see his blog &mdash; running out of time)</li>
+<li>Python sprints coming up (Aug 21-24)</li>
+<li>Q&amp;A
+<ul>
+<li>Py3K team is smaller than Perl6 &mdash; GvR optimistic that people will get the work done</li>
+<li>Taking advantage of multicore?
+<ul>
+<li>GvR not a big fan of threads</li>
+<li>Prefers loose coupling (one process per core)</li>
+<li>Last attempt to get rid of the GIL slowed Python down by 2X</li>
+<li>But neither Jython nor IronPython have a GIL</li>
+</ul>
+</li>
+<li>Will C-Python API change much?
+<ul>
+<li>Yup &mdash; just like the language</li>
+</ul>
+</li>
+<li>PyPy/type inference?
+<ul>
+<li>Python 4.0 or a sibling language</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Travis Oliphant on the State of NumPy</strong></p>
+<ul>
+<li>Chair thanked him for everything he's done to fix numerical Python &mdash; standing ovation (well deserved)</li>
+<li>NumPy 1.0 rc1 will be out in a few weeks</li>
+<li>Walked through design &mdash; tradeoffs between flexibility, portability, and performance very well thought through</li>
+<li>One part I enjoyed was the way he flipped back and forth between PowerPoint and the interpreter
+<ul>
+<li>Clear that for him, Python is a tool for thinking with</li>
+</ul>
+</li>
+<li>Showed off weave, an Enthought tool for embedding C in Python for array programming</li>
+<li>Also shows off Pyrex (another tool for the same purpose)</li>
+</ul>
+<p><strong>Fernando Perez: Python for Modern Scientific Algorithm Development</strong></p>
+<ul>
+<li>"Why is Python more than 'free MATLAB'?"
+<ul>
+<li>Power of built-in datatypes, higher-level programming, etc.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Michael Aivazis: "Building a Distributed Component Framework"</strong></p>
+<ul>
+<li>Described a medium-sized framework called pyre
+<ul>
+<li>1200 classes, 75K lines of Python, 30K lines of C++</li>
+<li>Has been running in various incarnations for almost ten years</li>
+</ul>
+</li>
+<li>Good discussion of architectural issues &mdash; perfect example of the kind of researcher I'd like Software Carpentry to produce</li>
+</ul>
+
+            <p><em>Originally posted 2006-08-17 by Greg Wilson in Community.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>SciPy&#8217;06: First Morning</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2006/08/scipy06-first-morning.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

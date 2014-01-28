@@ -1,0 +1,16 @@
+{
+ "badge": "http://software-carpentry.org/badges/class/instructor.json", 
+ "image": "http://software-carpentry.org/img/badges/instructor.png", 
+ "issuedOn": "2013-03-16", 
+ "recipient": {
+  "hashed": true, 
+  "identity": "sha256$5898ece48770c5188449f3c0c3f0913fe65c73745b7c71de2b81a586a2da4134", 
+  "salt": "software-carpentry", 
+  "type": "email"
+ }, 
+ "uid": "sha256$5898ece48770c5188449f3c0c3f0913fe65c73745b7c71de2b81a586a2da4134", 
+ "verify": {
+  "type": "hosted", 
+  "url": "http://software-carpentry.org/badges/instructor/figueira.l.json"
+ }
+}

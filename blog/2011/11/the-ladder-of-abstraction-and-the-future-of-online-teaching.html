@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: The Ladder of Abstraction and the Future of Online Teaching</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>The Ladder of Abstraction and the Future of Online Teaching</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p><a href="http://worrydream.com/LadderOfAbstraction/">Up and Down the Ladder of Abstraction</a> is one of the most thought-provoking things to hit the web in a long time. Its author, Bret Victor, doesn't just talk about the design process&mdash;he shows us what a great interactive tutorial ought to look like. (For a shorter, simpler, but equally inspiring example, have a look at the home page for his <a href="http://worrydream.com/Tangle/">Tangle</a> project, and ask yourself what learning would be like if learners could play with every diagram and quantitative statement in their "textbooks" that way...)</p>
+<p>Examples like these, and reflection on things I've learned by following people like <a href="http://computinged.wordpress.com/">Mark Guzdial</a> and <a href="http://www.hackeducation.com/">Audrey Watters</a>, have made me realize that there's a big difference between online <em>teaching</em> and online <em>learning</em>. Unfortunately, Software Carpentry has focused on the former rather than the latter&mdash;on presenting content, rather than on how (and how much) people actually learn. Partly, this is because the former is easier, since I have control over the notes, the videos, and so on. Partly too, though, it reflects an academic culture in which professors focus on lecturing, rather than on changing students' understanding of the world. (We've all had students who got B's, or even A's, without really understanding the course material...) And partly, I've focused on production rather than consumption because the latter is very hard to assess. Even when we're teaching this stuff in person, as we're doing right now in Toronto, it's very difficult to get a handle on how much students have actually absorbed.</p>
+<p>For example, suppose we're teaching Python (which we are), and one of the exercises is to read a bunch of numbers from a file and print their mean. Ignoring floating-point issues, there's only one right answer, but that doesn't mean we can say, "If your program prints 6, then you understand loops, file I/O, and string-to-number conversions." What we'll actually see is people hacking and tweaking their code, more or less at random, until voila, a 6 pops out and they're done. Their programs will be littered with unused variables, five-stage assignments like:</p>
+<pre>a = 5
+b = a
+c = b
+print c</pre>
+<p>and so on (what <a href="http://homepages.cae.wisc.edu/~khuff/">Katy Huff</a> called <a href="http://en.wikipedia.org/wiki/Cargo_cult_programming">cargo cult programming</a>). We will have taught, and students will have produced the right answer for one specific case, but in many cases, they won't have <em>learned</em>.</p>
+<p>Now, you'd think this would be easy to check: give them a similar problem, and see if they can transfer their knowledge. But that's not going to work, because they can hack and tweak their way to an accidentally-correct answer to the second problem just as they did for the first. We could time them, on the assumption that if they've learned, they'll solve the second problem faster than the first, and the third faster than the second, but all that's going to do (at best) is identify the people who aren't learning; it isn't going to tell us why they aren't, or what they don't understand, which in turn means that we won't know what to explain to them to clear things up.</p>
+<p>And that's the real problem with many production-oriented approaches to online learning, from Software Carpentry to the <a href="http://khanacademy.org">Khan Academy</a>. To paraphrase Tolstoy, successful learners are all alike; every unsuccessful learner is unsuccessful in their own way. There's only one correct mental model of how regular expressions work, but there are dozens or hundreds of ways to misunderstand them, and each one requires a different corrective explanation. What's worse, as we shift from knowing that to knowing how&mdash;from memorizing the multiplication table to solving rope-and-pulley dynamics problems or using the Unix shell&mdash;the space of possible misconceptions grows very, very quickly, and with it, the difficulty of diagnosing and correcting misunderstandings.</p>
+<p>In the long run, we may be able to develop expert systems (or <a href="http://en.wikipedia.org/wiki/Cognitive_tutor">cognitive tutors</a>) to help with some of these issues. Right now, though, I think the only option is to keep a human mentor in the loop.  I only have to look over someone's shoulder for a couple of minutes to see whether they've understood a lesson or not; watching <em>how</em> they produce an answer tells me more about their learning than the answer itself. Using today's tools, it would be relatively easy to have students record screencasts of themselves solving simple programming exercises and submit those along with their source code. However, I suspect most learners would be uncomfortable doing this, as it would feel very Big Brother-ish.</p>
+<p>I'd welcome your thoughts on all of this: on how we can shift Software Carpentry's focus from teaching to learning, and on how to assess the latter so that we can tell what's working and what isn't. After all, we're here to learn too...</p>
+
+            <p><em>Originally posted 2011-11-08 by Greg Wilson in Opinion.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>The Ladder of Abstraction and the Future of Online Teaching</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2011/11/the-ladder-of-abstraction-and-the-future-of-online-teaching.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

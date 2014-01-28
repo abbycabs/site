@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Solution to Data Checking Problem</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>Solution to Data Checking Problem</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p>I finally had a chance this morning to record my solution to the final exercise I set the learners from the Space Telescope Science Institute. It demonstrates how to build a little program in Python that checks the consistency of some experimental data; along the way, it uses file I/O, functions, assert statements, lists of lists, and on-the-fly unpacking. As always, feedback on the content and format would be greatly appreciated. (And if anyone would like to post their own solution, either as plain code or as a video, please let me know so that I can include it here.)</p>
+
+
+
+
+<div class="youtube">
+  <iframe title="Solution to Helmet Data Checking Problem"
+          src="http://www.youtube.com/embed/vV_SbCaD0O8"
+          time="00:14:20"
+          width="640" height="506"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"></iframe>
+</div>
+
+
+<pre>import sys
+
+#--------------------
+
+def get_reader(args):
+    '''Select either standard input or a file to read from.'''
+    if len(args) == 1:
+        reader = sys.stdin
+    elif len(args) == 2:
+        reader = file(sys.argv[1], 'r')
+    else:
+        print &gt;&gt; sys.stderr, "Usage: check.py [filename]"
+    return reader
+
+#--------------------
+
+def get_data(reader):
+    '''Read a helmet test data file.  We expect the date on the first
+    line, a title line second, and then one triple for each
+    experiment.'''
+    reader.readline() # should be the date
+    reader.readline() # should be the title line
+    # Each other line must be (degrees, seconds, brittleness) record
+    data = []
+    for line in reader:
+        fields = line.split()
+        assert len(fields) == 3, "Bad line: %s" % line
+        deg = float(fields[0])
+        sec = float(fields[1])
+        brit = float(fields[2])
+        record = [deg, sec, brit]
+        data.append(record)
+    return data
+
+#--------------------
+
+def report_error(left, right):
+    '''Report inconsistent data.'''
+    print left, 'is inconsistent with', right
+
+#--------------------
+
+def check(data):
+    '''Check that records obey consistency rules.'''
+    for record_1 in data:
+        deg_1, sec_1, brit_1 = record_1
+
+        for record_2 in data:
+            deg_2, sec_2, brit_2 = record_2
+
+            if (deg_1 == deg_2) and \
+               (sec_1 &gt; sec_2) and \
+               (brit_1 &lt; brit_2):                 report_error(record_1, record_2)             if (deg_1 &gt; deg_2) and \
+               (sec_1 == sec_2) and \
+               (brit_1 &lt; brit_2):
+                report_error(record_1, record_2)
+
+#--------------------
+
+reader = get_reader(sys.argv)
+data = get_data(reader)
+check(data)
+reader.close()</pre>
+
+            <p><em>Originally posted 2012-04-04 by Greg Wilson in Space Telescope Science Institute, Tutorial.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>Solution to Data Checking Problem</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2012/04/solution-to-data-checking-problem.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

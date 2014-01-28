@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Steven Koenig: What I've Learned</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>Steven Koenig: What I've Learned</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <!-- start excerpt -->
+<p>I have been a PhD student at Technische Universit&auml;t M&uuml;nchen, Germany since May 2012. My research interest is biopolymers: how to produce them, and what to do with them. Where computers come into play? Literally everywhere. And what I need Software Carpentry for? Literally everything.</p>
+<!-- end excerpt -->
+<p>Nowadays, many tasks in the lab are carried out using computers: from running chromatography systems to evaluating photometric 96 well assays, from rheometry to next-generation sequencing. The usefulness of the skill set covered by Software Carpentry was obvious to me the minute I read about the course contents.</p>
+<p>Although I am regarded as the computer nerd at work, there is still plenty to learn. And I found some things I always wanted to be introduced to in the course contents:</p>
+<ul>
+  <li>Git (distributed version control software)</li>
+  <li>make (automation)</li>
+  <li>Python (programming language)</li>
+  <li>Unit tests (self-tests for programmes)</li>
+</ul>
+<p>Just this weekend I had to take a look at the old files of my bachelor dissertation and what I found in one directory looked something like that:</p>
+<ul>
+  <li>20091201 - HA_PEF.ods</li>
+  <li>20091201 - HA_PEF.xls</li>
+  <li>20091210 - HA_PEF.xls</li>
+  <li>20100105 - HA_PEF.ods</li>
+  <li>20100105 - HA_PEF.xls</li>
+  <li>20100107 - HA_PEF.xls</li>
+  <li>20100108 - HA_PEF.xls</li>
+  <li>20100111 - HA_PEF.xls</li>
+  <li>20100112 - HA_PEF.xls</li>
+  <li>20100114 - HA_PEF.xls</li>
+  <li>20100115 - HA_PEF.xls</li>
+  <li>20100120 - HA_PEF.xls</li>
+  <li>20100121 - HA_PEF.xls</li>
+  <li>20100122 - HA_PEF.xls</li>
+  <li>20100125 - HA_PEF.xls</li>
+  <li>20100126 - HA_PEF.xls</li>
+  <li>20100127 - HA_PEF.ods</li>
+  <li>20100127 - HA_PEF.xls</li>
+  <li>20100205 - HA_PEF.xls</li>
+  <li>20100212 - HA_PEF.xls</li>
+</ul>
+<p>I was quite astonished to see this, I could not even remember that I did it <em>that way</em> back then. At that time, I never could have imagined that I could just have something like that instead:</p>
+<ul>
+  <li>HA_PEF.xls</li>
+</ul>
+<p>Using version control transformed the way I think about organising data. I was familiar with SVN before the SWC course, but it is way too cumbersome to set up and use locally IMHO Now that I know about Git, I can have one and only one file and I can leave the overhead of having different versions to Git. No more cluttering of my working directories. And there are even more benefits to using version control:</p>
+<ul>
+  <li>When used with text files, the differences between different versions can be viewed.</li>
+  <li>Other scientists can pull in my stuff and continue working on it having access to the complete project history.</li>
+  <li>Comments for differences introduced allow for quickly finding your way through your repository.</li>
+</ul>
+<p>There are more advantages of using version control and I recommend every scientist to get familiar with it as soon as possible.</p>
+<p>While automating routine work in the lab is common, automating the evaluation of the data generated is not as common. At least in our lab, data from high-throughput screenings are evaluated using Excel sheets, which involves lots of copying of data back and forth. Using SWC skills we can tap into the enormous potential of automation:</p>
+<ul>
+<li>Increased reliability: Humans are bad at repetitive tasks, computers are good at that. So, share the work with your computer. By using unit tests, the computer can even run tests to see if its programmes are correct or not.</li>
+<li>Increased reproducibility: Bundling input data with the evaluation instructions (as a programme) allows to reproduce the output data from scratch.</li>
+<li>Time savings: Once the framework is ready, 80+% of time can be saved easily.</li>
+<li>Cost savings: While the computer is doing the evaluation, staff can focus on other problems.</li>
+</ul>
+<p>Software Carpentry taught me that out there are numerous other people who think like me on these issues. Therefore, I hope to slowly creep in these "new" technologies into the everyday life of everybody in the lab.</p>
+
+            <p><em>Originally posted 2013-10-01 by Steven Koenig in Community, Experience Report.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>Steven Koenig: What I&#8217;ve Learned</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2013/10/steven-koenig.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

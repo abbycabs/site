@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Interview with Sergey Fomel</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>Interview with Sergey Fomel</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p>Sergey Fomel is a professor at the University of Texas at Austin, and the leader of the <a href="https://sourceforge.net/blog/for-reproducible-research-go-to-madagascar/">Madagascar</a> project.</p>
+<p><em>Tell us a bit about your organization and its goals.</em></p>
+<p>I work at the University of Texas at Austin, with a joint appointment between the Bureau of Economic Geology and the Department of Geological Sciences. My group conducts research on computational geophysics, with applications to petroleum exploration.</p>
+<p>I also serve as a project leader for the Madagascar open-source project. The goal of Madagascar is to provide a convenient and powerful environment and a convenient technology transfer tool for researchers working with digital image and data processing in geophysics and related fields.</p>
+<p><em>Tell us a bit about the software your group uses.</em></p>
+<p>We use Madagascar for all relevant scientific computations. For general data manipulations, Madagascar can be as general as tools like Matlab. The main difference is that multidimensional hypercube objects do not sit in memory but reside in files on disk or are passed through Unix pipes. This allows us to work with data that might be too large for RAM.</p>
+<p>For theoretical work, we use occasionally symbolic math software such as Mathematica. Currently, I am trying to switch from Mathematica to SAGE, which seems like a good open-source replacement.</p>
+<p>Supporting tools: Subversion for version control (a must), SCons for compilation and data processing flows, LaTeX for writing papers. Madagascar number-crunching programs are typically written in C, although there are interfaces to many other languages. We assemble elementary binary programs (compiled from C) into data processing flows using our extensions to SCons. We also use SCons (in combination with customized latex2html) to publish final results in a "reproducible research" format (papers with links to software code and data necessary for reproducing computational experiments).</p>
+<p><em>Tell us a bit about what software your group develops.</em></p>
+<p>We build software for use in our own research but also for sharing with others. Some codes get distributed first to our industrial sponsors, who incorporate them for their own use in industrial geophysical data processing. As for the general research framework, I believe it is very important to share it with as many other research groups as possible so that we could reproduce and verify each others's results (computational experiments) once they get published.</p>
+<p><em>What's the typical background of your scientists, developers, and/or users? What do you see as their strengths, and where are the gaps in their knowledge?</em></p>
+<p>Most of the people in the Madagascar developer community have background in geophysics or related fields (petroleum or electrical engineering, physics, applied mathematics, etc.) The strength in it is that every developer is also a user, people join the development effort to "scratch a personal itch". The weakness is the lack of formal training in software engineering, computer science, or numerical analysis. Geophysicists are inventive people, many of them with a natural talent for software development of numerical computations, but sometimes one just needs to follow good rules.</p>
+<p><em>How do you hope Software Carpentry will help them&mdash;that is, what big ideas and what specific skills do you what students to learn from it?</em></p>
+<p>Software Carpentry is exceptionally useful. It feels the gap in education for scientists like us, who use software tools every day but have only a fragmentary knowledge of them. By making this knowledge systematic, Software Carpentry simply makes us better at what we do. I could name some specific ideas (testing, scripting, debugging, version control) but actually all of them are good, the most important is to be as systematic with our tools as good carpenters are with theirs.</p>
+
+            <p><em>Originally posted 2010-08-02 by Greg Wilson in Interviews.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>Interview with Sergey Fomel</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2010/08/interview-with-sergey-fomel.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Platforms</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>Platforms</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p>After <a href="/blog/2010/04/feedback-and-boundaries.html">Thursday's post-mortem on the latest offering of Software Carpentry</a> at the Universitiy of Toronto, I had a chance to talk further with <a href="http://skoolr.blogspot.com/">Jon Pipitone</a>, who was one of the tutors (and who is just wrapping up an M.Sc. looking at code quality in climate models). We got onto the topic of infrastructure for Version 4, which needs to be settled quickly.</p>
+<ol>
+<li>a way to deliver content to students, including text and images, audio/video, exercises (with solutions), sample data sets, and useful software;</li>
+<li>a way for students to feed questions back to the course organizers (asynchronously through email and bulletin boards and/or synchronously through VoIP and desktop sharing);</li>
+<li>a way for instructors (who may or may not be contributors) to respond to students;</li>
+<li>a way for lay contributors (who may also be students) to offer new content, from pointing out typos to providing exercises or whole new lectures; and</li>
+<li>a way for core contributors to manage and edit contributions, create some of their own, et cetera.</li>
+</ol>
+<p>This description implies some social infrastructure, including:</p>
+<ol type="A">
+<li>some core contributors who are creating lots of course content, and probably teaching the course as well;</li>
+<li>a second tier of instructors who are creating less content but also interacting with students; and</li>
+<li>students, who may be registered in a course of some kind or working through the material on their own (and who may eventually move up to answering others' questions and eventually to creating content).</li>
+</ol>
+<p>This sounds like what you'd find in an open source project (regular users, occasional testers or bug reporters, and contributors) at least as much as it sounds like a traditional college course (students, teaching assistants, and professors). The most important difference is that the divisions between the latter three roles are sharper and deeper than the divisions in open source projects: some undergrad students eventually go to grad school and become TAs, and some of those eventually become faculty, but it's almost unheard of for someone to be in two of those categories at once, or to "bubble up" from one to the next based solely on ability and enthusiasm. That <em>must</em> happen if Software Carpentry is to become self-sustaining: while over 140,000 people have looked at <a href="http://software-carpentry.org">the existing material</a> in the past five years, only three dozen have ever sent bug reports, and only four of those have contributed any substantial content. Whatever we use to accomplish tasks 1-5 above must therefore draw people in and make it easy for them to use, ask, answer, and contribute.</p>
+<p>With that out of the way, here are a few options for discussion:</p>
+<ul>
+<li><strong>Project</strong>: use <a href="http://sourceforge.net">SourceForge</a> or <a href="http://code.google.com">Google Code</a> as a host.</li>
+<li><strong>Retro</strong>: a classic turn-of-the-century web site with static HTML for content, bulletin boards and/or mailing lists for discussion, <a href="http://trac.edgewall.org">Trac</a> with <a href="http://subversion.tigris.org">Subversion</a> for project management.</li>
+<li><strong>Social</strong>: a <a href="http://www.wordpress.com">WordPress</a> blog with lectures and other content as posts (updated several times, with threaded comments for feedback).</li>
+<li><strong>Turnkey</strong>: a fully-fledged learning management system such as <a href="http://moodle.org/">Moodle</a>.</li>
+<li><strong>Wiki</strong>: like Retro, but with the content in a wiki.</li>
+</ul>
+<p>So how do they stack up?</p>
+<table>
+<tbody>
+<tr>
+<td></td>
+<td>Project</td>
+<td>Retro</td>
+<td>Social</td>
+<td>Turnkey</td>
+<td>Wiki</td>
+</tr>
+<tr>
+<td>Easy to set up/administer/maintain?</td>
+<td>+1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>Easy for people to contribute?</td>
+<td>-1</td>
+<td>-1</td>
+<td>0</td>
+<td>-1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Comes with everything?</td>
+<td>0</td>
+<td>-1</td>
+<td>0</td>
+<td>+1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Flexible content delivery?</td>
+<td>-1</td>
+<td>0</td>
+<td>-1</td>
+<td>+1</td>
+<td>-1</td>
+</tr>
+<tr>
+<td><strong>Overall</strong></td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+<p>A bit of explanation:</p>
+<ul>
+<li>Project hosting services require little or no setup, but would force us to manage this as a software development project, rather than as a writing project: self-tests and "try this at home" examples aren't built in, and neither of the big open source project hosting sites would be happy if we used them as a video server.</li>
+<li>The "retro" option would require us to "roll our own" on a lot of things, which would be fun (I like to program) but wouldn't directly deliver value to scientists.</li>
+<li>WordPress is easy to set up, but doesn't have very many development-oriented or education-oriented plugins, and isn't designed to host video snippets or live examples. I think that building the course as a blog is a neat idea, but the novelty would soon wear off...</li>
+<li>Learning management systems like <a href="http://moodle.org">Moodle</a> have a lot we don't need (recording grades, for example), but a lot that we do (managing course bundles). I gave this category -1 for ease of setup because I'm unfamiliar with it, and 0 for "easy for people to contribute" because the LMSes I've looked at (<a href="http://atutor.ca/">ATutor</a>, <a href="http://olat.org">OLAT</a>, <a href="http://moodle.org">Moodle</a>, and <a href="http://sakaiproject.org/">Sakai</a>)  all seem to have significant learning overheads for creating content&mdash;they're a bigger hammer than I (think I) need. Of course, that could just be unfamiliarity again...</li>
+<li>A wiki would be easy to set up and maintain, but in my experience, editing large volumes of material in a browser is unpleasant, and there's little support for managing updates, particularly by concurrent authors.</li>
+</ul>
+<p>As always, I'd welcome your thoughts...</p>
+
+            <p><em>Originally posted 2010-04-08 by Greg Wilson in Tooling.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>Platforms</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2010/04/platforms.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

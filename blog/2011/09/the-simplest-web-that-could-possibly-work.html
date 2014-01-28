@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: The Simplest Web That Could Possibly Work</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>The Simplest Web That Could Possibly Work</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p>A new web tool called <a href="http://ifttt.com/">If This Then That</a> generated a flurry of interest this week (see for example <a href="http://www.hanselman.com/blog/EssentialIFTTTIfThisThenThatProgrammingWorkflowsForHumansUsingTheWebsSocialGlue.aspx">Scott Hanselman's blog post</a>). Simply put, IFTTT lets you connect web services together using if-then rules. It's as simple as:</p>
+<ol>
+<li>Click on "this" to start.</li>
+<li>Select "Twitter", and tick off boxes to create a rule (such as "when Alan Turing tweets").</li>
+<li>Click on "that".</li>
+<li>Select what you want to happen (e.g., echo the tweet to your own Facebook page).</li>
+<li>There is no step 5.</li>
+</ol>
+<p>That's the beauty of it: there is no step 5. It knows how to work with all sorts of services, from Instapaper and Pinboard to weather reports (yes, weather reports), and <em>there is no step 5</em>. Just as Twitter stripped blogs down to their bare essentials, IFTTT takes graphical workflow tools like Yahoo! Pipes and says, "What's the simplest version of this idea that could possibly be useful?"</p>
+<p>What's the equivalent for scientists? <a href="http://michaelnielsen.org">Michael Nielsen</a>'s answer is, "IFTTT itself." "Facebook for scientists" and "Twitter for scientists" projects have foundered because we already have Facebook and Twitter, and they already do most of what scientists need&mdash;why would this be different?</p>
+<p>But as <a href="http://cameronneylon.net/">Cameron Neylon</a> pointed out:</p>
+<blockquote><p>The problem on the research side is the variety of "output types". There are lots of inconsistent and non-standard outputs that can never quite be connected up the way you want, formats wrong, header broken, wrapped up in the wrong ASCII encoding or whatever.</p></blockquote>
+<p>Once again, it comes back to the third of <a href="http://blog.jonudell.net/2011/01/24/seven-ways-to-think-like-the-web/">Jon Udell's principles of computational thinking</a>: knowing the difference between structured and unstructured data. A lot of what's on scientists' hard drives cannot be understood by programs, despite being digital. A lot of the rest falls into the "long tail" trap: so few people (and files) use the format that writing tools to handle it isn't economical (by which I mean, general-purpose services won't, and the scientists who have their data in that format are too busy getting their next paper out to get around to it). This is scientific computing's "<a href="http://en.wikipedia.org/wiki/Last_mile">last mile</a>"; if we really want to <a href="http://www.hpcwire.com/hpcwire/2011-08-09/nsf_s_seidel:_software_is_the_modern_language_of_science_.html">make the world writable</a>, we need to focus on this rather than petaflops.</p>
+
+            <p><em>Originally posted 2011-09-17 by Greg Wilson in Noticed.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>The Simplest Web That Could Possibly Work</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2011/09/the-simplest-web-that-could-possibly-work.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

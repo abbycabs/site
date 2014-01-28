@@ -1,0 +1,16 @@
+{
+ "badge": "http://software-carpentry.org/badges/class/instructor.json", 
+ "image": "http://software-carpentry.org/img/badges/instructor.png", 
+ "issuedOn": "2013-07-19", 
+ "recipient": {
+  "hashed": true, 
+  "identity": "sha256$dc0fdc283e83f0acc6e666a5f5c757a51af49943cc93a643660f36ed97304531", 
+  "salt": "software-carpentry", 
+  "type": "email"
+ }, 
+ "uid": "sha256$dc0fdc283e83f0acc6e666a5f5c757a51af49943cc93a643660f36ed97304531", 
+ "verify": {
+  "type": "hosted", 
+  "url": "http://software-carpentry.org/badges/instructor/barneche.diego.json"
+ }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Bootcamp Student Composition by Domain</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>Bootcamp Student Composition by Domain</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <!-- start excerpt -->
+<p>
+Recently I was challenged to show that computational science is important to 
+biologists, and, more importantly, that biologists care about learning how to 
+develop quality software.  I am <i>not</i> a biologist.  While I find the 
+subject fascinating I cannot make any broad claims on the topic or hope to speak 
+for all biologists.  So I turned to Software Carpentry.
+</p>
+<p>
+My experience teaching Software Carpentry and related bootcamps has been that 
+biologists are always a significant portion of the student population.  In order
+to demonstrate this I asked to have access to anonymized answers to part of 
+<a href="/bootcamps/pre-learner.html">the pre-assessment survey</a>.
+Specifically, I was interested in the "<i>Which of the following most closely 
+aligns with your primary discipline?</i>" question. With a big assist from Amy 
+Brown I obtained the data I was looking for.
+</p>
+<!-- end excerpt -->
+<p>
+Almost immediately, I was confronted with the problem of who exactly is a biologist, 
+physicist, and so on.  The pre-assessment survey options are too fine grained for 
+purposes here.  For example, I consider astrophysicist and geologists both to be 
+physicists.  Furthermore, since the survey question is a check-box type the students
+could select multiple options.  Their selections may span multiple domains.  
+Finally, there is a pesky "Other" option which allows the students to submit 
+any discipline they desire.  
+This leads to the conundrum of which domain does the discipline 
+"Data Analysis" go in?  All of them I hope.  This survey question certainly
+does not yield a clean taxonomy.
+</p>
+<p>
+To coarsen the data, I chose the following five domains to group disciplines 
+into: physics, chemistry, biology, mathematics &amp; computer science, and 
+humanities &amp; social science.  Is this grossly unfair to some disciplines? Yes.
+Does it work? Double yes.  In the spirit of openness, all of the data and analysis
+is available at 
+<a href="https://github.com/scopatz/swc-bc-student-domains">this repository</a>.
+You can also view 
+<a href="http://nbviewer.ipython.org/urls/raw.github.com/scopatz/swc-bc-student-domains/master/domains.ipynb">the IPython notebook</a> 
+where I did my analysis. Feel free to criticize my groupings in the comments.
+</p>
+<p>
+The data that Amy provided me with was collected from 306 students over the 
+most recent 9 or 10 bootcamps.  This is a large enough 
+sample size to be able to say something meaningful about the student populous.
+From <a href="#fig1">Figure 1</a> &amp; <a href="#tab1">Table 1</a>, we can see that 
+my intuition turned out to be correct.
+</p>
+<p>
+Roughly a third of the participants in the bootcamps come from a biologically 
+oriented field!  This is second only to the physics-related disciplines.  Moreover, 
+the biologists far outstrip their counterparts in the other domains.  So if 
+Software Carpentry bootcamps are any measure of interest in software development
+best practices - and I think they are - then it is clear that the biology domain is
+thriving.
+</p>
+<div align="center" id="fig1">
+<p><img src="students_by_domain.svg" /></p>
+<p><b>Figure 1:</b> Percentage of Software Carpentry bootcamp students by domain.  
+<br/>
+These percentages sum to greater than 100% because students may select more that one discipline. 
+</p>
+</div>
+<div align="center" id="tab1">
+<table class="table table-striped">
+  <tr>
+    <th>Domain</th>
+    <th>Percentage (%)</th>
+  </tr>
+  <tr>
+    <td>Physics</td>
+    <td>45.75</td>
+  </tr>
+  <tr>
+    <td>Chemistry</td>
+    <td>13.40</td>
+  </tr>
+  <tr>
+    <td>Biology</td>
+    <td>33.01</td>
+  </tr>
+  <tr>
+    <td>Mathematics &amp; Computer Science</td>
+    <td>13.07</td>
+  </tr>
+  <tr>
+    <td>Humanities &amp; Social Sciences</td>
+    <td>14.38</td>
+  </tr>
+</table>
+<p><b>Table 1:</b> Results of <a href="#fig1">Figure 1</a> in tabular form.</p>
+</div>
+
+            <p><em>Originally posted 2013-09-30 by Anthony Scopatz in Assessment, Teaching.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>Bootcamp Student Composition by Domain</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2013/09/bootcamp-student-domains.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

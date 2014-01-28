@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: How Robust Is Your Programming Language?</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>How Robust Is Your Programming Language?</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p>One of the biggest problems in teaching novices how to program is that most programming systems are not robust. A car can go quite a long distance on a slightly-flat tire, and people can live for years with just one kidney or half a liver, but get one character out of place in a program, and boof&mdash;it's game over. And spotting that one character can be very hard, particularly if you're a novice and are learning mostly through copy-paste-and-tweak.</p>
+<p>Here's an example from a recent workshop. Learners had a bunch of data files that looked like this:</p>
+<pre>Date,Species,Count
+2012-07-03,raccoon,3
+2012-07-03,deer,1
+2012-07-04,squirrel,5
+2012-07-04,raccoon,1
+2012-07-05,squirrel,7
+2012-07-05,mouse,1</pre>
+<p>I'd shown them how to build a pipeline using <code>cut</code> and <code>grep -v</code> to extract the names of the animals that had been seen (and discard the title "Species"). Separately, I had also shown them how to use <code>sort</code> and <code>uniq -c</code> to count the number of distinct items in a list, and how to use a <code>for</code> loop to do something for each file in a set. Their capstone task was to put the three ideas together to count the number of distinct species in each data file separately.</p>
+<p>Here's what one student wrote: can you spot the bug?</p>
+<pre>#!/bin/bash/
+for filename in *.dat
+do
+    cut -d , -f 2 $filename | grep -v Species | sort | uniq -c
+done</pre>
+<p>Give up? It's the trailing '/' on the '#!' line at the start: it makes <code>/bin/bash/</code> look like a directory, which of course can't be used to execute a script. But that "of course" took me a minute to spot, and that was after the learner had spent (at a guess) five or ten minutes tweaking things in the body of the script.</p>
+<p>Almost by definition, novices don't have a good mental model of how things work, but that's exactly what they need in order to diagnose and fix problems. Real (physical) tools mostly aren't like this: you don't have to be a perfect driver in order to drive a car, or Picasso in order to paint a wall, because the things you're using are fairly forgiving.</p>
+<p>I'd therefore like to throw out a challenge to programming language designers. Forget about parallelism or the esoteric corner cases of various type systems; instead, focus on robustness. How forgiving is your language? How well do programs written in it work when people make minor mistakes? Or to switch to industrial engineering terminology, what are your language's tolerances?</p>
+<p>And to help people along this path, I'd like to propose a metric. Consider the set of all variants of your program in which a single typing mistake has been made (like the trailing '/' in the example above). The Strong Robustness Measure is the percentage of those programs that correctly reproduce the output of the intended program. The Weak Robustness Measure is the percentage for which the exact location of the error, and the fix required, are reported in terms a novice can understand. (I realize that what a novice understands is ill-defined, but you get the idea.) At a guess, Python's SRM score is close to 0%; its WRM score is around 20-50%, but that's based solely on recall of personal experience. I suspect that supposedly "forgiving" languages like Perl and Ruby don't do any better on either measure, and that "strict" languages like Java and Haskell do markedly worse on the second (without improving the first).</p>
+<p>I also suspect that as long as most languages and tools have an SRM score of 0, programming will continue to be hard to learn...</p>
+
+            <p><em>Originally posted 2012-07-21 by Greg Wilson in Education, Opinion, Tooling.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>How Robust Is Your Programming Language?</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2012/07/how-robust-is-your-programming-language.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

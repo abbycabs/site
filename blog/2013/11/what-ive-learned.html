@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Things I Wish Someone Had Told Me About Scientific Computing</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>Things I Wish Someone Had Told Me About Scientific Computing</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <!-- start excerpt -->
+<p>When I set out on my path into neuroscience, the idea of scientific computing was not even something that came up in passing. However, with little warning, I started spending my days at the computer writing code to analyse brain data.</p>
+<p>Cleaning neuroimaging data is a multi-step process and I wanted to bring out the most from the data. To do that, I thought, would require using the best bits from a slew of neuroimaging preprocessing tools. Some were better at removing extraneous noise, while others were better at image morphing. But entering the commands one by one was tedious and error-prone and the formats for the different functions were not always compatible. There had to be a better way. So, writing some kind of code became my only option.</p>
+<!-- end excerpt -->
+<p>Don't get me wrong, I wasn't scared by the algorithmic nature of computing: my other passion is developing statistical methods. But doing math and writing code are different beasts. Just using '=' as an assignment operator felt foreign and strange.</p>
+<p>I'm still slower than I'd like, and I certainly don't know every trick in the book, but I can now do matrix programming in several languages as well as stringing existing code together. Yet, I wish I had talked to someone more knowledgeable when I started my programming journey. Ultimately, it would have saved me a lot of time and struggle. So, here are a few things I learned along the way that I thought would be helpful to someone brand-new to programming:</p>
+<h2>Code that runs isn't necessarily code that is right</h2>
+<p>When I started, I thought that all code that ran through was good code. It doesn't stop, so it works! But, I started seeing things that I couldn't explain: misaligned data, brain activations outside of the brain and other strange things. "But my code ran!", I thought, "The results should make sense". But, nonsensical they were and I didn't have any idea why.</p>
+<h2>Good code takes good planning</h2>
+<p>Also, when I started, I thought that automating my data preprocessing would solve all my data problems. "Just find some way to automatically run the commands", I thought, "then everything will be just right". But, in the world of neuroimaging, <em>just right</em> is a matter of opinion and lots of my results wouldn't be just right under anyone's definition. I needed to answer why my data were coming up with nonsensical results and defend why I wanted to use tools that weren't expressly built to go together. I also needed to define what I meant by better. I couldn't do any of this using my code.</p>
+<p>Oh no, I thought. Writing code is just as tough as designing the whole study, only I have to design a new study every day! That's when I found something that really helped: <em>unit testing</em>. Writing the tests before writing my code really helped me operationalize the problem. It made sure that my code ran without breaking, and, more importantly, forced me to think about what did I mean by better and how was I going to test betterness. It not only made me a faster programmer, it helped me to be able to explain what I was doing to my colleagues. Wasn't it Einstein who said, "If I had only one hour to save the world, I would spend fifty-five minutes defining the problem, and only five minutes finding the solution"?</p>
+<h2>Keep it simple</h2>
+<p>When I first started, I tried to write everything into one big block of code. This got to be a big problem fast. First, I was repeatedly writing the same bits of code over and over (which was what I wanted to avoid by automating the process in the first place). My code was hard to read and hard to debug. Learning to put my code into small reusable chunks was one of my biggest breakthroughs: <em>one job, one function</em>. This made my code easier to debug because, together with my tests, I could find exactly where my code wasn't working and I only needed to fix the problem in one place. This reduced the number of bugs in my code dramatically. I also learned to test each function as I was building it, so most bugs are now caught early.</p>
+<h2>Nobody gets it right the first time</h2>
+<p>As a part-time coder and full-time perfectionist, I soon got really frustrated that my code didn't work off the bat. "What was wrong with me that I couldn't write anything that even ran, let alone worked!", I thought, "So what if I was a newbie. Professional developers don't have these kinds of problems."</p>
+<p>But, as I gained more experience I learned that developpers do have the same problems. All code usually has bugs in it at first. As I got more fluent in a language, the types of bugs I encoutered tended to change. The syntax errors gradually decreased, but still nothing is perfect the first time. I have just developed better skills at dealing with bugs and thinking about programming.</p>
+
+            <p><em>Originally posted 2013-11-26 by Lynne Williams in Stories.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>Things I Wish Someone Had Told Me About Scientific Computing</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2013/11/what-ive-learned.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

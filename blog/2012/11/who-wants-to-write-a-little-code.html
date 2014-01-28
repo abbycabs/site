@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Who Wants To Write a Little Code?</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>Who Wants To Write a Little Code?</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p>We have always steered away from building libraries to use in teaching&mdash;we want to show people the "real" stuff, and we can't afford to maintain things. The IPython Notebook has us rethinking that: now that we can display images inline, it would be wonderful if we could leverage <a href="http://coweb.cc.gatech.edu/mediaComp-teach">Mark Guzdial and Barbara Ericson's work</a>, and teach basic Python using simple image manipulation for examples (rather than text munging). Their research found that using images led to higher retention: more students stuck around, and the ones who did, remembered and used more of what they'd learned.</p>
+
+<p>The problem is, libraries like <a href="http://www.pythonware.com/products/pil/">PIL</a> and <a href="http://scikit-image.org/">scikit-image</a> aren't novice-friendly or teaching-oriented. Again, drawing from Guzdial and Ericson's work (which my co-authors and I did in <em><a href="http://www.amazon.com/Practical-Programming-Introduction-Pragmatic-Programmers/dp/1934356271/">Practical Programming</a></em>), we want something like this:</p>
+<pre>&gt;&gt;&gt; from skimage import novice        <span style="color: darkred;"> # special submodule for beginners</span>
+&gt;&gt;&gt; picture = novice.open('kite.png') <span style="color: darkred;"> # create a picture object from a file</span>
+&gt;&gt;&gt; print picture.format <span style="color: darkred;"> # pictures know their format...</span>
+<span style="color: darkgreen;"><em>'png'</em></span>
+&gt;&gt;&gt; print picture.path                <span style="color: darkred;"> # ...and where they came from...</span>
+<span style="color: darkgreen;"><em>'/Users/example/kite.png'</em></span>
+&gt;&gt;&gt; print picture.size                <span style="color: darkred;"> # ...and their size</span>
+<span style="color: darkgreen;"><em>(400, 500)</em></span>
+&gt;&gt;&gt; print picture.width               <span style="color: darkred;"> # 'width' and 'height' also exposed</span>
+<span style="color: darkgreen;"><em>400</em></span>
+&gt;&gt;&gt; picture.size = (200, 250)         <span style="color: darkred;"> # changing size automatically resizes</span>
+&gt;&gt;&gt; for pixel in picture:             <span style="color: darkred;"> # can iterate over pixels</span>
+...     if (pixel.red &gt; 0.5) and \    <span style="color: darkred;"> # pixels have RGB (values are 0.0-1.0)...</span>
+...         (pixel.x &lt; picture.width):   <span style="color: darkred;"># ...and know where they are</span>
+...         pixel.red /= 2               <span style="color: darkred;"># pixel is an alias into the picture</span>
+...
+&gt;&gt;&gt; print picture.modified               <span style="color: darkred;"># pictures know if their pixels are dirty</span>
+<span style="color: darkgreen;"><em>True</em></span>
+&gt;&gt;&gt; print picture.path                   <span style="color: darkred;"># picture no longer corresponds to file</span>
+<span style="color: darkgreen;"><em>None</em></span>
+&gt;&gt;&gt; picture[0:20, 0:20] = (0., 0., 0.)   <span style="color: darkred;"># overwrite lower-left rectangle with black</span>
+&gt;&gt;&gt; picture.save('kite-bluegreen.jpg')   <span style="color: darkred;"># guess file type from suffix</span>
+&gt;&gt;&gt; print picture.path                   <span style="color: darkred;"># picture now corresponds to file</span>
+<span style="color: darkgreen;"><em>'/Users/example/kite-bluegreen.jpg'</em></span>
+&gt;&gt;&gt; print picture.modified               <span style="color: darkred;"># and is now in sync</span>
+<span style="color: darkgreen;"><em>False</em></span></pre>
+<p>The key thing here is that the iterator variable aliases the pixel, but has extra information (its XY coordinates). Yes, this is a bit odd if you're used to standard image processing libraries, or worried about performance, but this is what works best for teaching.</p>
+
+<p>If this existed, we'd rewrite our intro Python material (variables, loops, conditionals, functions) on top of it. My question is, would any of our regular readers like to build it for us?</p>
+
+            <p><em>Originally posted 2012-11-16 by Greg Wilson in Community, Tooling.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>Who Wants To Write a Little Code?</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2012/11/who-wants-to-write-a-little-code.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>

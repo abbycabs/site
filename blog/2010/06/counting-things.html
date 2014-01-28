@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: Counting Things</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>Counting Things</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <p>I re-read Robins et al's "Learning and Teaching Programming: A Review and Discussion" [1] and Eccles and Stacey's "Understanding the Parallel Programming" [2] this morning. One of the key takeaways in both is that novice programmers tend to classify problems according to problem domain or language features, while experienced programmers tend to classify them according to solution strategies. Where a beginner sees a problem in molecular biology or statistics, for example, an expert sees an opportunity to apply divide-and-conquer or accumulate-and-adjust.</p>
+<p>Knowing that, it's tempting to try a strategies-first approach when teaching programming. That usually doesn't work, though, because the strategies are shaped by what computers can do, and if you don't know that, those strategies seem to appear like rabbits out of a magician's hat.</p>
+<p>The idea is still appealing, so as part of the lecture on program design (or perhaps as a separate lecture), I'd like to explore strategies for solving variations on a simple problem as a way to sum up previous material on programming language features like loops and conditionals. The problem I have in mind can be summed up in one word: counting. The variations are:</p>
+<ol>
+<li>How many things do I have? (Use len(list).)</li>
+<li>How many things do I have that satisfy some condition? (Conditional inside loop.)</li>
+<li>What if my things are in a file instead of in memory? (Read the file into a list, then count.)</li>
+<li>What if I have so many things that the won't fit into memory? (Read and test one at a time, streamwise.)</li>
+<li>What if I'm counting the number of items of each of a set of fixed types? (Use an array of accumulators.)</li>
+<li>What if I don't know the types in advance? (Use a dictionary&mdash;which is also the better answer for #5 above.)</li>
+<li>What if my classification scheme is likely to change frequently? (Pass the classifying function into the counting function.)</li>
+<li>What if I only want things up to some stop sign? (Count to sentinel and break.)</li>
+<li>What if my test depends on context, e.g., number of times A comes after B, or number of X's inside a region delimited by Y's? (Use flags to turning counting on and off.)</li>
+<li>What if my things are in a tree rather than a list? (Recursion.)</li>
+<li>What if my things are in a graph that might contain cycles? (Graph-traversal algorithms.)</li>
+<li>What if I might have all of the above? (Iterator and visitor design patterns.)</li>
+<li>What if my things are in a database? (Select, filter, and aggregate.)</li>
+<li>What if I want to calculate an average? (Any of the above plus a count of items.)</li>
+<li>What if I want to calculate a median? (Requires different strategies entirely because it depends on global knowledge.)</li>
+</ol>
+<p>I don't think students could absorb graph traversal, design patterns, and select/filter/aggregate as asides in a single lecture. (It's already clear from feedback, by the way, that introducing big-oh as an aside in the lecture on <a href="/v4/invperc/tuning.html">tuning programs</a> is asking too much&mdash;we'll fix that up soon.) What I'm wondering is, if we've introduced those topics earlier, would a single lecture that showed how changes in the problem determine solution strategy be useful as a summing up? Your feedback would be greatly appreciated.</p>
+<p>[1] Anthony Robins, Janet Rountree, and Nathan Rountree: "<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.100.9130&amp;rep=rep1&amp;type=pdf">Learning and Teaching Programming: A Review and Discussion</a>". <em>Computer Science Education</em>, 13(2), 2003.</p>
+<p>[2] Ryan Eccles and Deborah A. Stacey: "<a href="http://portal.acm.org/citation.cfm?id=1135771.1136120">Understanding the Parallel Programmer</a>". <em>Proc. 20th International  Symposium on High-Performance Computing in an Advanced Collaborative  Environment</em> (HPCS'06), 2006.</p>
+
+            <p><em>Originally posted 2010-06-11 by Greg Wilson in Content.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>Counting Things</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2010/06/counting-things.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>
