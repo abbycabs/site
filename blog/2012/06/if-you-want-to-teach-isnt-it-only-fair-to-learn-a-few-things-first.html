@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
 <link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
 <link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
-<meta http-equiv="last-modified" content="2013-12-21T03:40:36Z" />
+<meta http-equiv="last-modified" content="2014-01-26T05:19:11Z" />
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,8 +27,8 @@
         <span class="icon-bar"></span>
       </a>
       <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
-      <div class="nav-collapse collapse pull-right">
-        <ul class="nav">
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
           <li id="nav-bootcamps">
             <a href="../../../bootcamps/index.html">Bootcamps</a>
           </li>
@@ -42,13 +42,13 @@
             <a href="../../../faq.html">FAQ</a>
           </li>
           <li id="nav-about">
-            <a href="../../../pages/index.html">More...</a>
+            <a href="../../../pages/index.html">About</a>
           </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
         </ul>
-        <form class="navbar-search pull-right" method="get" action="http://www.google.com/search">
-          <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
-          <input name="q" type="text" class="search-query" placeholder="Search" />
-        </form>
       </div>
     </div>
   </div>
@@ -144,7 +144,7 @@
 <li>it only works if there's actually a reliable feedback function that we're actually paying attention to.</li>
 </ol>
 <p>Unfortunately, a lot of the "teach everyone programming" projects that have sprung up in the past year or two fail both of these tests. Most of them don't know what we've learned as a community over the past thirty-odd years about teaching programming, and most of them aren't doing any kind of systematic follow-up assessment to determine whether the techniques they're using are effective or not. It's as if a bunch of bright, passionate, idealistic people decided hey, none of us have ever written a large program before, but if we hack ten hours a day, we can create a world-beating browser. And to complete the analogy, imagine that when those people were told, "You know, this has been done before&mdash;maybe you should take a look at some of the prior art," their answer was, "Pfah! That stuff's the problem we're trying to fix!"</p>
-<p>So here's my challenge to you. If you want to teach programming&mdash;to scientists or anyone else&mdash;go and read a couple of reports on peer instruction (like <a href="http://mazur.harvard.edu/publications.php?function=display&amp;rowid=113">this summary</a> of ten years' use with physics, or <a href="http://dl.acm.org/citation.cfm?id=2016923">its application to programming instruction</a>). Find out what a <a href="http://www.neverworkintheory.org/?p=230">concept inventory</a> is, whether <a href="http://www.neverworkintheory.org/?p=233">online code reviews help learners as much as their face-to-face equivalents</a>, and whether <a href="http://www.neverworkintheory.org/?p=239">program animation can help people learn more quickly</a> (hint: using animations is much less effective than <em>building</em> animations). Read Mark Guzdial's discussion of <a href="../../../papers/making-software-guzdial-2010.pdf">what makes programming hard to teach</a> (and subscribe to <a href="http://computinged.wordpress.com/">his blog</a>), and learn at least a little about <a href="../../../papers/making-software-whitecraft-williams-2010.pdf">why there aren't more women in computing</a>, because after all, if you're going to ask Carla to learn about XML and URLs and lists and loops, isn't it only fair that you learn a few things yourself first?</p>
+<p>So here's my challenge to you. If you want to teach programming&mdash;to scientists or anyone else&mdash;go and read a couple of reports on peer instruction (like <a href="http://mazur.harvard.edu/publications.php?function=display&amp;rowid=113">this summary</a> of ten years' use with physics, or <a href="http://dl.acm.org/citation.cfm?id=2016923">its application to programming instruction</a>). Find out what a <a href="http://www.neverworkintheory.org/?p=230">concept inventory</a> is, whether <a href="http://www.neverworkintheory.org/?p=233">online code reviews help learners as much as their face-to-face equivalents</a>, and whether <a href="http://www.neverworkintheory.org/?p=239">program animation can help people learn more quickly</a> (hint: using animations is much less effective than <em>building</em> animations). Read Mark Guzdial's discussion in <a href="http://www.amazon.com/Making-Software-Really-Works-Believe-ebook/dp/B004D4YI6G/"><cite>Making Software</cite></a> of what makes programming hard to teach (and subscribe to <a href="http://computinged.wordpress.com/">his blog</a>), and learn at least a little about why there aren't more women in computing by reading Whitecraft and Williams' chapter in the same book. Because after all, if you're going to ask Carla to learn about XML and URLs and lists and loops, isn't it only fair that you learn a few things yourself first?</p>
 
             <p><em>Originally posted 2012-06-25 by Greg Wilson in Education, Opinion.</em></p>
             <!-- end content -->
@@ -153,8 +153,8 @@
   <script type="text/javascript">
     var disqus_shortname = 'software-carpentry';
     var disqus_developer = 1;
-    var disqus_identifier = '';
-    var disqus_title = 'If You Want to Teach, Isn't It Only Fair to Learn a Few Things First?';
+    var disqus_identifier = "";
+    var disqus_title = '<p>If You Want to Teach, Isn&#8217;t It Only Fair to Learn a Few Things First?</p>';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -171,6 +171,7 @@
     <footer class="content">
   <div class="container">
     <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
       <a href="https://twitter.com/swcarpentry">Twitter</a>
       <a href="http://software-carpentry.org/feed.xml">RSS</a>
       <a href="https://github.com/swcarpentry">GitHub</a>
@@ -178,7 +179,7 @@
       <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
       <a href="https://www.google.com/+Software-carpentryOrg">Google+</a>
       <a href="../../../license.html">License</a>
-      <a class="bugreport" href="mailto:info@software-carpentry.org?subject=bug%20in%20blog/2012/06/if-you-want-to-teach-isnt-it-only-fair-to-learn-a-few-things-first.html">Bug Report</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2012/06/if-you-want-to-teach-isnt-it-only-fair-to-learn-a-few-things-first.html">Bug Report</a>
     </div>
   </div>
 </footer>
