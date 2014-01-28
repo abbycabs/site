@@ -7,7 +7,6 @@
 
 .navbar .brand {
   padding-top: 0px;  /* align the logo */
-  text-shadow:none;
 }
 
 .navbar {
@@ -19,11 +18,11 @@
 .navbar .container {
     background-color: inherit;
     font-size:11pt;
-    padding:27px 10px 0px 10px;
+    padding:27px 10px 10px 10px;
     background:url('../img/software-carpentry-banner.png') no-repeat;
     background-size: 250px;
     background-position: 10px 10px;
-    height:50px;
+    height:40px;
 }
 
 .navbar-inner {
@@ -36,7 +35,6 @@ code {
 
 .navbar-inverse .nav > li > a {
   color: #f0f0f0;
-  text-shadow:none;
 }
 
 .navbar-inverse .navbar-inner {
@@ -69,25 +67,10 @@ code {
 .navbar-inverse .navbar-search .search-query {
   background-color: #ffffff;
   color: #666666;
-  border-color:#2b3990;
-}
-
-.navbar-inverse .navbar-search {
-  border: none;
-}
-
-.navbar-inverse .nav-collapse .nav > li > a:hover,
-.navbar-inverse .nav-collapse .dropdown-menu a:hover {
-  background-color: transparent;
 }
 
 .navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
   color: #2b3990;
-  text-align: center;
-}
-
-.navbar-inverse .nav-collapse .nav > li:hover > a {
-  color: #935212;
 }
 
 .navbar.transparent.navbar-inverse .navbar-inner {
@@ -96,6 +79,7 @@ code {
     box-shadow: 0px 0px;
     border-radius:0;
     -webkit-border-radius:0;
+    /*background-color: rgba(0,0,0,0.0);*/
     background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
     background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
     background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
@@ -103,36 +87,6 @@ code {
 
 .container {
     max-width:920px;
-}
-
-blockquote p {
-  font-size:14px;
-}
-
-@media (max-width: 979px){
-  .navbar-inverse .nav-collapse ul{
-    margin:20px 0 0;
-  }
-
-  .navbar-inverse .nav-collapse .nav > li > a {
-    font-size: 12pt;
-  }
-
-  .navbar-inverse .nav-collapse .navbar-search {
-    text-align: center;
-    border-top:1px solid #AAA;
-    margin:0;
-  }
-
-  .navbar-inverse .nav-collapse .navbar-search .search-query {
-    margin:10px 0;
-  }
-
-  .navbar-inverse .nav-collapse .nav > li {
-    border-top:1px solid #AAA;
-    padding:10px 0;
-  }
-
 }
 
 @media (max-width: 767px) {
@@ -156,34 +110,4 @@ blockquote p {
     max-width: 700px;
   }
 
-}
-
-@media (max-width: 400px) {
-  .header h1 {
-      font-size: 24pt;
-  }
-
-  #header-text {
-      font-size:16pt;
-  }
-
-  .navbar .container {
-    background-size: 200px;
-    background-position: 10px 20px;
-  }
-
-  #nav-logo {
-    width:190px;
-    height:40px;
-  }
-}
-
-@media (max-width: 319px) {
-  .header h1 {
-      font-size: 20pt;
-  }
-
-  #header-text {
-      font-size:16pt;
-  }
 }

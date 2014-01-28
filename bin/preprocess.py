@@ -10,10 +10,6 @@ import datetime
 import time
 import yaml
 from optparse import OptionParser
-try:  # Python 3
-    from urllib.parse import urlparse, urljoin
-except ImportError:  # Python 2
-    from urlparse import urlparse, urljoin
 from util import CONFIG_YML, \
                  STANDARD_YML, \
                  AIRPORTS_YML, \
@@ -33,12 +29,19 @@ MONTHS = {
 
 # Template for recent blog posts.
 RECENT_POST = '''\
-<h4><a href="{{page.root}}/%(path)s">%(title)s</a></h4>
-<small>By %(author)s / <a href="{{page.root}}/%(path)s">%(date)s</a> </small>
-<p>
+<h3><a href="{{page.root}}/%(path)s">%(title)s</a></h3>
+<div class="row-fluid">
+  <span class="span11">
     %(excerpt)s
-    <a class="pull-right" href="{{page.root}}/%(path)s">...read more</a>
-</p><br /><br />
+  </span>
+  <span class="span1"></span>
+</div>
+<div class="row-fluid">
+  <span class="span11">Posted %(date)s by %(author)s</span>
+  <span class="span1">
+    <a href="{{page.root}}/%(path)s">...more</a>
+  </span>
+</div>
 '''
 
 #----------------------------------------
@@ -102,7 +105,7 @@ def main():
     config['blog_favorites'].reverse()
 
     # Get information from legacy boot camp pages and merge with cached info.
-    config['bootcamps'] = harvest_bootcamps(options.site, cached_bootcamp_info)
+    config['bootcamps'] = harvest_bootcamps(cached_bootcamp_info)
 
     # Select those that'll be displayed on the home page.
     upcoming = [bc for bc in config['bootcamps'] if bc['startdate'] >= config['today']]
@@ -159,15 +162,13 @@ def harvest_blog(config):
 
 #----------------------------------------
 
-def harvest_bootcamps(site, bootcamps):
+def harvest_bootcamps(bootcamps):
     '''Harvest metadata from all boot camp index.html pages and merge with cached info.'''
     pages = glob.glob('bootcamps/*/index.html')
     metadata = harvest(pages)
     for f in metadata:
         bootcamps.append(metadata[f])
-        slug = f.split('/')[1]
-        bootcamps[-1]['slug'] = slug
-        bootcamps[-1]['url'] = urljoin(site, 'bootcamps/{0}/index.html'.format(slug))
+        bootcamps[-1]['slug'] = f.split('/')[1]
         fill_optional_metadata(bootcamps[-1], 'contact')
     bootcamps.sort(lambda x, y: cmp(x['slug'], y['slug']))
     return bootcamps
@@ -237,15 +238,12 @@ def organize_blog_entries(posts):
 #----------------------------------------
 
 def get_blog_excerpt(path):
-    '''Get excerpt from blog post for inclusion in blog index page.
-    Have to turn newlines into spaces so that older versions of Jekyll
-    (like the one on the server) won't turn them into single backslashes
-    when doing inclusion expansion.'''
+    '''Get excerpt from blog post for inclusion in blog index page.'''
     with open(path, 'r') as reader:
         temp = reader.read()
         temp = P_BLOG_EXCERPT.search(temp)
         assert temp, 'Blog post {0} lacks excerpt'.format(path)
-        return temp.group(1).replace('\n', ' ')
+        return temp.group(1)
 
 #----------------------------------------
 
