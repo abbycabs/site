@@ -332,93 +332,15 @@ SWC.maps = (function() {
       
     
       
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(37.4225, 122.1653),
-          map: map,
-          title: "Stanford University, Jan 27-28, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://arokem.github.io/2014-01-27-Stanford/">Stanford University</a></h5>' +
-          '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
-          '</div>';
-            set_info_window(map, marker, info_window, info_string);
+    
       
     
       
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(25.7174346,-80.2781389),
-          map: map,
-          title: "University of Miami, Jan 27-28, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://jennybc.github.io/2014-01-27-miami/">University of Miami</a></h5>' +
-          '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
-          '</div>';
-            set_info_window(map, marker, info_window, info_string);
+    
       
     
       
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(40.093692, -88.237606),
-          map: map,
-          title: "University of Illinois, Computational Science and Engineering, Jan 30-31, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://uiuc-cse.github.io/2014-01-30-cse/">University of Illinois, Computational Science and Engineering</a></h5>' +
-          '<h6><a href="/">Jan 30-31, 2014</a></h6>' +
-          '</div>';
-            set_info_window(map, marker, info_window, info_string);
-      
     
-      
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(42.361947,-71.090936),
-          map: map,
-          title: "Massachusetts Institute of Technology, Jan 30 - Feb 1, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://geocarpentry.github.io/2014-01-30-mit/">Massachusetts Institute of Technology</a></h5>' +
-          '<h6><a href="/">Jan 30 - Feb 1, 2014</a></h6>' +
-          '</div>';
-            set_info_window(map, marker, info_window, info_string);
-      
-    
-      
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(34.412114,-119.842014),
-          map: map,
-          title: "University of California Santa Barbara, Jan 31-Feb 1, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://swcarpentry.github.io/2014-01-31-ucsb/">University of California Santa Barbara</a></h5>' +
-          '<h6><a href="/">Jan 31-Feb 1, 2014</a></h6>' +
-          '</div>';
-            set_info_window(map, marker, info_window, info_string);
-      
-    
-      
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(52.6217629,-1.2409930),
-          map: map,
-          title: "The Genome Analysis Centre (TGAC), Feb 3-4, 2014",
-          //icon: openPin,
-          visible: true,
-        });
-        var info_string = '<div class="info-window">' +
-          '<h5><a href="http://apawlik.github.io/2014-02-03-TGAC/">The Genome Analysis Centre (TGAC)</a></h5>' +
-          '<h6><a href="/">Feb 3-4, 2014</a></h6>' +
-          '</div>';
-            set_info_window(map, marker, info_window, info_string);
       
     
       
@@ -2870,15 +2792,105 @@ SWC.maps = (function() {
       
     
       
-    
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(37.4225, 122.1653),
+          map: map,
+          title: "Stanford University, Jan 27-28, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://arokem.github.io/2014-01-27-Stanford/">Stanford University</a></h5>' +
+          '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
-    
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(25.7174346,-80.2781389),
+          map: map,
+          title: "University of Miami, Jan 27-28, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://jennybc.github.io/2014-01-27-miami/">University of Miami</a></h5>' +
+          '<h6><a href="/">Jan 27-28, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(40.093692, -88.237606),
+          map: map,
+          title: "University of Illinois, Computational Science and Engineering, Jan 30-31, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://uiuc-cse.github.io/2014-01-30-cse/">University of Illinois, Computational Science and Engineering</a></h5>' +
+          '<h6><a href="/">Jan 30-31, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
     
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(42.361947,-71.090936),
+          map: map,
+          title: "Massachusetts Institute of Technology, Jan 30 - Feb 1, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://geocarpentry.github.io/2014-01-30-mit/">Massachusetts Institute of Technology</a></h5>' +
+          '<h6><a href="/">Jan 30 - Feb 1, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(34.412114,-119.842014),
+          map: map,
+          title: "University of California Santa Barbara, Jan 31-Feb 1, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://swcarpentry.github.io/2014-01-31-ucsb/">University of California Santa Barbara</a></h5>' +
+          '<h6><a href="/">Jan 31-Feb 1, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
+      
+    
+      
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(52.6217629,-1.2409930),
+          map: map,
+          title: "The Genome Analysis Centre (TGAC), Feb 3-4, 2014",
+          //icon: openPin,
+          visible: true,
+        });
+        var info_string = '<div class="info-window">' +
+          '<h5><a href="http://apawlik.github.io/2014-02-03-TGAC/">The Genome Analysis Centre (TGAC)</a></h5>' +
+          '<h6><a href="/">Feb 3-4, 2014</a></h6>' +
+          '</div>';
+        set_info_window(map, marker, info_window, info_string);
+        markers.push(marker); // For clustering
+        oms.addMarker(marker); // For spiderfying
       
     
       

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<link href="../../../css/bootstrap/bootstrap.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="../../../css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc.css" />
+<link rel="stylesheet" type="text/css" href="../../../css/swc-bootstrap.css" />
+<link rel="alternate" type="application/rss+xml" title="The Software Carpentry Blog" href="/feed.xml"/>
+<meta http-equiv="last-modified" content="2014-02-10T02:27:43Z" />
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <title>Software Carpentry: An Online Peer Instruction Tool</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar transparent navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a href="../../../index.html" id="nav-logo" class="pull-left"></a>
+      <div class="nav-collapse collapse pull-right span12">
+        <ul class="nav pull-right">
+          <li id="nav-bootcamps">
+            <a href="../../../bootcamps/index.html">Bootcamps</a>
+          </li>
+          <li id="nav-lessons">
+            <a href="../../../v4/index.html">Lessons</a>
+          </li>
+          <li id="nav-blog">
+            <a href="../../../blog/index.html">Blog</a>
+          </li>
+          <li id="nav-faq">
+            <a href="../../../faq.html">FAQ</a>
+          </li>
+          <li id="nav-about">
+            <a href="../../../pages/index.html">About</a>
+          </li>
+          <form class="navbar-search" method="get" action="http://www.google.com/search">
+            <input type="hidden" name="sitesearch" value="/Users/acabunoc/Projects/sc-site/_site" />
+            <input name="q" type="text" class="search-query" placeholder="Search" />
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </header>
+    <section id="title" class="content">
+        <div class="container">
+              <h1>An Online Peer Instruction Tool</h1>
+        </div>
+    </section>
+    <section class="content">
+      <div class="container">
+            <!-- start content -->
+            <!-- start excerpt -->
+<p>
+  <a href="http://en.wikipedia.org/wiki/Peer_instruction">Peer instruction</a>
+  is a teaching technique originally developed by Eric Mazur and colleagues in the early 1990s.
+  Study after study has shown that peer instructions works better than conventional lecturing,
+  but to the best of my knowledge,
+  no online learning platform directly supports peer instruction.
+  I'd like to fix that,
+  and I hope some of our readers would like to help.
+</p>
+<!-- end excerpt -->
+<p>
+  <a href="http://youtu.be/2LbuoxAy56o">This video</a> shows peer instruction in action
+  in a classroom in India.
+  Its basic instructional cycle is:
+</p>
+<ol>
+  <li>The instructor poses a multiple-choice question.</li>
+  <li>Each student votes for an answer.</li>
+  <li>Students discuss their thinking with their peers.</li>
+  <li>Students re-vote.</li>
+  <li>The instructor reveals and explains the correct answer.</li>
+</ol>
+<p>
+  This technique works better than either someone talking in front of the class
+  or a recorded video.
+  The reason is the discussion phase:
+  it gives learners a chance to find out how other people are thinking,
+  which in turn allows peers to correct each other's misconceptions.
+</p>
+<p>
+  Moodle, Blackboard, and various MOOC platforms don't support that kind of interleaved discussion,
+  and neither do tools Skype.
+  In particular,
+  their voice and chat tools don't directly support transitions between:
+</p>
+<ul>
+  <li>one-to-many broadcast, in which the instructor is presenting to the whole class, and</li>
+  <li>many few-to-few discussions, in which learners talk amongst themselves.</li>
+</ul>
+<p>
+  I'd like a tool
+  that would let the moderator toggle between these two modes
+  so that the group doesn't lose a minute or two making each transition.
+  (I think this would be useful for meetings in general,
+  not just for teaching.)
+  Discussion groups could be set up in a bunch of ways
+  (learner's choice time, moderator-assigned, randomly matched each),
+  and it'd be nice if the voting was built in
+  and if the moderator could ring a bell or something a few seconds before transitions
+  so that learners weren't cut off mid-sentence.
+  Given <a href="http://www.webrtc.org/">WebRTC</a> and some back-end hacking,
+  it seems like a prototype wouldn't be all that difficult to hack together;
+  if you'd like to try,
+  please get in touch.
+</p>
+
+            <p><em>Originally posted 2014-02-09 by Greg Wilson in Tooling.</em></p>
+            <!-- end content -->
+            
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'software-carpentry';
+    var disqus_developer = 1;
+    var disqus_identifier = "";
+    var disqus_title = '<p>An Online Peer Instruction Tool</p>';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+      </div>
+    </section>
+    <footer class="content">
+  <div class="container">
+    <div class="links">
+      <a href="mailto:admin@software-carpentry.org">Email</a>
+      <a href="https://twitter.com/swcarpentry">Twitter</a>
+      <a href="http://software-carpentry.org/feed.xml">RSS</a>
+      <a href="https://github.com/swcarpentry">GitHub</a>
+      <a href="irc://freenode/swcarpentry">IRC</a>
+      <a href="https://www.facebook.com/SoftwareCarpentry">Facebook</a>
+      <a href="https://plus.google.com/+Software-carpentryOrg" rel="publisher">Google+</a>
+      <a href="../../../license.html">License</a>
+      <a class="bugreport" href="mailto:admin@software-carpentry.org?subject=bug%20in%20blog/2014/02/online-peer-instruction-tool.html">Bug Report</a>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery-1.9.1.min.js"></script>
+<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37305346-1']);
+  _gaq.push(['_setDomainName', 'software-carpentry.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  </body>
+</html>
